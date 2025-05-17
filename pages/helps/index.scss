@@ -1,0 +1,110 @@
+.help_view {
+  margin-top: -8.5rem;
+  &_section {
+    padding-top: 16.7rem;
+    height: 50rem;
+    background-image: url('/home_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    &_title {
+      text-indent: 30rem;
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 8.8rem;
+      line-height: 10.6rem;
+      margin-bottom: 2.4rem;
+    }
+    &_desc {
+      margin-left: 30rem;
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 2.8rem;
+      line-height: 4.3rem;
+      letter-spacing: 0.025rem;
+      width: 91.4rem;
+    }
+  }
+  &_box {
+    padding-left: 51.56rem;
+    padding-top: 8px;
+    padding-bottom: 8rem;
+    &_tip {
+      margin-bottom: 3rem;
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      color: #3370FF;
+      span {
+        color: #B4B4B4;
+      }
+    }
+    &_name {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 3.8rem;
+      height: 4.6rem;
+      line-height: 4.6rem;
+      margin-bottom: 3rem;
+      color: #1B1B1B;
+    }
+    &_link {
+      margin-bottom: 1.5rem;
+      display: block;
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 2.8rem;
+      color: #3370FF;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .help_view_section {
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+  }
+  .help_view_section_title {
+    font-size: 3.2rem;
+    width: 100%;
+    padding-left: 1.6rem;
+    box-sizing: border-box;
+    text-align: left;
+    text-indent: 0;
+    line-height: 3.6rem;
+  }
+  .help_view_section_desc {
+    line-height: 3rem;
+    font-size: 2.4rem;
+    padding-left: 1.6rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+  .help_view_box_main {
+    width: 100%;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  .help_view_box_main_item {
+    width: 100%;
+  }
+  .help_view_box {
+    padding-left: 1.6rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .help_view_box_link {
+    line-height: 3rem;
+    font-size: 2.4rem;
+  }
+}

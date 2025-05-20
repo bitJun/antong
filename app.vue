@@ -222,94 +222,56 @@ const onClose = () => {
   <NuxtPage />
   <footer id="footer">
     <div class="footer_box">
-      <div class="footer_box_left">
-        <div class="footer_box_main">
-          <img
-            src="/logo.png"
-            class="footer_box_main_logo"
-          />
-          MosApp
-        </div>
-        <p>©2014-2023 MosApp. All Rights Reserved.</p>
-      </div>
-      <div class="footer_box_center">
-        <div class="footer_box_center_item">
-          <a class="footer_box_center_link">{{ t('nav.Feature') }}</a>
-          <NuxtLink
-            class="footer_box_center_link"
-            to="/help"
-          >
-            {{ t('nav.Help') }}
-          </NuxtLink>
-          <NuxtLink
-            class="footer_box_center_link"
-            to="/post"
-          >
-            {{ t('nav.Post') }}
-          </NuxtLink>
-          <NuxtLink
-            class="footer_box_center_link"
-            to="/about"
-          >
-            {{ t('nav.AboutUs') }}
-          </NuxtLink>
-        </div>
-        <div class="footer_box_center_item">
-          <NuxtLink
-            class="footer_box_center_link"
-            to="/terms"
-          >
-            {{t('nav.Term')}}
-          </NuxtLink>
-          <NuxtLink
-            class="footer_box_center_link"
-            to="/policy"
-          >
-            {{t('nav.Privacy')}}
-          </NuxtLink>
-          <NuxtLink
-            class="footer_box_center_link"
-            to="/cookie"
-          >
-            {{t('nav.Cookie')}}
-          </NuxtLink>
+      <div class="footer_box_main">
+        <div class="footer_box_main_nav">
+          <div class="footer_box_main_nav_item">
+            <p class="footer_box_main_nav_item_title">关于我们</p>
+            <a class="footer_box_main_nav_item_link">安通简介</a>
+            <a class="footer_box_main_nav_item_link">我们的优势</a>
+            <a class="footer_box_main_nav_item_link">战略合作</a>
+            <a class="footer_box_main_nav_item_link">联系我们</a>
+          </div>
+          <div class="footer_box_main_nav_item">
+            <p class="footer_box_main_nav_item_title">产品中心</p>
+            <a class="footer_box_main_nav_item_link">智能健康系列</a>
+            <a class="footer_box_main_nav_item_link">创意生活系列</a>
+          </div>
+          <div class="footer_box_main_nav_item">
+            <p class="footer_box_main_nav_item_title">定制服务</p>
+            <a class="footer_box_main_nav_item_link">定制服务定位</a>
+            <a class="footer_box_main_nav_item_link">定制服务流程</a>
+          </div>
+          <div class="footer_box_main_nav_item">
+            <p class="footer_box_main_nav_item_title">行业资讯</p>
+          </div>
+          <div class="footer_box_main_nav_item">
+            <p class="footer_box_main_nav_item_title">联系我们</p>
+          </div>
         </div>
       </div>
-      <div class="footer_box_right">
-        <div class="footer_box_right_msg">
-          <img
-            src="/email.png"
-            class="footer_box_right_msg_email"
-          />
-          mosapp.app@gmail.com
-        </div>
-        <p class="footer_box_right_title">{{t('nav.Follow')}}</p>
-        <div class="footer_box_right_list">
-          <img
-            src="/x.png"
-            class="footer_box_right_list_item"
-          />
-          <img
-            src="/IG.png"
-            class="footer_box_right_list_item"
-          />
-          <img
-            src="/wechat.png"
-            class="footer_box_right_list_item"
-          />
-          <img
-            src="/facebook.png"
-            class="footer_box_right_list_item"
-          />
-          <img
-            src="/Linked.png"
-            class="footer_box_right_list_item"
-          />
-          <img
-            src="/tiktok.png"
-            class="footer_box_right_list_item"
-          />
-        </div>
+      <div class="footer_box_content">
+        <h4 class="footer_box_content_title">安桐（香港）有限公司</h4>
+        <p class="footer_box_content_desc">UNIT 2208,22/F YAN`S TOWER,25-27 WONG CHUK HANG ROAD, WONGCHUK HANG,HK</p>
+        <div class="footer_box_content_line"></div>
+        <p class="footer_box_content_desc">XIAMEN ANTONG IMPORT AND EXPORT CON.,LTD.</p>
+        <h4 class="footer_box_content_title">厦门安桐进出口有限公司</h4>
+        <p class="footer_box_content_desc">Unit 604, No.291,Bingcheng Road,Huli District,Xiamen City, Fujian Province,China.</p>
+        <div class="footer_box_content_line"></div>
+        <p class="footer_box_content_desc">ANTONG CAMBODIAN IMPORT AND EXPORT CON.,LTD.</p>
+        <h4 class="footer_box_content_title">安桐柬埔寨进出口有限公司</h4>
+        <p class="footer_box_content_desc">#263,St Nr6,Phum Lien Khleang,SangKat Prek leap,khan Chongva,Phnom Penh,Cambodia</p>
+        <h4 class="footer_box_content_phone">+855 188 56 9999</h4>
+        
+      </div>
+    </div>
+    <div class="footer_box">
+      <div class="footer_box_main">
+        <p class="footer_box_main_tip">
+          本网站会使用Cookies以提升您的访问体验。如继续浏览本网站，则表示您同意我们使用Cookies。更多Cookies政策请见本网站的隐私权政策
+        </p>
+      </div>
+      <div class="footer_box_content">
+        <h4 class="footer_box_content_title">请联系我们以了解更多信息</h4>
       </div>
     </div>
   </footer>

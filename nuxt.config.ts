@@ -8,10 +8,7 @@ export default defineNuxtConfig({
     port: 4000,
   },
   css: ['@/public/style/common.css'],
-  modules: [
-    '@nuxtjs/i18n',
-    '@element-plus/nuxt'
-  ],
+  modules: ['@nuxtjs/i18n', '@element-plus/nuxt', 'nuxt-swiper'],
   i18n: {
     vueI18n: './i18n.config.ts' // if you are using custom path, default
   }

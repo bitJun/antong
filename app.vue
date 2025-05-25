@@ -111,108 +111,110 @@ const onClose = () => {
           class="header_logo_img"
         />
       </div>
-      <ul class="header_nav">
-        <li class="header_nav_item">
-          <NuxtLink
-            class="header_nav_item_link"
-            activeClass="active"
-            to="/"
-          >
-            {{ t('nav.home') }}
-          </NuxtLink>
-        </li>
-        <li class="header_nav_item">
-          <NuxtLink
-            class="header_nav_item_link"
-            activeClass="active"
-            to="/about"
-          >
-            {{ t('nav.AboutUs') }}
-          </NuxtLink>
-        </li>
-        <li class="header_nav_item">
-          <NuxtLink
-            class="header_nav_item_link"
-            activeClass="active"
-            to="/about"
-          >
-            {{ t('nav.product') }}
-          </NuxtLink>
-        </li>
-        <li class="header_nav_item">
-          <NuxtLink
-            class="header_nav_item_link"
-            activeClass="active"
-            to="/help"
-          >
-            {{ t('nav.service') }}
-          </NuxtLink>
-        </li>
-        <li class="header_nav_item">
-          <NuxtLink
-            class="header_nav_item_link"
-            activeClass="active"
-            to="/post"
-          >
-            {{ t('nav.news') }}
-          </NuxtLink>
-        </li>
-        <li class="header_nav_item">
-          <NuxtLink
-            class="header_nav_item_link"
-            activeClass="active"
-            to="/post"
-          >
-            {{ t('nav.concat') }}
-          </NuxtLink>
-        </li>
-      </ul>
-      <div class="header_action">
-        <div class="header_action_lang langChange" @click="onShowLangMenu()">
-          <img
-            src="/global.png"
-            class="header_action_lang_img langChange"
-          />
-          {{lang[locale]}}
-          <img
-            src="/drop.png"
-            class="header_action_lang_icon"
-          />
-          <div class="header_action_lang_menu langChange" v-if="show">
-            <div class="header_action_lang_menu_title langChange">{{ t('nav.Choose') }}</div>
-            <div
-              class="header_action_lang_menu_item langChange"
-              :class="[locale == 'en' ? 'active' : '']"
-              @click="setLocale('en')"
+      <div class="header_box">
+        <ul class="header_nav">
+          <li class="header_nav_item">
+            <NuxtLink
+              class="header_nav_item_link"
+              activeClass="active"
+              to="/"
             >
-              English
-              <img
-                src="/check.png"
-                v-if="locale == 'en'"
-              />
-            </div>
-            <div
-              class="header_action_lang_menu_item langChange"
-              :class="[locale == 'zh-cn' ? 'active' : '']"
-              @click="setLocale('zh-cn')"
+              {{ t('nav.home') }}
+            </NuxtLink>
+          </li>
+          <li class="header_nav_item">
+            <NuxtLink
+              class="header_nav_item_link"
+              activeClass="active"
+              to="/about"
             >
-              简体中文
-              <img
-                src="/check.png"
-                v-if="locale == 'zh-cn'"
-              />
-            </div>
-            <div
-              class="header_action_lang_menu_item langChange"
-              :class="[locale == 'khmer' ? 'active' : '']"
-              @click="setLocale('khmer')"
+              {{ t('nav.AboutUs') }}
+            </NuxtLink>
+          </li>
+          <li class="header_nav_item">
+            <NuxtLink
+              class="header_nav_item_link"
+              activeClass="active"
+              to="/service"
             >
-              ខ្មែរ
-              <img
-                src="/check.png"
-                v-if="locale == 'khmer'"
-              />
-              <!-- 高棉语 -->
+              {{ t('nav.product') }}
+            </NuxtLink>
+          </li>
+          <li class="header_nav_item">
+            <NuxtLink
+              class="header_nav_item_link"
+              activeClass="active"
+              to="/service"
+            >
+              {{ t('nav.service') }}
+            </NuxtLink>
+          </li>
+          <li class="header_nav_item">
+            <NuxtLink
+              class="header_nav_item_link"
+              activeClass="active"
+              to="/post"
+            >
+              {{ t('nav.news') }}
+            </NuxtLink>
+          </li>
+          <li class="header_nav_item">
+            <NuxtLink
+              class="header_nav_item_link"
+              activeClass="active"
+              to="/post"
+            >
+              {{ t('nav.concat') }}
+            </NuxtLink>
+          </li>
+        </ul>
+        <div class="header_action">
+          <div class="header_action_lang langChange" @click="onShowLangMenu()">
+            <img
+              src="/global.png"
+              class="header_action_lang_img langChange"
+            />
+            {{lang[locale]}}
+            <img
+              src="/drop.png"
+              class="header_action_lang_icon"
+            />
+            <div class="header_action_lang_menu langChange" v-if="show">
+              <div class="header_action_lang_menu_title langChange">{{ t('nav.Choose') }}</div>
+              <div
+                class="header_action_lang_menu_item langChange"
+                :class="[locale == 'en' ? 'active' : '']"
+                @click="setLocale('en')"
+              >
+                English
+                <img
+                  src="/check.png"
+                  v-if="locale == 'en'"
+                />
+              </div>
+              <div
+                class="header_action_lang_menu_item langChange"
+                :class="[locale == 'zh-cn' ? 'active' : '']"
+                @click="setLocale('zh-cn')"
+              >
+                简体中文
+                <img
+                  src="/check.png"
+                  v-if="locale == 'zh-cn'"
+                />
+              </div>
+              <div
+                class="header_action_lang_menu_item langChange"
+                :class="[locale == 'khmer' ? 'active' : '']"
+                @click="setLocale('khmer')"
+              >
+                ខ្មែរ
+                <img
+                  src="/check.png"
+                  v-if="locale == 'khmer'"
+                />
+                <!-- 高棉语 -->
+              </div>
             </div>
           </div>
         </div>

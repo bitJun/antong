@@ -9,11 +9,11 @@
 .header {
   &_container {
     position: relative;
-    width: 1200px;
+    width: 144rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-family: Roboto;
     font-weight: 500;
     font-size: 3rem;
@@ -23,9 +23,9 @@
     color: #000000;
   }
   &_logo  {
-    position: absolute;
-    left: 7.6rem;
-    top: 2.1rem;
+    // position: absolute;
+    // left: 0rem;
+    // top: 2.1rem;
     height: 4.1rem;
     display: flex;
     align-items: center;
@@ -34,6 +34,10 @@
       width: max-content;
       height: 4.1rem;
     }
+  }
+  &_box {
+    display: flex;
+    align-items: center;
   }
   &_nav {
     height: 8.5rem;
@@ -85,15 +89,16 @@
     }
   }
   &_action {
-    position: absolute;
-    z-index: 9;
-    top: 0;
-    right: 0;
+    // position: absolute;
+    // z-index: 9;
+    // top: 0;
+    // right: 0;
     height: 8.5rem;
     display: flex;
     align-items: center;
     gap: 4.2rem;
-    padding-right: 2.1rem;
+    // padding-right: 2.1rem;
+    margin-left: 2rem;
     box-sizing: border-box;
     &_download {
       height: 4rem;

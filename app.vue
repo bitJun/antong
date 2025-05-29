@@ -135,7 +135,7 @@ const onClose = () => {
             <NuxtLink
               class="header_nav_item_link"
               activeClass="active"
-              to="/service"
+              to="/product"
             >
               {{ t('nav.product') }}
             </NuxtLink>
@@ -153,7 +153,7 @@ const onClose = () => {
             <NuxtLink
               class="header_nav_item_link"
               activeClass="active"
-              to="/post"
+              to="/news"
             >
               {{ t('nav.news') }}
             </NuxtLink>
@@ -162,7 +162,7 @@ const onClose = () => {
             <NuxtLink
               class="header_nav_item_link"
               activeClass="active"
-              to="/post"
+              to="/concat"
             >
               {{ t('nav.concat') }}
             </NuxtLink>

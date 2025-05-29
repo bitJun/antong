@@ -68,5 +68,32 @@
     "desc4": "According to the design plan and customer requirements, Antong starts to produce furniture. During the production process, customers can communicate with designers at any time to adjust and confirm the details.",
     "desc5": "After the product is completed, Antong will arrange a professional delivery team to deliver the furniture to the address specified by the customer, and will be responsible for installation and commissioning.",
     "desc6": "Provide high-quality after-sales service, including product maintenance, repair and replacement, etc. Customers can contact Antong's customer service team at any time to get timely solutions and suggestions."
+  },
+  "news": {
+    "title": "Industry news",
+    "t1": "Ogawa's exhibition hall at the Consumer Goods Expo stood out with its hard-core technology, attracting more than 20 mainstream media to focus on reports!",
+    "d1": "The 6-day 5th China International Consumer Goods Expo came to a successful conclusion in Hainan, and Ogawa's 'Foresee the Future' theme pavilion also ended perfectly, waiting for the next surprise. As a popular booth at this Consumer Goods Expo, Ogawa's novel combination of technology and home style has attracted much attention since the opening day, attracting many mainstream media to visit and report.",
+    "t2": "Ogawa shines at the Canton Fair, leading the new industry trend with smart health technology",
+    "d2": "The 137th Canton Fair offline exhibition has come to an end. On this important stage for Chinese companies to showcase their brand image and expand international markets, Ogawa Group, as a leading company in the massage and health care industry, made a grand appearance with its innovative massage chairs and small massage appliances, which once again won wide acclaim and demonstrated the powerful charm and unlimited potential of 'Made in China' in the massage and health care industry.",
+    "t3": "Honeywell Air Purifier KJ1000F-P22B Smart Air Guardian for Large Spaces",
+    "d3": "In today's pursuit of healthy quality of life, air purifiers have become a must-have appliance for many families. Honeywell KJ1000F-P22B air purifier stands out among many brands with its excellent performance and functions. This disinfection machine registered with the National Health Commission can not only effectively remove formaldehyde, odor, and sterilize, but also meet the needs of rapid cleaning of large spaces. It is an ideal choice for modern homes and offices.",
+    "t4": "2025 Milan Design Week & Furniture Fair ended perfectly",
+    "d4": "The 63rd Milan International Furniture Fair is themed 'Thought for Humans', focusing on the human body, sustainability and life aesthetics. American photographer Bill Durgin interprets the symbiosis of humanized design and environmental protection concepts through the artistic fusion of the human body with materials such as wood and metal. This global design event is not only a trend vane, but also a deep return to the essence of design.",
+    "t5": "As the only industry representative, Ogawa participated in the IEC/TC61 General Assembly as an observer",
+    "d5": "The 108th IEC/TC61 General Assembly of the IEC International Electrotechnical Commission was held in Hangzhou. Liu Ting, President of the China Household Electrical Appliance Research Institute, Irma Rustemi, Chairman of IEC/TC61, and Ma Dejun, Vice Chairman, attended the meeting. More than 200 experts from nearly 30 countries participated in the meeting. Ogawa Group, as the only representative of the massage equipment industry, attended the meeting as an observer for the first time.",
+    "t6": "Ogawa has obtained 6 major certifications from the China Quality Inspection Association, and its quality strength has been recognized again!",
+    "d6": "Thanks to its hard-core quality, Ogawa has won five honors for three consecutive years, including 'National Product and Service Quality Integrity Commitment Enterprise', 'National Industry Quality Leading Brand', 'National Product and Service Quality Integrity Brand', 'National Quality Reputation Guarantee Product', and 'National Consumer Quality Reputation Guarantee Product'.",
+    "t7": "The Chinese home furnishing industry has entered a new cycle as seen from the 40th Shenzhen International Furniture Fair",
+    "d7": "The Shenzhen International Furniture Fair brings together the country's top 300+ brands to launch new products, presenting a panoramic view of 11 new home furnishing tracks and consumption trends, linking domestic and foreign markets to drive innovation, clearing the fog of industry with a breakthrough momentum, and opening up a new future for the home furnishing industry.",
+    "t8": "Ogawa's first DeepSeek massage chair is launched, starting intelligent upgrade",
+    "d8": "The backend system of Ogawa Group's 'Ogawa AI Massage Robot Super Sense Ultimate Edition' has been successfully connected to DeepSeek, which will bring users an upgraded intelligent interactive experience. Users of this massage chair only need to update OTA with one click to enjoy the Deep-Seek version of the massage experience.",
+    "t9": "Smog effect export Honeywell's customized air purifiers for China are exported to India",
+    "d9": "Honeywell has promoted its Chinese-made air purifiers to developing countries such as India and Russia. Compared with China, India's air pollution is considered more serious, and its capital New Delhi has been rated as the city with the worst air quality in the world by the World Health Organization."
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Welcome to contact us",
+    "VIP": "VIP hotline",
+    "tip": "Contact us for more information"
   }
 }

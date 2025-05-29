@@ -34,6 +34,7 @@ useHead({
 
 const onShowLangMenu = () => {
   show.value = true;
+  console.log(23)
 }
 
 const onShowMenuLang = (event) => {
@@ -45,6 +46,12 @@ const onShowMenuLang = (event) => {
 
 const onShowMenu = () => {
   showMenu.value = true;
+}
+
+const onChangeLocal = (key) => {
+  setLocale(key);
+  show.value = false;
+  console.log('show.value', show.value)
 }
 
 
@@ -184,7 +191,7 @@ const onClose = () => {
               <div
                 class="header_action_lang_menu_item langChange"
                 :class="[locale == 'en' ? 'active' : '']"
-                @click="setLocale('en')"
+                @click.stop="onChangeLocal('en')"
               >
                 English
                 <img
@@ -195,7 +202,7 @@ const onClose = () => {
               <div
                 class="header_action_lang_menu_item langChange"
                 :class="[locale == 'zh-cn' ? 'active' : '']"
-                @click="setLocale('zh-cn')"
+                @click.stop="onChangeLocal('zh-cn')"
               >
                 简体中文
                 <img
@@ -206,7 +213,7 @@ const onClose = () => {
               <div
                 class="header_action_lang_menu_item langChange"
                 :class="[locale == 'khmer' ? 'active' : '']"
-                @click="setLocale('khmer')"
+                @click.stop="onChangeLocal('khmer')"
               >
                 ខ្មែរ
                 <img

@@ -65,15 +65,15 @@
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.ogawa.com.cn/news._.169.html" target="_blank" class="full bg2">
-        <div class="new_view_box_main">
-          <div class="new_view_box_main_desc">
-            <h4 class="new_view_box_main_desc_title">{{t('news.t5')}}</h4>
-            <p class="new_view_box_main_desc_tip">{{t('news.d5')}}</p>
-          </div>
+        <div class="new_view_box_mains">
           <img
             src="/news/img5.png"
-            class="new_view_box_main_img"
+            class="new_view_box_mains_img"
           />
+          <div class="new_view_box_mains_desc">
+            <h4 class="new_view_box_mains_desc_title">{{t('news.t5')}}</h4>
+            <p class="new_view_box_mains_desc_tip">{{t('news.d5')}}</p>
+          </div>
         </div>
       </NuxtLink>
       <NuxtLink to="http://www.ogawaworld.net.cn/brand/news/119" target="_blank" class="full bg3">
@@ -89,15 +89,15 @@
         </div>
       </NuxtLink>
       <NuxtLink to="https://mp.weixin.qq.com/s/F9XbRHRbXltohyzkaSOBzg" target="_blank" class="full bg1">
-        <div class="new_view_box_main">
-          <div class="new_view_box_main_desc">
-            <h4 class="new_view_box_main_desc_title">{{t('news.t7')}}</h4>
-            <p class="new_view_box_main_desc_tip">{{t('news.d7')}}</p>
-          </div>
+        <div class="new_view_box_mains">
           <img
             src="/news/img7.png"
-            class="new_view_box_main_img"
+            class="new_view_box_mains_img"
           />
+          <div class="new_view_box_mains_desc">
+            <h4 class="new_view_box_mains_desc_title">{{t('news.t7')}}</h4>
+            <p class="new_view_box_mains_desc_tip">{{t('news.d7')}}</p>
+          </div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.ogawa.com.cn/news_180.html" target="_blank" class="full bg2">
@@ -113,15 +113,15 @@
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.jiemian.com/article/911718.html" target="_blank" class="full bg3">
-        <div class="new_view_box_main">
-          <div class="new_view_box_main_desc">
-            <h4 class="new_view_box_main_desc_title">{{t('news.t9')}}</h4>
-            <p class="new_view_box_main_desc_tip">{{t('news.d9')}}</p>
-          </div>
+        <div class="new_view_box_mains">
           <img
             src="/news/img9.png"
-            class="new_view_box_main_img"
+            class="new_view_box_mains_img"
           />
+          <div class="new_view_box_mains_desc">
+            <h4 class="new_view_box_mains_desc_title">{{t('news.t9')}}</h4>
+            <p class="new_view_box_mains_desc_tip">{{t('news.d9')}}</p>
+          </div>
         </div>
       </NuxtLink>
     </div>

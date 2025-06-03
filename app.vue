@@ -234,53 +234,51 @@ const onClose = () => {
       <div class="footer_box_main">
         <div class="footer_box_main_nav">
           <div class="footer_box_main_nav_item">
-            <p class="footer_box_main_nav_item_title">关于我们</p>
-            <a class="footer_box_main_nav_item_link">安通简介</a>
-            <a class="footer_box_main_nav_item_link">我们的优势</a>
-            <a class="footer_box_main_nav_item_link">战略合作</a>
-            <a class="footer_box_main_nav_item_link">联系我们</a>
+            <p class="footer_box_main_nav_item_title">{{t('footer.AboutUs')}}</p>
+            <a class="footer_box_main_nav_item_link">{{t('footer.intro')}}</a>
+            <a class="footer_box_main_nav_item_link">{{t('footer.advantages')}}</a>
+            <a class="footer_box_main_nav_item_link">{{t('footer.cooperate')}}</a>
+            <a class="footer_box_main_nav_item_link">{{t('footer.concat')}}</a>
           </div>
           <div class="footer_box_main_nav_item">
-            <p class="footer_box_main_nav_item_title">产品中心</p>
-            <a class="footer_box_main_nav_item_link">智能健康系列</a>
-            <a class="footer_box_main_nav_item_link">创意生活系列</a>
+            <p class="footer_box_main_nav_item_title">{{t('footer.product')}}</p>
+            <a class="footer_box_main_nav_item_link">{{t('footer.health')}}</a>
+            <a class="footer_box_main_nav_item_link">{{t('footer.creativity')}}</a>
           </div>
           <div class="footer_box_main_nav_item">
-            <p class="footer_box_main_nav_item_title">定制服务</p>
-            <a class="footer_box_main_nav_item_link">定制服务定位</a>
-            <a class="footer_box_main_nav_item_link">定制服务流程</a>
+            <p class="footer_box_main_nav_item_title">{{t('footer.service')}}</p>
+            <a class="footer_box_main_nav_item_link">{{t('footer.position')}}</a>
+            <a class="footer_box_main_nav_item_link">{{t('footer.process')}}</a>
           </div>
           <div class="footer_box_main_nav_item">
-            <p class="footer_box_main_nav_item_title">行业资讯</p>
+            <p class="footer_box_main_nav_item_title">{{t('footer.news')}}</p>
           </div>
           <div class="footer_box_main_nav_item">
-            <p class="footer_box_main_nav_item_title">联系我们</p>
+            <p class="footer_box_main_nav_item_title">{{t('footer.concat')}}</p>
           </div>
         </div>
       </div>
       <div class="footer_box_content">
-        <h4 class="footer_box_content_title">安桐（香港）有限公司</h4>
-        <p class="footer_box_content_desc">UNIT 2208,22/F YAN`S TOWER,25-27 WONG CHUK HANG ROAD, WONGCHUK HANG,HK</p>
+        <h4 class="footer_box_content_title">{{t('footer.t1')}}</h4>
+        <p class="footer_box_content_desc">{{t('footer.address1')}}</p>
         <div class="footer_box_content_line"></div>
-        <p class="footer_box_content_desc">XIAMEN ANTONG IMPORT AND EXPORT CON.,LTD.</p>
-        <h4 class="footer_box_content_title">厦门安桐进出口有限公司</h4>
-        <p class="footer_box_content_desc">Unit 604, No.291,Bingcheng Road,Huli District,Xiamen City, Fujian Province,China.</p>
+        <h4 class="footer_box_content_title">{{t('footer.t2')}}</h4>
+        <p class="footer_box_content_desc">{{t('footer.address2')}}</p>
         <div class="footer_box_content_line"></div>
-        <p class="footer_box_content_desc">ANTONG CAMBODIAN IMPORT AND EXPORT CON.,LTD.</p>
-        <h4 class="footer_box_content_title">安桐柬埔寨进出口有限公司</h4>
-        <p class="footer_box_content_desc">#263,St Nr6,Phum Lien Khleang,SangKat Prek leap,khan Chongva,Phnom Penh,Cambodia</p>
-        <h4 class="footer_box_content_phone">+855 188 56 9999</h4>
+        <h4 class="footer_box_content_title">{{t('footer.t3')}}</h4>
+        <p class="footer_box_content_desc">{{t('footer.address3')}}</p>
+        <h4 class="footer_box_content_phone">+86 186 0692 2333&nbsp;&nbsp;+855 188 56 9999</h4>
         
       </div>
     </div>
     <div class="footer_box">
       <div class="footer_box_main">
         <p class="footer_box_main_tip">
-          本网站会使用Cookies以提升您的访问体验。如继续浏览本网站，则表示您同意我们使用Cookies。更多Cookies政策请见本网站的隐私权政策
+          {{t('footer.tip')}}
         </p>
       </div>
       <div class="footer_box_content">
-        <h4 class="footer_box_content_title">请联系我们以了解更多信息</h4>
+        <h4 class="footer_box_content_title">{{t('footer.tip1')}}</h4>
       </div>
     </div>
   </footer>

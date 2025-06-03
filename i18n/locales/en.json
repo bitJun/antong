@@ -6,17 +6,7 @@
     "service": "Customized services",
     "news": "Industry news",
     "concat": "Contact us",
-    "Features": "Features",
-    "Help": "Help",
-    "Post": "Post",
-    "Login": "Login",
-    "Download": "Download",
-    "Choose": "Choose Language",
-    "Feature": "Feature",
-    "Term": "Term of Service",
-    "Privacy": "Privacy Policy",
-    "Cookie": "Child Safety Policy Agreement",
-    "Follow": "Follow us"
+    "Choose": "Choose Language"
   },
   "home": {
     "title": "AntoraAntong",
@@ -95,5 +85,27 @@
     "subtitle": "Welcome to contact us",
     "VIP": "VIP hotline",
     "tip": "Contact us for more information"
+  },
+  "footer": {
+    "AboutUs": "About Us",
+    "product": "Product",
+    "service": "Customized services",
+    "news": "Industry news",
+    "concat": "Contact us",
+    "intro": "About Antora",
+    "advantages": "Our Advantages",
+    "cooperate": "Strategic Partner Brands",
+    "health": "Smart Health Series",
+    "creativity": "Creative Living Series",
+    "position": "Customized Service Orientation",
+    "process": "VIP Customized Service Procedure",
+    "t1": "Antora Company Limited",
+    "t2": "Xiamen Antora Import and Export Co., Ltd.",
+    "t3": "ANTORA CAMBODIAN IMPORT EXPORT CO., LTD.",
+    "tip": "This website uses Cookies to enhance your browsing experience. By continuing to browse this website, you agree to our use of Cookies. For more information on our Cookie policy, please refer to the website's Privacy Policy.",
+    "tip1": "Please contact us for further information.",
+    "address1": "Unit 2208, 22/F., Yan's Tower, 25-27 Wong Chuk Hang Road, Wong Chuk Hang, Hong Kong",
+    "address2": "Unit 604, Block A3, Xiamen International Yacht Club, No. 291 Bingcheng Road, Huli District, Xiamen",
+    "address3": "#263H, St NR6, Phum Kien Khleang, Sangkat Prek leap, Khan Chroy Chongva, Phnom Penh, Cambodia."
   }
 }

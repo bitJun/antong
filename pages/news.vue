@@ -24,6 +24,7 @@
               {{t('news.d1')}}
             </p>
           </div>
+          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.ogawa.com.cn/news_.181.html" target="_blank" class="full bg2">
@@ -36,6 +37,7 @@
             src="/news/img2.png"
             class="new_view_box_main_img"
           />
+          <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://post.smzdm.com/p/al8x4gley" target="_blank" class="full bg3">
@@ -50,6 +52,7 @@
               {{t('news.d3')}}
             </p>
           </div>
+          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://mp.wetxin.gq.com/s /Aj_TfSwMk.vL1G5SrqWiVA" target="_blank" class="full bg1">
@@ -62,6 +65,7 @@
             src="/news/img4.png"
             class="new_view_box_main_img"
           />
+          <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.ogawa.com.cn/news._.169.html" target="_blank" class="full bg2">
@@ -74,6 +78,7 @@
             <h4 class="new_view_box_mains_desc_title">{{t('news.t5')}}</h4>
             <p class="new_view_box_mains_desc_tip">{{t('news.d5')}}</p>
           </div>
+          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="http://www.ogawaworld.net.cn/brand/news/119" target="_blank" class="full bg3">
@@ -86,6 +91,7 @@
             src="/news/img6.png"
             class="new_view_box_main_img"
           />
+          <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://mp.weixin.qq.com/s/F9XbRHRbXltohyzkaSOBzg" target="_blank" class="full bg1">
@@ -98,6 +104,7 @@
             <h4 class="new_view_box_mains_desc_title">{{t('news.t7')}}</h4>
             <p class="new_view_box_mains_desc_tip">{{t('news.d7')}}</p>
           </div>
+          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.ogawa.com.cn/news_180.html" target="_blank" class="full bg2">
@@ -110,6 +117,7 @@
             src="/news/img8.png"
             class="new_view_box_main_img"
           />
+          <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.jiemian.com/article/911718.html" target="_blank" class="full bg3">
@@ -122,6 +130,7 @@
             <h4 class="new_view_box_mains_desc_title">{{t('news.t9')}}</h4>
             <p class="new_view_box_mains_desc_tip">{{t('news.d9')}}</p>
           </div>
+          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
     </div>

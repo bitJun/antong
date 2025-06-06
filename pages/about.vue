@@ -116,11 +116,10 @@ const containerRef = ref(null);
 const swiper = useSwiper(containerRef, {
   effect: 'creative',
   loop: true,
-  autoplay: {
-    delay: 1000,
-  },
+  autoplay: true,
   slidesPerView: 4,
   spaceBetween: 20,
+  navigation: true,
   creativeEffect: {
     prev: {
       shadow: true,

@@ -6,7 +6,11 @@
   margin-top: -8.5rem;
   &_banner {
     width: 100%;
-    height: max-content;
+    position: relative;
+    &_img {
+      width: 100%;
+      height: max-content;
+    }
   }
   &_forest {
     position: relative;

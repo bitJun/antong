@@ -7,7 +7,6 @@
       height: auto;
     }
     &_main {
-      padding-top: 10rem;
       position: absolute;
       left: 0;
       top: 0;
@@ -29,6 +28,7 @@
       font-size: 4rem;
       line-height: 4.8rem;
       margin-bottom: 1rem;
+      color: #323232;
     }
     &_desc {
       color: #999;
@@ -39,7 +39,6 @@
     }
   }
   &_box {
-    padding: 9.3rem 0 0 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -48,7 +47,9 @@
       width: 120rem;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-bottom: 3rem;
+      padding: 8rem 0;
       &_desc {
         width: 40%;
         &_title {
@@ -83,6 +84,7 @@
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
+      align-items: center;
       &_desc {
         width: 40%;
         &_title {
@@ -93,7 +95,6 @@
           letter-spacing: 0%;
           margin-bottom: 3rem;
           color: #1F1F1F;
-          margin-top: 4rem;
         }
         &_tip {
           font-family: Roboto;
@@ -104,7 +105,7 @@
         }
       }
       &_img {
-        width: 50%;
+        width: 40%;
         height: auto;
       }
     }
@@ -127,6 +128,12 @@
       &_swiper {
         width: 120rem;
         margin: 0 auto;
+        &_item {
+          &_img {
+            width: 100%;
+            height: auto;
+          }
+        }
       }
     }
   }

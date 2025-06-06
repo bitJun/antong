@@ -1,9 +1,39 @@
 <template>
   <div class="home_view">
-    <img
-      src="/home/banner.png"
-      class="home_view_banner"
-    />
+    <swiper-container ref="bannerRef">
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <img
+          src="/home/banner1.jpg"
+          class="home_view_banner_img"
+        />
+      </swiper-slide>
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <img
+          src="/home/banner2.jpg"
+          class="home_view_banner_img"
+        />
+      </swiper-slide>
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <img
+          src="/home/banner3.jpg"
+          class="home_view_banner_img"
+        />
+      </swiper-slide>
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <img
+          src="/home/banner4.png"
+          class="home_view_banner_img"
+        />
+      </swiper-slide>
+    </swiper-container>
     <div class="line"></div>
     <div class="home_view_forest">
       <img
@@ -109,6 +139,38 @@
               class="home_view_news_list_item_img"
             />
           </swiper-slide>
+          <swiper-slide
+            class="home_view_news_list_item"
+          >
+            <img
+              src="/home/news4.png"
+              class="home_view_news_list_item_img"
+            />
+          </swiper-slide>
+          <swiper-slide
+            class="home_view_news_list_item"
+          >
+            <img
+              src="/home/news5.png"
+              class="home_view_news_list_item_img"
+            />
+          </swiper-slide>
+          <swiper-slide
+            class="home_view_news_list_item"
+          >
+            <img
+              src="/home/news6.png"
+              class="home_view_news_list_item_img"
+            />
+          </swiper-slide>
+          <swiper-slide
+            class="home_view_news_list_item"
+          >
+            <img
+              src="/home/news7.png"
+              class="home_view_news_list_item_img"
+            />
+          </swiper-slide>
         </swiper-container>
       </div>
     </div>
@@ -165,14 +227,34 @@ const isMobile = ref(false);
 const windowsUrl = ref('');
 const macUrl = ref('');
 const containerRef = ref(null);
-const slides = ref(Array.from({ length: 10 }));
+const bannerRef = ref(null);
+const swipers = useSwiper(bannerRef, {
+  effect: 'creative',
+  loop: true,
+  autoplay: {
+    delay: 1000,
+  },
+  slidesPerView: 1,
+  navigation: true,
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: [0, 0, -400],
+    },
+    next: {
+      shadow: true,
+      translate: [0, 0, -400],
+    },
+  },
+})
 const swiper = useSwiper(containerRef, {
   effect: 'creative',
   loop: true,
   autoplay: {
     delay: 1000,
   },
-  slidesPerView: 3,
+  slidesPerView: 4,
+  navigation: true,
   spaceBetween: 20,
   creativeEffect: {
     prev: {

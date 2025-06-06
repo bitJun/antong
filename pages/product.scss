@@ -46,6 +46,8 @@
     }
   }
   &_section {
+    display: block;
+    text-decoration: none;
     &_info {
       width: 40%;
       &_img {
@@ -79,6 +81,8 @@
   }
   &_main {
     margin-bottom: 2rem;
+    display: block;
+    text-decoration: none;
     &_info {
       width: 25%;
       display: flex;

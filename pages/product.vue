@@ -1,109 +1,145 @@
 <template>
-  <div class="about_view">
-    <div class="about_view_section">
-      <img
-        src="/about/bg.png"
-        class="about_view_section_img"
-      />
-      <div class="about_view_section_main">
-        <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
-        <p class="about_view_section_title">{{t('about.title')}}</p>
-        <p class="about_view_section_desc">{{t('about.desc')}}</p>
+  <div class="product_view">
+    <div class="product_view_box1">
+      <div class="product_view_box1_main">
+        <h4 class="product_view_box1_main_title">{{ t('product.title') }}</h4>
+        <p class="product_view_box1_main_desc">{{ t('product.desc') }}</p>
       </div>
-      <!--  -->
     </div>
-    <div class="about_view_box">
-      <div class="about_view_box_main">
-        <div class="about_view_box_main_desc">
-          <h4 class="about_view_box_main_desc_title">{{t('about.subTitle')}}</h4>
-          <p class="about_view_box_main_desc_tip">{{t('about.line1')}}</p>
-          <p class="about_view_box_main_desc_tip">{{t('about.line2')}}</p>
-          <p class="about_view_box_main_desc_tip">{{t('about.line3')}}</p>
-        </div>
-        <img
-          src="/about/pic1.png"
-          class="about_view_box_main_img"
-        />
-      </div>
-      <div class="about_view_box_section">
-        <div class="about_view_box_mains">
+    <div class="product_view_section" style="background: #DDEBF6;">
+      <div class="box">
+        <div class="product_view_section_info">
           <img
-            src="/about/pic2.png"
-            class="about_view_box_mains_img"
+            src="/product/p1.png"
+            class="product_view_section_img"
           />
-          <div class="about_view_box_mains_desc">
-            <h4 class="about_view_box_mains_desc_title">{{t('about.subTitle2')}}</h4>
-            <p class="about_view_box_mains_desc_tip">
-              {{t('about.line4')}}
-            </p>
+        </div>
+        <div class="product_view_section_box">
+          <h4 class="product_view_section_box_title">{{t('product.p1_title')}}</h4>
+          <p class="product_view_section_box_desc">{{t('product.p1_desc')}}</p>
+          <div class="flex">
+            <div class="product_view_section_box_btn">Read more {{t('product.more')}}&nbsp;></div>
           </div>
         </div>
       </div>
-      <div class="about_view_box_line"></div>
-      <div class="about_view_box_container">
-        <h4 class="about_view_box_container_title">{{t('about.honor')}}</h4>
-        <div class="about_view_box_container_swiper">
-          <swiper-container ref="containerRef">
-            <swiper-slide
-              class="about_view_box_container_swiper_item"
-            >
-              <img
-                src="/about/honor1.png"
-                class="about_view_box_container_swiper_item_img"
-              />
-            </swiper-slide>
-            <swiper-slide
-              class="about_view_box_container_swiper_item"
-            >
-              <img
-                src="/about/honor2.png"
-                class="about_view_box_container_swiper_item_img"
-              />
-            </swiper-slide>
-            <swiper-slide
-              class="about_view_box_container_swiper_item"
-            >
-              <img
-                src="/about/honor3.png"
-                class="about_view_box_container_swiper_item_img"
-              />
-            </swiper-slide>
-            <swiper-slide
-              class="about_view_box_container_swiper_item"
-            >
-              <img
-                src="/about/honor4.png"
-                class="about_view_box_container_swiper_item_img"
-              />
-            </swiper-slide>
-            <swiper-slide
-              class="about_view_box_container_swiper_item"
-            >
-              <img
-                src="/about/honor5.png"
-                class="about_view_box_container_swiper_item_img"
-              />
-            </swiper-slide>
-            <swiper-slide
-              class="about_view_box_container_swiper_item"
-            >
-              <img
-                src="/about/honor6.png"
-                class="about_view_box_container_swiper_item_img"
-              />
-            </swiper-slide>
-            <swiper-slide
-              class="about_view_box_container_swiper_item"
-            >
-              <img
-                src="/about/honor7.png"
-                class="about_view_box_container_swiper_item_img"
-              />
-            </swiper-slide>
-          </swiper-container>
+    </div>
+    <div class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+      <div class="box">
+        <div class="product_view_section_box">
+          <h4 class="product_view_section_box_title">{{t('product.p2_title')}}</h4>
+          <p class="product_view_section_box_desc">{{t('product.p2_desc')}}</p>
+          <div class="flex">
+            <div class="product_view_section_box_btn">Read more {{t('product.more')}}&nbsp;></div>
+          </div>
+        </div>
+        <div class="product_view_section_info">
+          <img
+            src="/product/p2.png"
+            class="product_view_section_img"
+          />
         </div>
       </div>
-      <div class="about_view_box_line"></div>
+    </div>
+    <div class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+      <div class="box">
+        <div class="product_view_section_info">
+          <img
+            src="/product/p3.png"
+            class="product_view_section_img"
+          />
+        </div>
+        <div class="product_view_section_box">
+          <h4 class="product_view_section_box_title">{{t('product.p3_title')}}</h4>
+          <p class="product_view_section_box_desc">{{t('product.p3_desc')}}</p>
+          <div class="flex">
+            <div class="product_view_section_box_btn">Read more {{t('product.more')}}&nbsp;></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product_view_box2">
+      <div class="product_view_box2_main">
+        <h4 class="product_view_box2_main_title">{{ t('product.title1') }}</h4>
+        <p class="product_view_box2_main_desc">{{ t('product.desc1') }}</p>
+      </div>
+    </div>
+    <div class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
+      <div class="box">
+        <div class="product_view_main_info">
+          <h4 class="product_view_main_info_title">{{t('product.p4_title')}}</h4>
+          <div class="flex">
+            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+          </div>
+        </div>
+        <div class="product_view_main_detail">
+          <img
+            src="/product/p4.png"
+            class="product_view_main_detail_img"
+          />
+          <img
+            src="/product/p5.png"
+            class="product_view_main_detail_img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="product_view_main" style="background: #EAEBF0;padding: 2rem 0;">
+      <div class="box">
+        <div class="product_view_main_info">
+          <h4 class="product_view_main_info_title">{{t('product.p5_title')}}</h4>
+          <div class="flex">
+            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+          </div>
+        </div>
+        <div class="product_view_main_detail">
+          <img
+            src="/product/p6.png"
+            class="product_view_main_detail_imgs"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="product_view_main" style="background: #FFFFFF;padding: 2rem 0;">
+      <div class="box">
+        <div class="product_view_main_info">
+          <h4 class="product_view_main_info_title">{{t('product.p6_title')}}</h4>
+          <div class="flex">
+            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+          </div>
+        </div>
+        <div class="product_view_main_detail">
+          <img
+            src="/product/p7.png"
+            class="product_view_main_detail_imgs"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
+      <div class="box">
+        <div class="product_view_main_info">
+          <h4 class="product_view_main_info_title">{{t('product.p7_title')}}</h4>
+          <div class="flex">
+            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+          </div>
+        </div>
+        <div class="product_view_main_detail">
+          <img
+            src="/product/p8.png"
+            class="product_view_main_detail_imgs"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="product_view_main" style="background: #EAEBF0;padding: 16em 0;">
+      <div class="box">
+        <div class="product_view_main_info">
+          <h4 class="product_view_main_info_title">{{t('product.p8_title')}}</h4>
+          <div class="flex">
+            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

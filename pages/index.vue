@@ -8,6 +8,11 @@
           src="/home/banner1.jpg"
           class="home_view_banner_img"
         />
+        <div class="home_view_banner_box">
+          <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
+          <p class="home_view_banner_box_desc">{{t('home.banner1_desc')}}</p>
+          <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
+        </div>
       </swiper-slide>
       <swiper-slide
         class="home_view_banner"
@@ -16,6 +21,11 @@
           src="/home/banner2.jpg"
           class="home_view_banner_img"
         />
+        <div class="home_view_banner_box1">
+          <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
+          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc')}}</p>
+          <div class="home_view_banner_box1_btn">{{t('home.btn')}}&nbsp;></div>
+        </div>
       </swiper-slide>
       <swiper-slide
         class="home_view_banner"
@@ -24,6 +34,11 @@
           src="/home/banner3.jpg"
           class="home_view_banner_img"
         />
+        <div class="home_view_banner_box2">
+          <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
+          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc')}}</p>
+          <div class="home_view_banner_box2_btn">{{t('home.btn')}}&nbsp;></div>
+        </div>
       </swiper-slide>
       <swiper-slide
         class="home_view_banner"
@@ -32,6 +47,11 @@
           src="/home/banner4.png"
           class="home_view_banner_img"
         />
+        <div class="home_view_banner_box3">
+          <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>
+          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc')}}</p>
+          <div class="home_view_banner_box3_btn">{{t('home.btn')}}&nbsp;></div>
+        </div>
       </swiper-slide>
     </swiper-container>
     <div class="line"></div>

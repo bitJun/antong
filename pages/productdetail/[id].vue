@@ -1,9 +1,11 @@
 <template>
   <div class="help_view">
-    <img
-      class="help_view_img"
-      :src="`/product/pd${id}.png`"
-    />
+    <div class="help_view_box">
+      <img
+        class="help_view_img"
+        :src="`/product/pd${id}.png`"
+      />
+    </div>
   </div>
 </template>
 <script setup>

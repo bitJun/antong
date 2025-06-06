@@ -62,7 +62,7 @@
       />
       <div class="home_view_forest_main">
         <p class="home_view_forest_main_title">{{t('home.title')}}</p>
-        <div class="home_view_forest_main_line">-</div>
+        <!-- <div class="home_view_forest_main_line">-</div> -->
         <p class="home_view_forest_main_tip">{{t('home.tip1')}}</p>
         <p class="home_view_forest_main_tip">{{t('home.tip2')}}</p>
         <p class="home_view_forest_main_tip">{{t('home.tip3')}}</p>

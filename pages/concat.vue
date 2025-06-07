@@ -7,10 +7,45 @@
       />
       <div class="about_view_section_box">
         <h4 class="about_view_section_title">{{t('contact.title')}}</h4>
+        <div v-if='isMobile'>
+          <p class="about_view_main_vip">
+            <img
+              src="/contact/email.png"
+              class="about_view_main_vip_img"
+            />&nbsp;
+            <!-- {{t('contact.VIP')}} -->
+            服务邮箱
+          </p>
+          <p class="about_view_main_vip">public@antoralife.com</p>
+        </div>
+        <p class="about_view_main_vip" v-else>
+          <!-- {{t('contact.VIP')}}&nbsp; -->
+          <img
+            src="/contact/email.png"
+            class="about_view_main_vip_img"
+          />&nbsp;
+          服务邮箱
+          &nbsp;&nbsp;public@antoralife.com
+        </p>
+        <div class="about_view_main_contact">
+          <img
+            src="/contact/phone.png"
+            class="about_view_main_contact_img"
+          />
+          <img
+            src="/contact/tg.png"
+            class="about_view_main_contact_img"
+          />
+          <img
+            src="/contact/wechat.png"
+            class="about_view_main_contact_img"
+          />
+        </div>
+        <p class="about_view_main_tip">{{t('contact.tip')}}</p>
       </div>
     </div>
     <div class="about_view_line"></div>
-    <div class="about_view_main">
+    <!-- <div class="about_view_main">
       <h4 class="about_view_main_title">{{t('contact.subtitle')}}</h4>
       <div class="about_view_main_box">
         <p class="about_view_main_subtitle">ANTORA COMPANY LIMITED</p>
@@ -60,7 +95,7 @@
         />
       </div>
       <p class="about_view_main_tip">{{t('contact.tip')}}</p>
-    </div>
+    </div> -->
   </div>
 </template>
 <script setup>

@@ -10,7 +10,8 @@
         />
         <div class="home_view_banner_box">
           <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
-          <p class="home_view_banner_box_desc">{{t('home.banner1_desc')}}</p>
+          <p class="home_view_banner_box_desc">{{t('home.banner1_desc1')}}</p>
+          <p class="home_view_banner_box_desc">{{t('home.banner1_desc2')}}</p>
           <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </swiper-slide>
@@ -23,7 +24,8 @@
         />
         <div class="home_view_banner_box1">
           <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
-          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc')}}</p>
+          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc1')}}</p>
+          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc2')}}</p>
           <div class="home_view_banner_box1_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </swiper-slide>
@@ -36,7 +38,8 @@
         />
         <div class="home_view_banner_box2">
           <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
-          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc')}}</p>
+          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc1')}}</p>
+          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc2')}}</p>
           <div class="home_view_banner_box2_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </swiper-slide>
@@ -49,7 +52,8 @@
         />
         <div class="home_view_banner_box3">
           <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>
-          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc')}}</p>
+          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc1')}}</p>
+          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc2')}}</p>
           <div class="home_view_banner_box3_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </swiper-slide>
@@ -65,7 +69,7 @@
         <!-- <div class="home_view_forest_main_line">-</div> -->
         <p class="home_view_forest_main_tip">{{t('home.tip1')}}</p>
         <p class="home_view_forest_main_tip">{{t('home.tip2')}}</p>
-        <p class="home_view_forest_main_tip">{{t('home.tip3')}}</p>
+        <p class="home_view_forest_main_tip">{{t('home.tip3').replace(/'/g, '"')}}</p>
         <p class="home_view_forest_main_tip">{{t('home.tip4')}}</p>
         <div class="home_view_forest_main_btn">{{t('home.btn')}}&nbsp;></div>
       </div>

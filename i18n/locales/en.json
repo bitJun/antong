@@ -30,13 +30,17 @@
     "subtitle1": "Industry News",
     "subtitle2": "Strategic Partner Brands",
     "banner1_title": "Oxygen Chamber",
-    "banner1_desc": "ProductsRevitalize life with boundless vitality!",
+    "banner1_desc1": "ProductsRevitalize life",
+    "banner1_desc2": "with boundless vitality!",
     "banner2_title": "Massage Products",
-    "banner2_desc": "Initiate a therapeutic journey for body and mind.",
+    "banner2_desc1": "Initiate a therapeutic journey",
+    "banner2_desc2": "for body and mind.",
     "banner3_title": "High-End Customization",
-    "banner3_desc": "Tailor-made luxury for exclusive enjoyment.",
+    "banner3_desc1": "Tailor-made luxury",
+    "banner3_desc2": "for exclusive enjoyment.",
     "banner4_title": "Furniture Products",
-    "banner4_desc": "Enjoy a cozy and comfortable space."
+    "banner4_desc1": "Enjoy a cozy and",
+    "banner4_desc2": "comfortable space."
   },
   "about": {
     "tip": "Our Mission",

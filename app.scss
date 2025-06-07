@@ -265,6 +265,29 @@
   }
   &_content {
     width: 60rem;
+    &_info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      color: #ffffff;
+      &_icon {
+        width: 2rem;
+        margin-right: 1rem;
+      }
+    }
+    &_email {
+      font-size: 1.6rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    &_list {
+      display: flex;
+      gap: 2rem;
+      &_img {
+        width: 8rem;
+      }
+    }
     &_title {
       color: #fff;
       font-size: 1.8rem;

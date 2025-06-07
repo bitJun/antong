@@ -258,7 +258,29 @@ const onClose = () => {
         </div>
       </div>
       <div class="footer_box_content">
-        <h4 class="footer_box_content_title">{{t('footer.t1')}}</h4>
+        <div class="footer_box_content_info">
+          <img
+            src="/email1.png"
+            class="footer_box_content_info_icon"
+          />
+          服务邮箱
+        </div>
+        <p class="footer_box_content_email">public@antoralife.com</p>
+        <div class="footer_box_content_list">
+          <img
+            src="/contact/phone.png"
+            class="footer_box_content_list_img"
+          />
+          <img
+            src="/contact/tg.png"
+            class="footer_box_content_list_img"
+          />
+          <img
+            src="/contact/wechat.png"
+            class="footer_box_content_list_img"
+          />
+        </div>
+        <!-- <h4 class="footer_box_content_title">{{t('footer.t1')}}</h4>
         <p class="footer_box_content_desc">{{t('footer.address1')}}</p>
         <div class="footer_box_content_line"></div>
         <h4 class="footer_box_content_title">{{t('footer.t2')}}</h4>
@@ -275,7 +297,7 @@ const onClose = () => {
           class="footer_box_content_phone"
         >
           +86 186 0692 2333&nbsp;&nbsp;+855 188 56 9999
-        </h4>
+        </h4> -->
       </div>
     </div>
     <div class="footer_box">

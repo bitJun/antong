@@ -98,7 +98,6 @@ const onClose = () => {
         src="/logo.jpg"
         class="top_nav_logo_img"
       />
-      MosApp
     </div>
     <img
       src="/menu.png"
@@ -267,8 +266,16 @@ const onClose = () => {
         <div class="footer_box_content_line"></div>
         <h4 class="footer_box_content_title">{{t('footer.t3')}}</h4>
         <p class="footer_box_content_desc">{{t('footer.address3')}}</p>
-        <h4 class="footer_box_content_phone">+86 186 0692 2333&nbsp;&nbsp;+855 188 56 9999</h4>
-        
+        <div v-if="isMobile">
+          <p class="footer_box_content_phone">+86 186 0692 2333</p>
+          <p class="footer_box_content_phone">+855 188 56 9999</p>
+        </div>
+        <h4
+          v-else
+          class="footer_box_content_phone"
+        >
+          +86 186 0692 2333&nbsp;&nbsp;+855 188 56 9999
+        </h4>
       </div>
     </div>
     <div class="footer_box">
@@ -295,25 +302,7 @@ const onClose = () => {
             activeClass="active"
             to="/"
           >
-            {{ t('nav.Features') }}
-          </NuxtLink>
-        </li>
-        <li class="menuList_nav_item">
-          <NuxtLink
-            class="menuList_nav_item_link"
-            activeClass="active"
-            to="/help"
-          >
-            {{ t('nav.Help') }}
-          </NuxtLink>
-        </li>
-        <li class="menuList_nav_item">
-          <NuxtLink
-            class="menuList_nav_item_link"
-            activeClass="active"
-            to="/post"
-          >
-            {{ t('nav.Post') }}
+            {{ t('nav.home') }}
           </NuxtLink>
         </li>
         <li class="menuList_nav_item">
@@ -325,21 +314,43 @@ const onClose = () => {
             {{ t('nav.AboutUs') }}
           </NuxtLink>
         </li>
+        <li class="menuList_nav_item">
+          <NuxtLink
+            class="menuList_nav_item_link"
+            activeClass="active"
+            to="/product"
+          >
+            {{ t('nav.product') }}
+          </NuxtLink>
+        </li>
+        <li class="menuList_nav_item">
+          <NuxtLink
+            class="menuList_nav_item_link"
+            activeClass="active"
+            to="/service"
+          >
+            {{ t('nav.service') }}
+          </NuxtLink>
+        </li>
+        <li class="menuList_nav_item">
+          <NuxtLink
+            class="menuList_nav_item_link"
+            activeClass="active"
+            to="/news"
+          >
+            {{ t('nav.news') }}
+          </NuxtLink>
+        </li>
+        <li class="menuList_nav_item">
+          <NuxtLink
+            class="menuList_nav_item_link"
+            activeClass="active"
+            to="/concat"
+          >
+            {{ t('nav.concat') }}
+          </NuxtLink>
+        </li>
       </ul>
-      <NuxtLink to="https://dl.mosapp.app/" class="menuList_download">
-        {{ t('nav.Download') }}
-        <!-- <img
-          src="/down_white.png"
-          class="menuList_download_img"
-        /> -->
-      </NuxtLink>
-      <button class="menuList_login">
-        {{ t('nav.Login') }}
-        <!-- <img
-          src="/down_black.png"
-          class="menuList_login_img"
-        /> -->
-      </button>
       <div class="menuList_lang langChange" @click="onShowMenuLang($event)">
         <img
           src="/global.png"

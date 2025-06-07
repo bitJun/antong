@@ -151,3 +151,62 @@
 .bg3 {
   background: #E0ECF8;
 }
+@media screen and (max-width: 768px) {
+  .new_view {
+    &_section {
+      &_main {
+        width: 60%;
+      }
+    }
+    &_box {
+      &_main {
+        width: 100%;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &_img {
+          width: 100%;
+        }
+        &_desc {
+          width: 100%;
+          padding: 0 1.6rem;
+          box-sizing: border-box;
+        }
+        &_btn {
+          font-size: 1.6rem;
+          color: #333333;
+          text-decoration: none;
+          position: static;
+          right: 8rem;
+          bottom: 8rem;
+          text-align: center;
+        }
+      }
+      &_mains {
+        width: 100%;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &_img {
+          width: 100%;
+        }
+        &_desc {
+          width: 100%;
+          padding: 0 1.6rem;
+          box-sizing: border-box;
+        }
+        &_btn {
+          font-size: 1.6rem;
+          color: #333333;
+          text-decoration: none;
+          position: static;
+          right: 8rem;
+          bottom: 8rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

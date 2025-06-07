@@ -27,7 +27,7 @@
           <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="https://www.ogawa.com.cn/news_.181.html" target="_blank" class="full bg2">
+      <NuxtLink to="https://www.ogawa.com.cn/news_181.html" target="_blank" class="full bg2">
         <div class="new_view_box_main">
           <div class="new_view_box_main_desc">
             <h4 class="new_view_box_main_desc_title">{{t('news.t2')}}</h4>
@@ -40,7 +40,7 @@
           <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="https://post.smzdm.com/p/al8x4gley" target="_blank" class="full bg3">
+      <NuxtLink to="https://post.smzdm.com/p/al8x4gle/" target="_blank" class="full bg3">
         <div class="new_view_box_mains">
           <img
             src="/news/img3.png"
@@ -55,7 +55,7 @@
           <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="https://mp.wetxin.gq.com/s /Aj_TfSwMk.vL1G5SrqWiVA" target="_blank" class="full bg1">
+      <NuxtLink to="https://mp.weixin.qq.com/s/Aj_TfSwMkJvL1G5SrqWiVA" target="_blank" class="full bg1">
         <div class="new_view_box_main">
           <div class="new_view_box_main_desc">
             <h4 class="new_view_box_main_desc_title">{{t('news.t4')}}</h4>
@@ -68,7 +68,7 @@
           <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="https://www.ogawa.com.cn/news._.169.html" target="_blank" class="full bg2">
+      <NuxtLink to="https://www.ogawa.com.cn/news_169.html" target="_blank" class="full bg2">
         <div class="new_view_box_mains">
           <img
             src="/news/img5.png"
@@ -94,7 +94,7 @@
           <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="https://mp.weixin.qq.com/s/F9XbRHRbXltohyzkaSOBzg" target="_blank" class="full bg1">
+      <NuxtLink to="https://mp.weixin.qq.com/s/F9XbRHRbXItohyzkQSOBzg" target="_blank" class="full bg1">
         <div class="new_view_box_mains">
           <img
             src="/news/img7.png"

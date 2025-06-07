@@ -234,10 +234,12 @@ const onClose = () => {
         <div class="footer_box_main_nav">
           <div class="footer_box_main_nav_item">
             <p class="footer_box_main_nav_item_title">{{t('footer.AboutUs')}}</p>
+            <a class="footer_box_main_nav_item_link">{{t('footer.shiming')}}</a>
+            <a class="footer_box_main_nav_item_link">{{t('footer.yuanjing')}}</a>
             <a class="footer_box_main_nav_item_link">{{t('footer.intro')}}</a>
             <a class="footer_box_main_nav_item_link">{{t('footer.advantages')}}</a>
-            <a class="footer_box_main_nav_item_link">{{t('footer.cooperate')}}</a>
-            <a class="footer_box_main_nav_item_link">{{t('footer.concat')}}</a>
+            <a class="footer_box_main_nav_item_link">{{t('footer.honor')}}</a>
+            <!-- <a class="footer_box_main_nav_item_link">{{t('footer.concat')}}</a> -->
           </div>
           <div class="footer_box_main_nav_item">
             <p class="footer_box_main_nav_item_title">{{t('footer.product')}}</p>
@@ -280,24 +282,6 @@ const onClose = () => {
             class="footer_box_content_list_img"
           />
         </div>
-        <!-- <h4 class="footer_box_content_title">{{t('footer.t1')}}</h4>
-        <p class="footer_box_content_desc">{{t('footer.address1')}}</p>
-        <div class="footer_box_content_line"></div>
-        <h4 class="footer_box_content_title">{{t('footer.t2')}}</h4>
-        <p class="footer_box_content_desc">{{t('footer.address2')}}</p>
-        <div class="footer_box_content_line"></div>
-        <h4 class="footer_box_content_title">{{t('footer.t3')}}</h4>
-        <p class="footer_box_content_desc">{{t('footer.address3')}}</p>
-        <div v-if="isMobile">
-          <p class="footer_box_content_phone">+86 186 0692 2333</p>
-          <p class="footer_box_content_phone">+855 188 56 9999</p>
-        </div>
-        <h4
-          v-else
-          class="footer_box_content_phone"
-        >
-          +86 186 0692 2333&nbsp;&nbsp;+855 188 56 9999
-        </h4> -->
       </div>
     </div>
     <div class="footer_box">

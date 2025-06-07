@@ -31,7 +31,7 @@
     "subtitle2": "战略合作品牌",
     "banner1_title": "氧舱产品",
     "banner1_desc1": "让生命",
-    "banner1_desc2": "发无限生机!",
+    "banner1_desc2": "焕发无限生机!",
     "banner2_title": "按摩产品",
     "banner2_desc1": "轻启一场",
     "banner2_desc2": "身心的疗愈之旅",
@@ -39,8 +39,8 @@
     "banner3_desc1": "量身定制",
     "banner3_desc2": "尊享奢华",
     "banner4_title": "家具产品",
-    "banner4_desc1": "静享一方的惬",
-    "banner4_desc2": "意之境"
+    "banner4_desc1": "静享一方的",
+    "banner4_desc2": "惬意之境"
   },
   "about": {
     "tip": "我们的使命",
@@ -121,8 +121,11 @@
     "product": "产品中心",
     "service": "定制服务",
     "news": "行业资讯",
+    "shiming": "我们的使命",
+    "yuanjing": "我们的愿景",
+    "honor": "荣誉奖项",
     "concat": "联系我们",
-    "intro": "安桐简介",
+    "intro": "关于安桐",
     "advantages": "我们的优势",
     "cooperate": "战略合作",
     "health": "智能健康系列",

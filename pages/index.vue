@@ -68,7 +68,7 @@
         <p class="home_view_forest_main_title">{{t('home.title')}}</p>
         <!-- <div class="home_view_forest_main_line">-</div> -->
         <p class="home_view_forest_main_tip">{{t('home.tip1')}}</p>
-        <p class="home_view_forest_main_tip">{{t('home.tip2')}}</p>
+        <p class="home_view_forest_main_tip">{{t('home.tip2').replace(/'/g, '"')}}</p>
         <p class="home_view_forest_main_tip">{{t('home.tip3').replace(/'/g, '"')}}</p>
         <p class="home_view_forest_main_tip">{{t('home.tip4')}}</p>
         <div class="home_view_forest_main_btn">{{t('home.btn')}}&nbsp;></div>

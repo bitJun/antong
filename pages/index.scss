@@ -762,3 +762,7 @@
     }
   }
 }
+::v-deep .swiper-button-next,
+::v-deep .swiper-button-prev {
+  color: #0a6250; /* ← 修改为你想要的颜色，比如 red, #fff, etc. */
+}

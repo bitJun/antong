@@ -154,8 +154,48 @@
 @media screen and (max-width: 768px) {
   .new_view {
     &_section {
+      height: 30rem;
+      background-image: url('/news/bg.png');
+      background-size: cover;
+      position: relative;
+      &_img {
+        width: 100%;
+        height: auto;
+        display: none;
+      }
       &_main {
-        width: 60%;
+        position: static;
+        left: 100%;
+        transform: translateX(0);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5%;
+        box-sizing: border-box;
+      }
+      &_tip {
+        color: #ffffff;
+        font-size: 1.6rem;
+        margin-bottom:0.51rem;
+      }
+      &_title {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+        color: #ffffff;
+      }
+      &_desc {
+        color: #999;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2rem;
       }
     }
     &_box {

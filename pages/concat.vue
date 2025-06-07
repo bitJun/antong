@@ -27,7 +27,17 @@
         <p class="about_view_main_desc">安桐柬埔寨进出口有限公司</p>
         <p class="about_view_main_tips">#263, St NR6, Phum Kien Khleang, Sangkat Prek leap, Khan Chroy Chongva, Phnom Penh, Cambodia.</p>
       </div>
-      <p class="about_view_main_vip">
+      <div v-if='isMobile'>
+        <p class="about_view_main_vip">
+          <img
+            src="/contact/tel.png"
+            class="about_view_main_vip_img"
+          />&nbsp;
+          {{t('contact.VIP')}}
+        </p>
+        <p class="about_view_main_vip">+86 186 0692 2333&nbsp;&nbsp;+855 188 56 9999</p>
+      </div>
+      <p class="about_view_main_vip" v-else>
         {{t('contact.VIP')}}&nbsp;
         <img
           src="/contact/tel.png"
@@ -56,6 +66,17 @@
 <script setup>
 import { useI18n } from '#imports';
 const { t } = useI18n();
+const isMobile = ref(false);
+
+if (process.client) {
+  const isMobileDevice = () => {
+    return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+  }
+  isMobile.value = isMobileDevice();
+  window.addEventListener("resize", function () {
+    isMobile.value = isMobileDevice();
+  });
+}
 </script>
 <style lang="scss" scoped>
   @use './concat.scss';

@@ -373,21 +373,22 @@
     &_banner {
       width: 100%;
       position: relative;
-      height: 20rem;
       &_img {
         width: 100%;
         height: max-content;
-        display: none;
       }
-      &_box {
+      &_box,
+      &_box1,
+      &_box2,
+      &_box3 {
         position: absolute;
-        width: 40%;
-        left: 10%;
+        width: 100%;
+        left: 0%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        top: 50%;
+        top: 30%;
         transform: translateY(-50%);
         z-index: 11;
         &_title {
@@ -400,83 +401,12 @@
           color: #323232;
           font-size: 1.2rem;
           text-align: center;
-          margin-bottom: 1.5rem;
-        }
-        &_btn {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-top: 1.8rem;
-          padding: 0 2rem;
-          border-radius: 7.5rem;
-          color: #ffffff;
-          font-size: 1.6rem;
-          height: 2.5rem;
-          background: #0a6250;
-        }
-      }
-      &_box1 {
-        position: absolute;
-        width: 40%;
-        right: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 11;
-        &_title {
-          color: #999;
-          margin-bottom: 1rem;
-          font-size: 1.6rem;
-        }
-        &_desc {
-          color: #323232;
-          font-size: 1.8rem;
-          text-align: center;
           margin-bottom: 1rem;
         }
         &_btn {
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-top: 1.8rem;
-          padding: 0 2rem;
-          border-radius: 7.5rem;
-          color: #ffffff;
-          font-size: 1.6rem;
-          height: 2.5rem;
-          background: #0a6250;
-        }
-      }
-      &_box2 {
-        position: absolute;
-        width: 40%;
-        right: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 11;
-        &_title {
-          color: #999;
-          margin-bottom: 1rem;
-          font-size: 1.6rem;
-        }
-        &_desc {
-          color: #323232;
-          font-size: 2.2rem;
-          text-align: center;
-          margin-bottom: 1.5rem;
-        }
-        &_btn {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-top: 1.8rem;
           padding: 0 2rem;
           border-radius: 7.5rem;
           color: #ffffff;
@@ -486,16 +416,6 @@
         }
       }
       &_box3 {
-        position: absolute;
-        width: 100%;
-        left: 0%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 11;
         &_title {
           color: #ffffff;
           margin-bottom: 0.5rem;
@@ -521,22 +441,6 @@
         }
       }
     }
-    &_banner:first-child {
-      background-image: url('/home/banner1.jpg');
-      background-size: cover;
-    }
-    &_banner:nth-child(2) {
-      background-image: url('/home/banner2.jpg');
-      background-size: cover;
-    }
-    &_banner:nth-child(3) {
-      background-image: url('/home/banner3.jpg');
-      background-size: cover;
-    }
-    &_banner:nth-child(4) {
-      background-image: url('/home/banner4.png');
-      background-size: cover;
-    }
     &_forest {
       position: relative;
       background-image: url('/home/forest.png');
@@ -553,7 +457,7 @@
         // top: 0;
         // width: 100%;
         // height: 100%;
-        padding: 0 1.6rem;
+        padding: 0 1rem;
         box-sizing: border-box;
         
         display: flex;
@@ -594,12 +498,11 @@
     }
     &_product {
       padding: 1rem;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 两列，宽度平分 */
-      grid-template-rows: repeat(2, auto);   /* 两行，高度根据内容自动调整 */
+      display: flex;
       gap: 10px; /* 网格间距，可选 */
       width: 100%; /* 宽度自适应 */
       box-sizing: border-box;
+      flex-direction: column-reverse;
       &_item {
         width: 100%;
         &_main {
@@ -762,7 +665,11 @@
     }
   }
 }
-::v-deep .swiper-button-next,
-::v-deep .swiper-button-prev {
-  color: #0a6250; /* ← 修改为你想要的颜色，比如 red, #fff, etc. */
+
+:deep(.swiper .swiper-button-next) {
+  color: #0a6250 !important;
+}
+::v-deep .swiper .swiper-button-next,
+::v-deep .swiper .swiper-button-prev {
+  color: #0a6250 !important; /* ← 修改为你想要的颜色，比如 red, #fff, etc. */
 }

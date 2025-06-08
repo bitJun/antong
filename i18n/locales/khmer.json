@@ -30,13 +30,17 @@
     "subtitle1": "ព័ត៌មានអំពីឧស្សាហកម្ម",
     "subtitle2": "ដៃគូសហប្រតិបត្តិការយុទ្ធសាស្ត្រ",
     "banner1_title": "氧舱产品",
-    "banner1_desc": "让生命焕发无限生机!",
+    "banner1_desc1": "让生命",
+    "banner1_desc2": "焕发无限生机!",
     "banner2_title": "按摩产品",
-    "banner2_desc": "轻启一场身心的疗愈之旅",
+    "banner2_desc1": "轻启一场",
+    "banner2_desc2": "身心的疗愈之旅",
     "banner3_title": "高端定制",
-    "banner3_desc": "量身定制尊享奢华",
+    "banner3_desc1": "量身定制",
+    "banner3_desc2": "尊享奢华",
     "banner4_title": "家具产品",
-    "banner4_desc": "静享一方的惬意之境"
+    "banner4_desc1": "静享一方的",
+    "banner4_desc2": "惬意之境"
   },
   "about": {
     "tip": "បេសកកម្មរបស់យើង",

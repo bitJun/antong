@@ -5,8 +5,14 @@
         class="home_view_banner"
       >
         <img
+          src="/home/banner_mb1.png"
+          class="home_view_banner_img"
+          v-if="isMobile"
+        />
+        <img
           src="/home/banner1.jpg"
           class="home_view_banner_img"
+          v-else
         />
         <div class="home_view_banner_box">
           <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
@@ -19,8 +25,14 @@
         class="home_view_banner"
       >
         <img
+          src="/home/banner_mb2.png"
+          class="home_view_banner_img"
+          v-if="isMobile"
+        />
+        <img
           src="/home/banner2.jpg"
           class="home_view_banner_img"
+          v-else
         />
         <div class="home_view_banner_box1">
           <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
@@ -33,8 +45,14 @@
         class="home_view_banner"
       >
         <img
+          src="/home/banner_mb3.png"
+          class="home_view_banner_img"
+          v-if="isMobile"
+        />
+        <img
           src="/home/banner3.jpg"
           class="home_view_banner_img"
+          v-else
         />
         <div class="home_view_banner_box2">
           <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
@@ -47,8 +65,14 @@
         class="home_view_banner"
       >
         <img
+          src="/home/banner_mb4.png"
+          class="home_view_banner_img"
+          v-if="isMobile"
+        />
+        <img
           src="/home/banner4.png"
           class="home_view_banner_img"
+          v-else
         />
         <div class="home_view_banner_box3">
           <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>
@@ -293,10 +317,22 @@ const swiper = useSwiper(containerRef, {
 })
 
 onMounted(()=>{
-  isMobileDevice();
-  console.log(swiper.instance)
+  isMobile.value = isMobileDevice();
+  console.log('isMobile.value', isMobile.value)
   onLoadData();
 });
+
+if (process.client) {
+  const isMobileDevice = () => {
+    return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+  }
+
+  isMobile.value = isMobileDevice();
+
+  window.addEventListener("resize", function () {
+    isMobile.value = isMobileDevice();
+  });
+}
 
 const onLoadData = async () => {
   windowsUrl.value = await QRCode.toDataURL('https://cdn-oss.mos.me/public/mosapp/pc/MosApp-Windows-Latest.exe');
@@ -314,6 +350,13 @@ const data = reactive({
 
 const { t } = useI18n();
 </script>
+<style>
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0a6250 !important; /* ← 修改为你想要的颜色，比如 red, #fff, etc. */
+}
+</style>
 <style lang="scss" scoped>
 @use "./index.scss";
 swiper-slide {

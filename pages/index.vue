@@ -1,11 +1,11 @@
 <template>
   <div class="home_view">
-    <swiper-container ref="bannerRef" v-if="isMobile">
+    <swiper-container ref="bannerRef">
       <swiper-slide
         class="home_view_banner"
       >
         <img
-          src="/home/banner_mb1.png"
+          :src="isMobile ? '/home/banner_mb1.png' : '/home/banner1.jpg'"
           class="home_view_banner_img"
         />
         <div class="home_view_banner_box">
@@ -19,7 +19,7 @@
         class="home_view_banner"
       >
         <img
-          src="/home/banner_mb2.png"
+          :src="isMobile ? '/home/banner_mb2.png' : '/home/banner2.jpg'"
           class="home_view_banner_img"
         />
         <div class="home_view_banner_box1">
@@ -33,7 +33,7 @@
         class="home_view_banner"
       >
         <img
-          src="/home/banner_mb3.png"
+          :src="isMobile ? '/home/banner_mb3.png' : '/home/banner3.jpg'"
           class="home_view_banner_img"
         />
         <div class="home_view_banner_box2">
@@ -47,65 +47,7 @@
         class="home_view_banner"
       >
         <img
-          src="/home/banner_mb4.png"
-          class="home_view_banner_img"
-        />
-        <div class="home_view_banner_box3">
-          <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>
-          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc1')}}</p>
-          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc2')}}</p>
-          <div class="home_view_banner_box3_btn">{{t('home.btn')}}&nbsp;></div>
-        </div>
-      </swiper-slide>
-    </swiper-container>
-    <swiper-container ref="bannerRef" v-else>
-      <swiper-slide
-        class="home_view_banner"
-      >
-        <img
-          src="/home/banner1.jpg"
-          class="home_view_banner_img"
-        />
-        <div class="home_view_banner_box">
-          <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
-          <p class="home_view_banner_box_desc">{{t('home.banner1_desc1')}}</p>
-          <p class="home_view_banner_box_desc">{{t('home.banner1_desc2')}}</p>
-          <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
-        </div>
-      </swiper-slide>
-      <swiper-slide
-        class="home_view_banner"
-      >
-        <img
-          src="/home/banner2.jpg"
-          class="home_view_banner_img"
-        />
-        <div class="home_view_banner_box1">
-          <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
-          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc1')}}</p>
-          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc2')}}</p>
-          <div class="home_view_banner_box1_btn">{{t('home.btn')}}&nbsp;></div>
-        </div>
-      </swiper-slide>
-      <swiper-slide
-        class="home_view_banner"
-      >
-        <img
-          src="/home/banner3.jpg"
-          class="home_view_banner_img"
-        />
-        <div class="home_view_banner_box2">
-          <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
-          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc1')}}</p>
-          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc2')}}</p>
-          <div class="home_view_banner_box2_btn">{{t('home.btn')}}&nbsp;></div>
-        </div>
-      </swiper-slide>
-      <swiper-slide
-        class="home_view_banner"
-      >
-        <img
-          src="/home/banner4.png"
+          :src="isMobile ? '/home/banner_mb4.png' : '/home/banner4.png'"
           class="home_view_banner_img"
         />
         <div class="home_view_banner_box3">
@@ -353,22 +295,25 @@ const swiper = useSwiper(containerRef, {
 onMounted(()=>{
   nextTick(()=>{
     isMobile.value = isMobileDevice();
+    window.addEventListener("resize", function () {
+      isMobile.value = isMobileDevice();
+    });
   })
   console.log('isMobile.value', isMobile.value)
   onLoadData();
 });
 
-if (process.client) {
-  const isMobileDevice = () => {
-    return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
-  }
+// if (process.client) {
+//   const isMobileDevice = () => {
+//     return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+//   }
 
-  isMobile.value = isMobileDevice();
+//   isMobile.value = isMobileDevice();
 
-  window.addEventListener("resize", function () {
-    isMobile.value = isMobileDevice();
-  });
-}
+//   window.addEventListener("resize", function () {
+//     isMobile.value = isMobileDevice();
+//   });
+// }
 
 const onLoadData = async () => {
   windowsUrl.value = await QRCode.toDataURL('https://cdn-oss.mos.me/public/mosapp/pc/MosApp-Windows-Latest.exe');

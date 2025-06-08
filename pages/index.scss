@@ -394,13 +394,13 @@
         &_title {
           color: #999;
           margin-bottom: 1rem;
-          font-size: 1.8rem;
-          font-weight: bold;
+          font-size: 1.2rem;
         }
         &_desc {
           color: #323232;
-          font-size: 1.2rem;
+          font-size: 1.8rem;
           text-align: center;
+          font-weight: bold;
           margin-bottom: 1rem;
         }
         &_btn {
@@ -537,9 +537,9 @@
     }
     &_service {
       position: relative;
-      background-image: url('/home/serviceBg.png');
+      background-image: url('/home/service_mbBg.png');
       background-size: cover;
-      height: 30rem;
+      height: 50rem;
       &_img {
         width: 100%;
         height: max-content;

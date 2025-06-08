@@ -89,6 +89,15 @@ const onClose = () => {
   }
 }
 
+const scrollToTop = (smooth = true) => {
+  if (smooth && 'scrollBehavior' in document.documentElement.style) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }
+}
+
 
 </script>
 <template>
@@ -228,6 +237,12 @@ const onClose = () => {
     </div>
   </header>
   <NuxtPage />
+  <img
+    src="/top.png"
+    v-if="!isMobile"
+    class="top"
+    @click="scrollToTop()"
+  />
   <footer id="footer">
     <div class="footer_box">
       <div class="footer_box_main">

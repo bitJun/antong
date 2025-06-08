@@ -524,3 +524,10 @@
 a {
   text-decoration: none;
 }
+.top {
+  position: fixed;
+  right: 10%;
+  bottom: 20rem;
+  z-index: 999;
+  cursor: pointer;
+}

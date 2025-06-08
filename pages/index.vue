@@ -247,7 +247,7 @@
 import { useI18n } from '#imports';
 import QRCode from 'qrcode';
 import { ref, onMounted, nextTick } from 'vue';
-const isMobile = ref(false);
+const isMobile = ref(true);
 const windowsUrl = ref('');
 const macUrl = ref('');
 const containerRef = ref(null);
@@ -299,7 +299,6 @@ onMounted(()=>{
       isMobile.value = isMobileDevice();
     });
   })
-  console.log('isMobile.value', isMobile.value)
   onLoadData();
 });
 

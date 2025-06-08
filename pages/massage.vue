@@ -48,7 +48,7 @@
         </div>
         <div class="product_view_section_info">
           <img
-            src="/product/p2.png"
+            src="/massage/banner2.png"
             class="product_view_section_img"
           />
         </div>
@@ -58,7 +58,7 @@
       <div class="box">
         <div class="product_view_section_info">
           <img
-            src="/product/p3.png"
+            src="/massage/banner3.png"
             class="product_view_section_img"
           />
         </div>

@@ -1,18 +1,12 @@
 <template>
   <div class="home_view">
-    <swiper-container ref="bannerRef">
+    <swiper-container ref="bannerRef" v-if="isMobile">
       <swiper-slide
         class="home_view_banner"
       >
         <img
           src="/home/banner_mb1.png"
           class="home_view_banner_img"
-          v-if="isMobile"
-        />
-        <img
-          src="/home/banner1.jpg"
-          class="home_view_banner_img"
-          v-else
         />
         <div class="home_view_banner_box">
           <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
@@ -27,12 +21,6 @@
         <img
           src="/home/banner_mb2.png"
           class="home_view_banner_img"
-          v-if="isMobile"
-        />
-        <img
-          src="/home/banner2.jpg"
-          class="home_view_banner_img"
-          v-else
         />
         <div class="home_view_banner_box1">
           <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
@@ -47,12 +35,6 @@
         <img
           src="/home/banner_mb3.png"
           class="home_view_banner_img"
-          v-if="isMobile"
-        />
-        <img
-          src="/home/banner3.jpg"
-          class="home_view_banner_img"
-          v-else
         />
         <div class="home_view_banner_box2">
           <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
@@ -67,12 +49,64 @@
         <img
           src="/home/banner_mb4.png"
           class="home_view_banner_img"
-          v-if="isMobile"
         />
+        <div class="home_view_banner_box3">
+          <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>
+          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc1')}}</p>
+          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc2')}}</p>
+          <div class="home_view_banner_box3_btn">{{t('home.btn')}}&nbsp;></div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <swiper-container ref="bannerRef" v-else>
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <img
+          src="/home/banner1.jpg"
+          class="home_view_banner_img"
+        />
+        <div class="home_view_banner_box">
+          <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
+          <p class="home_view_banner_box_desc">{{t('home.banner1_desc1')}}</p>
+          <p class="home_view_banner_box_desc">{{t('home.banner1_desc2')}}</p>
+          <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
+        </div>
+      </swiper-slide>
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <img
+          src="/home/banner2.jpg"
+          class="home_view_banner_img"
+        />
+        <div class="home_view_banner_box1">
+          <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
+          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc1')}}</p>
+          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc2')}}</p>
+          <div class="home_view_banner_box1_btn">{{t('home.btn')}}&nbsp;></div>
+        </div>
+      </swiper-slide>
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <img
+          src="/home/banner3.jpg"
+          class="home_view_banner_img"
+        />
+        <div class="home_view_banner_box2">
+          <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
+          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc1')}}</p>
+          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc2')}}</p>
+          <div class="home_view_banner_box2_btn">{{t('home.btn')}}&nbsp;></div>
+        </div>
+      </swiper-slide>
+      <swiper-slide
+        class="home_view_banner"
+      >
         <img
           src="/home/banner4.png"
           class="home_view_banner_img"
-          v-else
         />
         <div class="home_view_banner_box3">
           <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>

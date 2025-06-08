@@ -304,7 +304,7 @@
 <script setup>
 import { useI18n } from '#imports';
 import QRCode from 'qrcode';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, nextTick } from 'vue';
 const isMobile = ref(false);
 const windowsUrl = ref('');
 const macUrl = ref('');
@@ -351,7 +351,9 @@ const swiper = useSwiper(containerRef, {
 })
 
 onMounted(()=>{
-  isMobile.value = isMobileDevice();
+  nextTick(()=>{
+    isMobile.value = isMobileDevice();
+  })
   console.log('isMobile.value', isMobile.value)
   onLoadData();
 });

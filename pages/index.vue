@@ -4,16 +4,21 @@
       <swiper-slide
         class="home_view_banner"
       >
-        <img
-          :src="isMobile ? '/home/banner_mb1.png' : '/home/banner1.jpg'"
-          class="home_view_banner_img"
-        />
-        <div class="home_view_banner_box">
-          <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
-          <p class="home_view_banner_box_desc">{{t('home.banner1_desc1')}}</p>
-          <p class="home_view_banner_box_desc">{{t('home.banner1_desc2')}}</p>
-          <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
-        </div>
+        <NuxtLink
+          to="productdetail/1"
+          class="home_view_banner"
+        >
+          <img
+            :src="isMobile ? '/home/banner_mb1.png' : '/home/banner1.jpg'"
+            class="home_view_banner_img"
+          />
+          <div class="home_view_banner_box">
+            <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
+            <p class="home_view_banner_box_desc">{{t('home.banner1_desc1')}}</p>
+            <p class="home_view_banner_box_desc">{{t('home.banner1_desc2')}}</p>
+            <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+        </NuxtLink>
       </swiper-slide>
       <swiper-slide
         class="home_view_banner"
@@ -71,11 +76,16 @@
         <p class="home_view_forest_main_tip">{{t('home.tip2').replace(/'/g, '"')}}</p>
         <p class="home_view_forest_main_tip">{{t('home.tip3').replace(/'/g, '"')}}</p>
         <p class="home_view_forest_main_tip">{{t('home.tip4')}}</p>
-        <div class="home_view_forest_main_btn">{{t('home.btn')}}&nbsp;></div>
+        <NuxtLink 
+          class="home_view_forest_main_btn"
+          to="/about"
+        >
+          {{t('home.btn')}}&nbsp;>
+        </NuxtLink>
       </div>
     </div>
     <div class="home_view_product">
-      <div class="home_view_product_item">
+      <NuxtLink class="home_view_product_item" to="productdetail/1">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t1')}}</h4>
           <p class="home_view_product_item_main_desc">{{t('home.d1')}}</p>
@@ -85,8 +95,8 @@
           src="/home/pic1.png"
           class="home_view_product_item_img"
         />
-      </div>
-      <div class="home_view_product_item">
+      </NuxtLink>
+      <NuxtLink class="home_view_product_item" to="productdetail/2">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t2')}}</h4>
           <p class="home_view_product_item_main_desc">{{t('home.d2')}}</p>
@@ -96,7 +106,7 @@
           src="/home/pic2.png"
           class="home_view_product_item_img"
         />
-      </div>
+      </NuxtLink>
       <div class="home_view_product_item">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t3')}}</h4>
@@ -131,11 +141,16 @@
         <p class="home_view_service_main_tip">{{t('home.dd1')}}</p>
         <p class="home_view_service_main_tip">{{t('home.dd2')}}</p>
         <p class="home_view_service_main_tip">{{t('home.dd3')}}</p>
-        <div class="home_view_service_main_btn">{{t('home.btn')}}&nbsp;></div>
+        <NuxtLink 
+          class="home_view_service_main_btn"
+          to="/service"
+        >
+          {{t('home.btn')}}&nbsp;>
+        </NuxtLink>
       </div>
     </div>
     <div class="line"></div>
-    <div class="home_view_news">
+    <NuxtLink to="/news" class="home_view_news">
       <h4 class="home_view_news_title">{{t('home.subtitle1')}}</h4>
       <div class="home_view_news_list">
         <swiper-container ref="containerRef">
@@ -197,7 +212,7 @@
           </swiper-slide>
         </swiper-container>
       </div>
-    </div>
+    </NuxtLink>
     <div class="line"></div>
     <div class="home_view_cooperate">
       <h4 class="home_view_cooperate_title">{{t('home.subtitle2')}}</h4>

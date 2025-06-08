@@ -608,7 +608,7 @@
         &_item {
           &_img {
             width: 100%;
-            height: max-content;
+            height: auto;
           }
         }
       }
@@ -642,7 +642,7 @@
           width: 48%;
           &_img {
             width: 100% !important;
-            height: max-content !important;
+            height: auto !important;
           }
         }
       }

@@ -298,6 +298,7 @@ onMounted(()=>{
     window.addEventListener("resize", function () {
       isMobile.value = isMobileDevice();
     });
+    console.log('isMobile.value', isMobile.value)
   })
   onLoadData();
 });
@@ -320,7 +321,7 @@ const onLoadData = async () => {
 }
 
 const isMobileDevice = () => {
-  return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
 
 const data = reactive({

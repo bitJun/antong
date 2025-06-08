@@ -25,7 +25,7 @@
           <p class="product_view_section_box_desc">{{t('purifier.p1_desc6')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p1_desc7')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('purifier.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('purifier.more')}}&nbsp;></div>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
           <p class="product_view_section_box_desc">{{t('purifier.p2_desc4')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p2_desc5')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('purifier.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('purifier.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_section_info">
@@ -69,7 +69,7 @@
           <p class="product_view_section_box_desc">{{t('purifier.p3_desc4')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p3_desc5')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('purifier.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('purifier.more')}}&nbsp;></div>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
           <p class="product_view_section_box_desc">{{t('purifier.p4_desc5')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p4_desc6')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('purifier.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('purifier.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_section_info">
@@ -115,7 +115,7 @@
           <p class="product_view_section_box_desc">{{t('purifier.p5_desc5')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p5_desc6')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('purifier.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('purifier.more')}}&nbsp;></div>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
           <p class="product_view_section_box_desc">{{t('purifier.p6_desc7')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p6_desc8')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('purifier.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('purifier.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_section_info">
@@ -165,7 +165,7 @@
           <p class="product_view_section_box_desc">{{t('purifier.p7_desc7')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p7_desc8')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('purifier.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('purifier.more')}}&nbsp;></div>
           </div>
         </div>
       </div>

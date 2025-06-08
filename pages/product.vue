@@ -18,7 +18,7 @@
           <h4 class="product_view_section_box_title">{{t('product.p1_title')}}</h4>
           <p class="product_view_section_box_desc">{{t('product.p1_desc')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('product.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('product.more')}}&nbsp;></div>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
           <h4 class="product_view_section_box_title">{{t('product.p2_title')}}</h4>
           <p class="product_view_section_box_desc">{{t('product.p2_desc')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('product.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('product.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_section_info">
@@ -52,7 +52,7 @@
           <h4 class="product_view_section_box_title">{{t('product.p3_title')}}</h4>
           <p class="product_view_section_box_desc">{{t('product.p3_desc')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('product.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('product.more')}}&nbsp;></div>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p4_title')}}</h4>
           <div class="flex">
-            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+            <div class="product_view_main_info_btn">{{t('product.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_main_detail">
@@ -88,7 +88,7 @@
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p5_title')}}</h4>
           <div class="flex">
-            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+            <div class="product_view_main_info_btn">{{t('product.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_main_detail">
@@ -104,7 +104,7 @@
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p6_title')}}</h4>
           <div class="flex">
-            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+            <div class="product_view_main_info_btn">{{t('product.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_main_detail">
@@ -120,7 +120,7 @@
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p7_title')}}</h4>
           <div class="flex">
-            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+            <div class="product_view_main_info_btn">{{t('product.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_main_detail">
@@ -136,7 +136,7 @@
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p8_title')}}</h4>
           <div class="flex">
-            <div class="product_view_main_info_btn">Read more {{t('product.more')}}&nbsp;></div>
+            <div class="product_view_main_info_btn">{{t('product.more')}}&nbsp;></div>
           </div>
         </div>
       </div>

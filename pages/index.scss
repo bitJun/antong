@@ -374,8 +374,8 @@
       width: 100%;
       position: relative;
       &_img {
-        width: 100%;
-        height: max-content;
+        width: 100% !important;
+        height: auto !important;
       }
       &_box,
       &_box1,
@@ -641,8 +641,8 @@
           margin-bottom: 1rem;
           width: 48%;
           &_img {
-            width: 100%;
-            height: auto;
+            width: 100% !important;
+            height: max-content !important;
           }
         }
       }

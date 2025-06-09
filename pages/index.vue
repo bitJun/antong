@@ -96,7 +96,7 @@
           class="home_view_product_item_img"
         />
       </NuxtLink>
-      <NuxtLink class="home_view_product_item" to="productdetail/2">
+      <NuxtLink class="home_view_product_item" to="massage">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t2')}}</h4>
           <p class="home_view_product_item_main_desc">{{t('home.d2')}}</p>
@@ -118,7 +118,7 @@
           class="home_view_product_item_img"
         />
       </NuxtLink>
-      <NuxtLink to="/massage" class="home_view_product_item">
+      <NuxtLink to="/product#creativity" class="home_view_product_item">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t4')}}</h4>
           <p class="home_view_product_item_main_desc">{{t('home.d4')}}</p>

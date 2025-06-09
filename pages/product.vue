@@ -57,7 +57,7 @@
         </div>
       </div>
     </NuxtLink>
-    <div class="product_view_box2">
+    <div class="product_view_box2" id="creativity">
       <div class="product_view_box2_main">
         <h4 class="product_view_box2_main_title">{{ t('product.title1') }}</h4>
         <p class="product_view_box2_main_desc">{{ t('product.desc1') }}</p>
@@ -131,7 +131,7 @@
         </div>
       </div>
     </NuxtLink>
-    <div class="product_view_main" style="background: #EAEBF0;padding: 16em 0;">
+    <!-- <div class="product_view_main" style="background: #EAEBF0;padding: 16em 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p8_title')}}</h4>
@@ -140,7 +140,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script setup>

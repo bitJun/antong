@@ -48,12 +48,13 @@
   &_section {
     display: block;
     text-decoration: none;
+    padding: 3rem 0;
     &_info {
       width: 40%;
-      &_img {
-        width: 100%;
-        height: auto;
-      }
+    }
+    &_img {
+      width: 100%;
+      height: auto;
     }
     &_box {
       width: 50%;
@@ -154,12 +155,13 @@
     &_section {
       display: block;
       text-decoration: none;
+      padding: 1.6rem 0;
       &_info {
         width: 100%;
-        &_img {
-          width: 100%;
-          height: auto;
-        }
+      }
+      &_img {
+        width: 100%;
+        height: auto;
       }
       &_box {
         width: 100%;

@@ -63,7 +63,7 @@
         <p class="product_view_box2_main_desc">{{ t('product.desc1') }}</p>
       </div>
     </div>
-    <NuxtLink to="/productdetail/4" class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink to="/master" class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p4_title')}}</h4>
@@ -115,7 +115,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/productdetail/7" class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink to="/teaSpace" class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p7_title')}}</h4>

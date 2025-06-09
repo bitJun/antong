@@ -9,7 +9,7 @@
     <div class="product_view_title">
       {{ t('massage.subtitle') }}
     </div>
-    <NuxtLink to="/productdetail/1" class="product_view_section" style="background: #DDEBF6;">
+    <NuxtLink to="/massagedetail/8638" class="product_view_section" style="background: #DDEBF6;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -31,7 +31,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/productdetail/2" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <NuxtLink to="/massagedetail/880" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title" style="margin-bottom: 0;">M-880</h4>
@@ -54,7 +54,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/productdetail/3" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink to="/massagedetail/7598" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img

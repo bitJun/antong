@@ -1,0 +1,21 @@
+.help_view {
+  &_box {
+    width: 750px;
+    margin: 0 auto;
+  }
+  &_img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .help_view {
+    &_box {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &_img {
+      width: 100%;
+    }
+  }
+}

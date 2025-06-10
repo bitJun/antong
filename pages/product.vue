@@ -83,7 +83,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/productdetail/5" class="product_view_main" style="background: #EAEBF0;padding: 2rem 0;">
+    <NuxtLink to="/mansion" class="product_view_main" style="background: #EAEBF0;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p5_title')}}</h4>
@@ -99,7 +99,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/productdetail/6" class="product_view_main" style="background: #FFFFFF;padding: 2rem 0;">
+    <NuxtLink to="/office" class="product_view_main" style="background: #FFFFFF;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p6_title')}}</h4>

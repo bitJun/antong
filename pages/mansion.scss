@@ -90,28 +90,27 @@
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       &_item {
-        padding: 1rem 0;
         background: #ffffff;
         border: 1px solid #6F87A0;
+        position: relative;
         &_img {
           width: 100%;
           z-index: 99;
         }
         &_desc {
+          position: absolute;
+          left: 0;
+          bottom: 1rem;
+          width: 100%;
           z-index: 199;
-          height: 6rem;
-          // margin-top: -0.1rem;
-          // margin-left: 0.2px;
-          // border-left: 0.5px solid #6F87A0;
-          // border-right: 0.5px solid #6F87A0;
-          // border-bottom: 0.5px solid #6F87A0;
+          // height: 2rem;
           box-sizing: border-box;
           display: flex;
           align-items: center;
           justify-content: center;
           color: #323232;
           margin-top: -0.5rem;
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
       }
     }

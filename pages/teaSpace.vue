@@ -35,14 +35,16 @@
         <p class="product_view_main_box_line">{{ t('teaSpace.desc4') }}</p>
         <p class="product_view_main_box_line">{{ t('teaSpace.desc5') }}</p>
         <p class="product_view_main_box_line">{{ t('teaSpace.desc6') }}</p>
-        <div class="product_view_main_box_flex">
+        <div class="product_view_main_box_flex" style="margin-bottom: 0;">
           <img
             src="/teaSpace/banner4.png"
             class="product_view_main_box_img"
+            style="margin-bottom: 0;"
           />
           <img
             src="/teaSpace/banner5.png"
             class="product_view_main_box_img"
+            style="margin-bottom: 0;"
           />
         </div>
       </div>

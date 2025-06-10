@@ -23,7 +23,7 @@
       <div class="product_view_box_list">
         <div class="product_view_box_list_item">
           <img
-            src="/product/img1.jpeg"
+            src="/product/img1.png"
             class="product_view_box_list_item_img"
           >
           <h4 class="product_view_box_list_item_title">{{t('service.line1')}}</h4>
@@ -31,7 +31,7 @@
         </div>
         <div class="product_view_box_list_item">
           <img
-            src="/product/img2.jpeg"
+            src="/product/img2.png"
             class="product_view_box_list_item_img"
           >
           <h4 class="product_view_box_list_item_title">{{t('service.line2')}}</h4>
@@ -39,7 +39,7 @@
         </div>
         <div class="product_view_box_list_item">
           <img
-            src="/product/img3.jpeg"
+            src="/product/img3.png"
             class="product_view_box_list_item_img"
           >
           <h4 class="product_view_box_list_item_title">{{t('service.line3')}}</h4>
@@ -47,7 +47,7 @@
         </div>
         <div class="product_view_box_list_item">
           <img
-            src="/product/img4.jpeg"
+            src="/product/img4.png"
             class="product_view_box_list_item_img"
           >
           <h4 class="product_view_box_list_item_title">{{t('service.line4')}}</h4>
@@ -55,7 +55,7 @@
         </div>
         <div class="product_view_box_list_item">
           <img
-            src="/product/img5.jpeg"
+            src="/product/img5.png"
             class="product_view_box_list_item_img"
           >
           <h4 class="product_view_box_list_item_title">{{t('service.line5')}}</h4>
@@ -63,7 +63,7 @@
         </div>
         <div class="product_view_box_list_item">
           <img
-            src="/product/img6.jpeg"
+            src="/product/img6.png"
             class="product_view_box_list_item_img"
           >
           <h4 class="product_view_box_list_item_title">{{t('service.line6')}}</h4>

@@ -6,6 +6,7 @@
         <p class="product_view_box1_main_desc">{{ t('purifier.desc') }}</p>
       </div>
     </div>
+    <div class="product_view_subtitle">{{t('purifier.subtitle')}}</div>
     <NuxtLink to="/purifierdetail/KJ1000" class="product_view_section" style="background: #DDEBF6;">
       <div class="box">
         <div class="product_view_section_info">

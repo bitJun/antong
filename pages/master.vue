@@ -20,7 +20,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p1_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p1_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p1_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p1_design')}}</p>
         </div>
       </div>
     </div>

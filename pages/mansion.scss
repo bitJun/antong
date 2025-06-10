@@ -47,7 +47,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 4rem;
+      font-size: 3.2rem;
     }
     &_box {
       width: 120rem;
@@ -92,12 +92,20 @@
       &_item {
         padding: 1rem 0;
         background: #ffffff;
+        border: 1px solid #6F87A0;
         &_img {
           width: 100%;
+          z-index: 99;
         }
         &_desc {
+          z-index: 199;
           height: 6rem;
-          background: #C3D5E0;
+          // margin-top: -0.1rem;
+          // margin-left: 0.2px;
+          // border-left: 0.5px solid #6F87A0;
+          // border-right: 0.5px solid #6F87A0;
+          // border-bottom: 0.5px solid #6F87A0;
+          box-sizing: border-box;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -117,6 +125,7 @@
       &_item {
         padding: 1rem 0;
         background: #ffffff;
+        border: 1px solid #6F87A0;
         &_img {
           width: 100%;
           margin-bottom: 1rem;

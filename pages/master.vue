@@ -31,7 +31,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p2_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p2_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p2_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p2_design')}}</p>
         </div>
         <div class="product_view_section_info">
           <img
@@ -54,7 +54,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p3_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p3_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p3_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p3_design')}}</p>
         </div>
       </div>
     </div>
@@ -65,7 +65,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p4_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p4_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p4_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p4_design')}}</p>
         </div>
         <div class="product_view_section_info">
           <img
@@ -88,7 +88,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p5_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p5_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p5_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p5_design')}}</p>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p6_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p6_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p6_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p6_design')}}</p>
         </div>
         <div class="product_view_section_info">
           <img
@@ -122,7 +122,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p7_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p7_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p7_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p7_design')}}</p>
         </div>
       </div>
     </div>
@@ -133,7 +133,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p8_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p8_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p8_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p8_design')}}</p>
         </div>
         <div class="product_view_section_info">
           <img
@@ -156,7 +156,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p9_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p9_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p9_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p9_design')}}</p>
         </div>
       </div>
     </div>
@@ -167,7 +167,7 @@
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p10_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p10_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
-          <p class="product_view_section_box_desc">{{t('master.p10_design')}}：</p>
+          <p class="product_view_section_box_desc">{{t('master.p10_design')}}</p>
         </div>
         <div class="product_view_section_info">
           <img

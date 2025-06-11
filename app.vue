@@ -150,7 +150,7 @@ const scrollToTop = (smooth = true) => {
             <NuxtLink
               class="header_nav_item_link"
               activeClass="active"
-              to="/product"
+              to="/product/home"
             >
               {{ t('nav.product') }}
             </NuxtLink>
@@ -339,7 +339,7 @@ const scrollToTop = (smooth = true) => {
           <NuxtLink
             class="menuList_nav_item_link"
             activeClass="active"
-            to="/product"
+            to="/product/home"
           >
             {{ t('nav.product') }}
           </NuxtLink>

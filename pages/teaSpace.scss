@@ -81,7 +81,6 @@
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
       &_item {
-        padding: 1rem 0;
         background: #ffffff;
         position: relative;
         &_img {
@@ -91,7 +90,7 @@
         &_desc {
           position: absolute;
           left: 0;
-          bottom: 1.5rem;
+          bottom: 2rem;
           width: 100%;
           z-index: 199;
           display: flex;
@@ -109,13 +108,19 @@
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1rem;
       &_item {
-        padding: 1rem 0;
         background: #ffffff;
+        position: relative;
         &_img {
           width: 100%;
           margin-bottom: 1rem;
+          z-index: 99;
         }
         &_desc {
+          position: absolute;
+          left: 0;
+          bottom: 2rem;
+          width: 100%;
+          z-index: 199;
           display: flex;
           align-items: center;
           justify-content: center;

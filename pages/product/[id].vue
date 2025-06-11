@@ -6,7 +6,7 @@
         <p class="product_view_box1_main_desc">{{ t('product.desc') }}</p>
       </div>
     </div>
-    <NuxtLink to="/productdetail/1" class="product_view_section" style="background: #DDEBF6;">
+    <NuxtLink id="oxygen" to="/productdetail/1" class="product_view_section" style="background: #DDEBF6;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -23,7 +23,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/massage" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <NuxtLink id="massage" to="/massage" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title">{{t('product.p2_title')}}</h4>
@@ -63,7 +63,7 @@
         <p class="product_view_box2_main_desc">{{ t('product.desc1') }}</p>
       </div>
     </div>
-    <NuxtLink to="/master" class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink id="master" to="/master" class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p4_title')}}</h4>
@@ -146,7 +146,33 @@
 <script setup>
 import { useI18n } from '#imports';
 const { t } = useI18n();
-import { reactive, ref } from 'vue';
+import { reactive, ref, onMounted, watch } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+
+onMounted(() => {
+  scrollToHash()
+})
+
+
+const scrollToHash = () => {
+  console.log('route',route.params.id)
+  if (route.query.id) {
+    document.getElementById(route.params.id).scrollIntoView({
+      behavior: 'smooth', // 平滑滚动
+      block: 'start' // 可选值：start, center, end, nearest
+    })
+    // const el = document.querySelector(route.params.id)
+    // if (el) {
+    //   el.scrollIntoView({ behavior: 'smooth' })
+    // }
+  }
+}
+
+watch(() => route.hash, () => {
+  scrollToHash()
+})
 
 const containerRef = ref(null);
 const swiper = useSwiper(containerRef, {

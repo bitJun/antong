@@ -13,39 +13,51 @@
           src="/teaSpace/banner1.png"
           class="product_view_main_box_img"
         />
-        <p class="product_view_main_box_line">{{ t('teaSpace.line1') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.line2') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.line3') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.line4') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.line5') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.line6') }}</p>
-        <div class="product_view_main_box_flex">
-          <img
-            src="/teaSpace/banner2.png"
-            class="product_view_main_box_img"
-          />
-          <img
-            src="/teaSpace/banner3.png"
-            class="product_view_main_box_img"
-          />
+        <div class="m20">
+          <p class="product_view_main_box_line">{{ t('teaSpace.line1') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.line2') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.line3') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.line4') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.line5') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.line6') }}</p>
         </div>
-        <p class="product_view_main_box_line">{{ t('teaSpace.desc1') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.desc2') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.desc3') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.desc4') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.desc5') }}</p>
-        <p class="product_view_main_box_line">{{ t('teaSpace.desc6') }}</p>
+        <div class="product_view_main_box_flex">
+          <div class="product_view_main_box_flex_item">
+            <img
+              src="/teaSpace/banner2.png"
+              class="product_view_main_box_img"
+            />
+          </div>
+          <div class="product_view_main_box_flex_item">
+            <img
+              src="/teaSpace/banner3.png"
+              class="product_view_main_box_img"
+            />
+          </div>
+        </div>
+        <div class="m20">
+          <p class="product_view_main_box_line">{{ t('teaSpace.desc1') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.desc2') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.desc3') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.desc4') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.desc5') }}</p>
+          <p class="product_view_main_box_line">{{ t('teaSpace.desc6') }}</p>
+        </div>
         <div class="product_view_main_box_flex" style="margin-bottom: 0;">
+          <div class="product_view_main_box_flex_item">
           <img
             src="/teaSpace/banner4.png"
             class="product_view_main_box_img"
             style="margin-bottom: 0;"
           />
+          </div>
+          <div class="product_view_main_box_flex_item">
           <img
             src="/teaSpace/banner5.png"
             class="product_view_main_box_img"
             style="margin-bottom: 0;"
           />
+          </div>
         </div>
       </div>
       <h4 class="product_view_main_title" style="color: #323232">{{ t('teaSpace.subtitle2') }}</h4>

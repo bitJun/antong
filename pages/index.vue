@@ -5,7 +5,8 @@
         class="home_view_banner"
       >
         <NuxtLink
-          to="productdetail/1"
+          to="/product/oxygen"
+          :external="true"
           class="home_view_banner"
         >
           <img
@@ -23,44 +24,62 @@
       <swiper-slide
         class="home_view_banner"
       >
-        <img
-          :src="isMobile ? '/home/banner_mb2.png' : '/home/banner2.jpg'"
-          class="home_view_banner_img"
-        />
-        <div class="home_view_banner_box1">
-          <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
-          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc1')}}</p>
-          <p class="home_view_banner_box1_desc">{{t('home.banner2_desc2')}}</p>
-          <div class="home_view_banner_box1_btn">{{t('home.btn')}}&nbsp;></div>
-        </div>
+        <NuxtLink
+          to="/product/massage"
+          :external="true"
+          class="home_view_banner"
+        >
+          <img
+            :src="isMobile ? '/home/banner_mb2.png' : '/home/banner2.jpg'"
+            class="home_view_banner_img"
+          />
+          <div class="home_view_banner_box1">
+            <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
+            <p class="home_view_banner_box1_desc">{{t('home.banner2_desc1')}}</p>
+            <p class="home_view_banner_box1_desc">{{t('home.banner2_desc2')}}</p>
+            <div class="home_view_banner_box1_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+        </NuxtLink>
       </swiper-slide>
       <swiper-slide
         class="home_view_banner"
       >
-        <img
-          :src="isMobile ? '/home/banner_mb3.png' : '/home/banner3.jpg'"
-          class="home_view_banner_img"
-        />
-        <div class="home_view_banner_box2">
-          <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
-          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc1')}}</p>
-          <p class="home_view_banner_box2_desc">{{t('home.banner3_desc2')}}</p>
-          <div class="home_view_banner_box2_btn">{{t('home.btn')}}&nbsp;></div>
-        </div>
+        <NuxtLink
+          to="/service"
+          :external="true"
+          class="home_view_banner"
+        >
+          <img
+            :src="isMobile ? '/home/banner_mb3.png' : '/home/banner3.jpg'"
+            class="home_view_banner_img"
+          />
+          <div class="home_view_banner_box2">
+            <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
+            <p class="home_view_banner_box2_desc">{{t('home.banner3_desc1')}}</p>
+            <p class="home_view_banner_box2_desc">{{t('home.banner3_desc2')}}</p>
+            <div class="home_view_banner_box2_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+        </NuxtLink>
       </swiper-slide>
       <swiper-slide
         class="home_view_banner"
       >
-        <img
-          :src="isMobile ? '/home/banner_mb4.png' : '/home/banner4.png'"
-          class="home_view_banner_img"
-        />
-        <div class="home_view_banner_box3">
-          <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>
-          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc1')}}</p>
-          <p class="home_view_banner_box3_desc">{{t('home.banner4_desc2')}}</p>
-          <div class="home_view_banner_box3_btn">{{t('home.btn')}}&nbsp;></div>
-        </div>
+        <NuxtLink
+          to="/product/master"
+          :external="true"
+          class="home_view_banner"
+        >
+          <img
+            :src="isMobile ? '/home/banner_mb4.png' : '/home/banner4.png'"
+            class="home_view_banner_img"
+          />
+          <div class="home_view_banner_box3">
+            <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>
+            <p class="home_view_banner_box3_desc">{{t('home.banner4_desc1')}}</p>
+            <p class="home_view_banner_box3_desc">{{t('home.banner4_desc2')}}</p>
+            <div class="home_view_banner_box3_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+        </NuxtLink>
       </swiper-slide>
     </swiper-container>
     <div class="line"></div>
@@ -118,9 +137,10 @@
           class="home_view_product_item_img"
         />
       </NuxtLink>
-      <NuxtLink to="/product#creativity" class="home_view_product_item">
+      <NuxtLink to="/product/creativity" :external="true" class="home_view_product_item">
+      <!-- <NuxtLink :to="{path: '/product', hash: '#creativity'}" class="home_view_product_item"> -->
         <div class="home_view_product_item_main">
-          <h4 class="home_view_product_item_main_title">{{t('home.t4')}}</h4>
+          <h4 class="home_view_product_item_main_title">{{t('home.t4')}}11</h4>
           <p class="home_view_product_item_main_desc">{{t('home.d4')}}</p>
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>

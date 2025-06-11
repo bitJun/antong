@@ -56,7 +56,6 @@
       &_img {
         width: 100%;
         height: auto;
-        margin-bottom: 2rem;
       }
       &_line {
         line-height: 2.5rem;
@@ -84,11 +83,17 @@
       &_item {
         padding: 1rem 0;
         background: #ffffff;
+        position: relative;
         &_img {
           width: 100%;
-          margin-bottom: 1rem;
+          z-index: 99;
         }
         &_desc {
+          position: absolute;
+          left: 0;
+          bottom: 1.5rem;
+          width: 100%;
+          z-index: 199;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -133,6 +138,10 @@
 }
 .mb20 {
   margin-bottom: 3rem;
+}
+.m20 {
+  width: 120rem;
+  margin: 4rem auto;
 }
 @media screen and (max-width: 768px) {
   .product_view {
@@ -198,13 +207,17 @@
           text-align: center;
         }
         &_flex {
+          width: 120rem;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           gap: 0.5rem;
           margin: 2rem 0;
-          &_img {
+          &_item {
             flex: 1;
+          }
+          &_img {
+            width: 100%;
             height: auto;
           }
         }

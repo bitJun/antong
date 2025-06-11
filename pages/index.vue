@@ -104,7 +104,7 @@
       </div>
     </div>
     <div class="home_view_product">
-      <NuxtLink class="home_view_product_item" to="productdetail/1">
+      <NuxtLink class="home_view_product_item" to="product/oxygen">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t1')}}</h4>
           <p class="home_view_product_item_main_desc">{{t('home.d1')}}</p>
@@ -140,7 +140,7 @@
       <NuxtLink to="/product/creativity" :external="true" class="home_view_product_item">
       <!-- <NuxtLink :to="{path: '/product', hash: '#creativity'}" class="home_view_product_item"> -->
         <div class="home_view_product_item_main">
-          <h4 class="home_view_product_item_main_title">{{t('home.t4')}}11</h4>
+          <h4 class="home_view_product_item_main_title">{{t('home.t4')}}</h4>
           <p class="home_view_product_item_main_desc">{{t('home.d4')}}</p>
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>

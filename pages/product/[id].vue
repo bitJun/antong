@@ -159,6 +159,7 @@ onMounted(() => {
 const scrollToHash = () => {
   console.log('route',route.params.id)
   if (route.query.id) {
+    console.log()
     document.getElementById(route.params.id).scrollIntoView({
       behavior: 'smooth', // 平滑滚动
       block: 'start' // 可选值：start, center, end, nearest

@@ -21,7 +21,7 @@
     background: #6F87A0;
     padding: 8rem 0;
     &_main {
-      width: 120rem;
+      width: 80%;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -50,7 +50,7 @@
       font-size: 3.2rem;
     }
     &_box {
-      width: 120rem;
+      width: 80%;
       margin: 0 auto;
       position: relative;
       &_tip {
@@ -84,7 +84,7 @@
     }
     &_container {
       box-sizing: border-box;
-      width: 120rem;
+      width: 80%;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -116,7 +116,7 @@
     }
     &_containers {
       box-sizing: border-box;
-      width: 120rem;
+      width: 80%;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -148,7 +148,7 @@
   }
 }
 .box {
-  width: 120rem;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
@@ -167,13 +167,16 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .tip {
-  width: 120rem;
-  margin: 0rem auto 1rem auto;
+  width: 80%;
+  margin: 1rem auto 1rem auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 1.8rem;
   color: #323232;
+  a {
+    color: #323232;
+  }
 }
 @media screen and (max-width: 768px) {
   .product_view {

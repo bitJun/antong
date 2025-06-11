@@ -73,7 +73,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.chair${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">{{t('mansion.tip')}}</p>
+      <p class="tip">
+        <NuxtLink to="concat">
+          {{t('mansion.tip')}}
+        </NuxtLink>
+      </p>
       <h4 class="product_view_main_title">{{ t('mansion.subtitle5') }}</h4>
       <div class="product_view_main_box">
         <img
@@ -93,7 +97,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.writingDesk${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">{{t('mansion.tip')}}</p>
+      <p class="tip">
+        <NuxtLink to="concat">
+          {{t('mansion.tip')}}
+        </NuxtLink>
+      </p>
       <h4 class="product_view_main_title">{{ t('mansion.subtitle6') }}</h4>
       <div class="product_view_main_box">
         <img

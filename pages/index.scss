@@ -307,7 +307,7 @@
       margin-bottom: 4rem;
     }
     &_list {
-      width: 120rem;
+      width: 80%;
       margin: 0 auto;
       &_item {
         &_img {
@@ -330,7 +330,7 @@
     }
     &_list {
       margin: 0 auto;
-      width: 120rem;
+      width: 80%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       &_item {

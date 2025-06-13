@@ -6,7 +6,7 @@
   position: sticky;
   left: 0;
   top: 0;
-  z-index: 99;
+  z-index: 9999;
   width: 100vw;
 }
 .header {
@@ -63,6 +63,31 @@
       text-align: center;
       vertical-align: middle;
       color: #000000;
+      position: relative;
+      cursor: pointer;
+      &_box {
+        position: absolute;
+        left: 0;
+        top: 8.5rem;
+        display: none;
+        z-index: 9999;
+        background: #ffffff;
+        padding: 0 2rem;
+        width: max-content;
+        &_item {
+          font-family: Roboto;
+          font-weight: 500;
+          font-size: 1.6rem;
+          display: block;
+          height: 4rem;
+          line-height: 4rem;
+          letter-spacing: 0%;
+          text-align: center;
+          color: #000000;
+          cursor: pointer !important;
+          text-decoration: none;
+        }
+      }
       &_link {
         font-family: Roboto;
         font-weight: 500;
@@ -88,6 +113,11 @@
         left: 0;
         border-radius: 4px;
         background: #0a6250;
+      }
+    }
+    &_item:hover {
+      .header_nav_item_box {
+        display: block;
       }
     }
   }
@@ -530,4 +560,7 @@ a {
   bottom: 20rem;
   z-index: 999;
   cursor: pointer;
+}
+.swiper-button-prev {
+  color: red !important;
 }

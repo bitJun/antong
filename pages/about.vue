@@ -43,7 +43,13 @@
       <div class="about_view_box_container">
         <h4 class="about_view_box_container_title">{{t('about.honor')}}</h4>
         <div class="about_view_box_container_swiper">
-          <swiper-container ref="containerRef">
+          <swiper-container
+            ref="containerRef"
+            :style="{
+              '--swiper-navigation-color': '#0a6250',
+              '--swiper-pagination-color': '#0a6250'
+            }"
+          >
             <swiper-slide
               class="about_view_box_container_swiper_item"
             >

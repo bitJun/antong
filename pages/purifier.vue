@@ -155,7 +155,7 @@
           />
         </div>
         <div class="product_view_section_box">
-          <h4 class="product_view_section_box_title" style="margin-bottom: 0;">KJ460F-P21W</h4>
+          <h4 class="product_view_section_box_title" style="margin-bottom: 0;">KJ520F-C22W</h4>
           <h4 class="product_view_section_box_title">{{t('purifier.p7_title')}}</h4>
           <p class="product_view_section_box_desc">{{t('purifier.p7_desc1')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p7_desc2')}}</p>

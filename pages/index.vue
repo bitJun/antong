@@ -1,6 +1,12 @@
 <template>
   <div class="home_view">
-    <swiper-container ref="bannerRef">
+    <swiper-container
+      ref="bannerRef"
+      :style="{
+        '--swiper-navigation-color': '#0a6250',
+        '--swiper-pagination-color': '#0a6250'
+      }"
+    >
       <swiper-slide
         class="home_view_banner"
       >
@@ -30,7 +36,7 @@
           class="home_view_banner"
         >
           <img
-            :src="isMobile ? '/home/banner_mb2.png' : '/home/banner2.jpg'"
+            :src="isMobile ? '/home/banner_mb2.png' : '/home/banner2.png'"
             class="home_view_banner_img"
           />
           <div class="home_view_banner_box1">
@@ -173,7 +179,13 @@
     <NuxtLink to="/news" class="home_view_news">
       <h4 class="home_view_news_title">{{t('home.subtitle1')}}</h4>
       <div class="home_view_news_list">
-        <swiper-container ref="containerRef">
+        <swiper-container
+          ref="containerRef"
+          :style="{
+            '--swiper-navigation-color': '#0a6250',
+            '--swiper-pagination-color': '#0a6250'
+          }"
+        >
           <swiper-slide
             class="home_view_news_list_item"
           >

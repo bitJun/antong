@@ -40,7 +40,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/purifier" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink id="purifier" to="/purifier" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -83,7 +83,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/mansion" class="product_view_main" style="background: #EAEBF0;padding: 2rem 0;">
+    <NuxtLink id="mansion" to="/mansion" class="product_view_main" style="background: #EAEBF0;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p5_title')}}</h4>
@@ -99,7 +99,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/office" class="product_view_main" style="background: #FFFFFF;padding: 2rem 0;">
+    <NuxtLink id="office" to="/office" class="product_view_main" style="background: #FFFFFF;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p6_title')}}</h4>
@@ -115,7 +115,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/teaSpace" class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink id="teaSpace" to="/teaSpace" class="product_view_main" style="background: #DDEBF6;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_main_info">
           <h4 class="product_view_main_info_title">{{t('product.p7_title')}}</h4>
@@ -158,20 +158,15 @@ onMounted(() => {
 
 const scrollToHash = () => {
   console.log('route',route.params.id)
-  if (route.query.id) {
-    console.log()
+  if (route.params.id && route.params.id != 'home') {
     document.getElementById(route.params.id).scrollIntoView({
       behavior: 'smooth', // 平滑滚动
       block: 'start' // 可选值：start, center, end, nearest
     })
-    // const el = document.querySelector(route.params.id)
-    // if (el) {
-    //   el.scrollIntoView({ behavior: 'smooth' })
-    // }
   }
 }
 
-watch(() => route.hash, () => {
+watch(() => route.params.id, () => {
   scrollToHash()
 })
 

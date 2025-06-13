@@ -40,6 +40,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`office.chair${item}`) }}</p>
         </div>
       </div>
+      <p class="tip">
+        <NuxtLink to="concat">
+          {{t('mansion.tip')}}
+        </NuxtLink>
+      </p>
     </div>
   </div>
 </template>

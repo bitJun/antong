@@ -147,13 +147,65 @@ const scrollToTop = (smooth = true) => {
             </NuxtLink>
           </li>
           <li class="header_nav_item">
-            <NuxtLink
+            <!-- <NuxtLink
               class="header_nav_item_link"
               activeClass="active"
               to="/product/home"
             >
               {{ t('nav.product') }}
-            </NuxtLink>
+            </NuxtLink> -->
+            {{ t('nav.product') }}
+            <div class="header_nav_item_box">
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/product/oxygen"
+              >
+                高压氧舱
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/product/massage"
+              >
+                智能按摩椅
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/product/purifier"
+              >
+                空气消毒净化器
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/product/master"
+              >
+                大师经典家具
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/product/mansion"
+              >
+                豪宅舒适空间
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/product/office"
+              >
+                办公商务空间
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/product/teaSpace"
+              >
+                新派茶空间
+              </NuxtLink>
+            </div>
           </li>
           <li class="header_nav_item">
             <NuxtLink
@@ -250,7 +302,7 @@ const scrollToTop = (smooth = true) => {
           <div class="footer_box_main_nav_item">
             <p class="footer_box_main_nav_item_title">{{t('footer.AboutUs')}}</p>
             <a class="footer_box_main_nav_item_link">{{t('footer.shiming')}}</a>
-            <a class="footer_box_main_nav_item_link">{{t('footer.yuanjing')}}</a>
+            <!-- <a class="footer_box_main_nav_item_link">{{t('footer.yuanjing')}}</a> -->
             <a class="footer_box_main_nav_item_link">{{t('footer.intro')}}</a>
             <a class="footer_box_main_nav_item_link">{{t('footer.advantages')}}</a>
             <a class="footer_box_main_nav_item_link">{{t('footer.honor')}}</a>

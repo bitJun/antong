@@ -40,6 +40,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.coffeetable${item}`) }}</p>
         </div>
       </div>
+      <p class="tip">
+        <NuxtLink to="concat">
+          {{t('mansion.tip')}}
+        </NuxtLink>
+      </p>
       <h4 class="product_view_main_title">{{ t('mansion.subtitle3') }}</h4>
       <div class="product_view_main_box">
         <img
@@ -126,6 +131,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.bed${item}`) }}</p>
         </div>
       </div>
+      <p class="tip">
+        <NuxtLink to="concat">
+          {{t('mansion.tip')}}
+        </NuxtLink>
+      </p>
       <h4 class="product_view_main_title">{{ t('mansion.subtitle7') }}</h4>
       <div class="product_view_main_containers">
         <div
@@ -139,6 +149,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.bedside${item}`) }}</p>
         </div>
       </div>
+      <p class="tip">
+        <NuxtLink to="concat">
+          {{t('mansion.tip')}}
+        </NuxtLink>
+      </p>
     </div>
   </div>
 </template>

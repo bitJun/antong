@@ -98,7 +98,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/purifierdetail/KJ460F" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink to="/purifierdetail/KJ460FP21W" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img

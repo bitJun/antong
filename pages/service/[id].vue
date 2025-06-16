@@ -6,7 +6,7 @@
         class="product_view_bg_img"
       >
     </div>
-    <div class="product_view_position">
+    <div class="product_view_position" id="position">
       <div class="product_view_position_main">
         <img
           src="/product/img.png"
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="product_view_box">
+    <div class="product_view_box" id="process">
       <h3 class="product_view_box_title">{{t('service.subTitle')}}</h3>
       <div class="product_view_box_list">
         <div class="product_view_box_list_item">
@@ -77,6 +77,33 @@
 <script setup>
 import { useI18n } from '#imports';
 const { t } = useI18n();
+import { reactive, ref, onMounted, watch } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+
+onMounted(() => {
+  scrollToHash()
+})
+
+
+const scrollToHash = () => {
+  console.log('route',route.params.id)
+  if (route.params.id && route.params.id != 'home') {
+    document.getElementById(route.params.id).scrollIntoView({
+      behavior: 'smooth', // 平滑滚动
+      block: 'start' // 可选值：start, center, end, nearest
+    })
+  }
+}
+
+watch(route, (to, from) => {
+  scrollToHash()
+},{ deep: true })
+
+// watch(() => route.params.id, () => {
+//   scrollToHash()
+// },{ deep: true })
 </script>
 <style lang="scss" scoped>
   @use './service.scss';

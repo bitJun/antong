@@ -138,13 +138,44 @@ const scrollToTop = (smooth = true) => {
             </NuxtLink>
           </li>
           <li class="header_nav_item">
-            <NuxtLink
+            <!-- <NuxtLink
               class="header_nav_item_link"
               activeClass="active"
               to="/about"
             >
               {{ t('nav.AboutUs') }}
-            </NuxtLink>
+            </NuxtLink> -->
+            {{ t('nav.AboutUs') }}
+            <div class="header_nav_item_box">
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/about/mission"
+              >
+                我们的使命
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/about/antong"
+              >
+                关于安桐
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/about/advantages"
+              >
+                我们的优势
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/about/honor"
+              >
+                荣誉奖项
+              </NuxtLink>
+            </div>
           </li>
           <li class="header_nav_item">
             <!-- <NuxtLink
@@ -208,13 +239,30 @@ const scrollToTop = (smooth = true) => {
             </div>
           </li>
           <li class="header_nav_item">
-            <NuxtLink
+            <!-- <NuxtLink
               class="header_nav_item_link"
               activeClass="active"
               to="/service"
             >
               {{ t('nav.service') }}
-            </NuxtLink>
+            </NuxtLink> -->
+            {{ t('nav.service') }}
+            <div class="header_nav_item_box">
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/service/position"
+              >
+                服务定位
+              </NuxtLink>
+              <NuxtLink
+                class="header_nav_item_box_item"
+                activeClass="active"
+                to="/service/process"
+              >
+                服务流程
+              </NuxtLink>
+            </div>
           </li>
           <li class="header_nav_item">
             <NuxtLink
@@ -382,7 +430,7 @@ const scrollToTop = (smooth = true) => {
           <NuxtLink
             class="menuList_nav_item_link"
             activeClass="active"
-            to="/about"
+            to="/about/home"
           >
             {{ t('nav.AboutUs') }}
           </NuxtLink>
@@ -400,7 +448,7 @@ const scrollToTop = (smooth = true) => {
           <NuxtLink
             class="menuList_nav_item_link"
             activeClass="active"
-            to="/service"
+            to="/service/home"
           >
             {{ t('nav.service') }}
           </NuxtLink>

@@ -166,9 +166,14 @@ const scrollToHash = () => {
   }
 }
 
-watch(() => route.params.id, () => {
-  scrollToHash()
-})
+watch(route, (to, from) => {
+   scrollToHash()
+},{ deep: true })
+
+
+// watch(() => route, () => {
+//   scrollToHash()
+// },{ deep: true })
 
 const containerRef = ref(null);
 const swiper = useSwiper(containerRef, {

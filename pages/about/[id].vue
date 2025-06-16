@@ -1,6 +1,6 @@
 <template>
   <div class="about_view">
-    <div class="about_view_section">
+    <div class="about_view_section" id="mission">
       <img
         src="/about/bg.png"
         class="about_view_section_img"
@@ -13,7 +13,7 @@
       <!--  -->
     </div>
     <div class="about_view_box">
-      <div class="about_view_box_main">
+      <div class="about_view_box_main" id="antong">
         <div class="about_view_box_main_desc">
           <h4 class="about_view_box_main_desc_title">{{t('about.subTitle')}}</h4>
           <p class="about_view_box_main_desc_tip">{{t('about.line1')}}</p>
@@ -25,7 +25,7 @@
           class="about_view_box_main_img"
         />
       </div>
-      <div class="about_view_box_section">
+      <div class="about_view_box_section" id="advantages">
         <div class="about_view_box_mains">
           <img
             src="/about/pic2.png"
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="about_view_box_line"></div>
-      <div class="about_view_box_container">
+      <div class="about_view_box_container" id="honor">
         <h4 class="about_view_box_container_title">{{t('about.honor')}}</h4>
         <div class="about_view_box_container_swiper">
           <swiper-container
@@ -116,7 +116,33 @@
 <script setup>
 import { useI18n } from '#imports';
 const { t } = useI18n();
-import { reactive, ref } from 'vue';
+import { reactive, ref, onMounted, watch } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+
+onMounted(() => {
+  scrollToHash()
+})
+
+
+const scrollToHash = () => {
+  console.log('route',route.params.id)
+  if (route.params.id && route.params.id != 'home') {
+    document.getElementById(route.params.id).scrollIntoView({
+      behavior: 'smooth', // 平滑滚动
+      block: 'start' // 可选值：start, center, end, nearest
+    })
+  }
+}
+
+watch(route, (to, from) => {
+  scrollToHash()
+},{ deep: true })
+
+// watch(() => route.params.id, () => {
+//   scrollToHash()
+// },{ deep: true })
 
 const containerRef = ref(null);
 const swiper = useSwiper(containerRef, {

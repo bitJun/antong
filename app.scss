@@ -1,6 +1,9 @@
 * {
   font-family: PingFangSC-Thin, sans-serif;
 }
+img {
+  image-rendering: auto;
+}
 #header {
   height: 8.5rem;
   position: sticky;
@@ -72,9 +75,9 @@
         display: none;
         z-index: 9999;
         background: #ffffff;
-        padding: 0 2rem;
         width: max-content;
         &_item {
+          padding: 0 2rem;
           font-family: Roboto;
           font-weight: 500;
           font-size: 1.6rem;
@@ -86,6 +89,10 @@
           color: #000000;
           cursor: pointer !important;
           text-decoration: none;
+        }
+        &_item:hover {
+          background-image: linear-gradient(180deg, #248D3A 0%, #003D79 100%);
+          color: #ffffff;
         }
       }
       &_link {

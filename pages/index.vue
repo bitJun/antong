@@ -1,38 +1,23 @@
 <template>
-  <div class="home_view">
+  <div class="home_view" ref="homeViewRef">
+    <video
+      src="/video.mp4"
+      class="home_view_video"
+      controls
+    />
     <swiper-container
       ref="bannerRef"
       :style="{
         '--swiper-navigation-color': '#0a6250',
         '--swiper-pagination-color': '#0a6250'
       }"
+      :autoplay="true"
     >
       <swiper-slide
         class="home_view_banner"
       >
         <NuxtLink
-          to="/product/oxygen"
-          :external="true"
-          class="home_view_banner"
-        >
-          <img
-            :src="isMobile ? '/home/banner_mb1.png' : '/home/banner1.png'"
-            class="home_view_banner_img"
-          />
-          <div class="home_view_banner_box">
-            <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4>
-            <p class="home_view_banner_box_desc">{{t('home.banner1_desc1')}}</p>
-            <p class="home_view_banner_box_desc">{{t('home.banner1_desc2')}}</p>
-            <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
-          </div>
-        </NuxtLink>
-      </swiper-slide>
-      <swiper-slide
-        class="home_view_banner"
-      >
-        <NuxtLink
-          to="/product/massage"
-          :external="true"
+          to="product/massage"
           class="home_view_banner"
         >
           <img
@@ -40,7 +25,7 @@
             class="home_view_banner_img"
           />
           <div class="home_view_banner_box1">
-            <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4>
+            <!-- <h4 class="home_view_banner_box1_title">{{t('home.banner2_title')}}</h4> -->
             <p class="home_view_banner_box1_desc">{{t('home.banner2_desc1')}}</p>
             <p class="home_view_banner_box1_desc">{{t('home.banner2_desc2')}}</p>
             <div class="home_view_banner_box1_btn">{{t('home.btn')}}&nbsp;></div>
@@ -51,16 +36,34 @@
         class="home_view_banner"
       >
         <NuxtLink
-          to="/service"
-          :external="true"
+          to="product/oxygen"
           class="home_view_banner"
         >
           <img
-            :src="isMobile ? '/home/banner_mb3.png' : '/home/banner3.jpg'"
+            :src="isMobile ? '/home/banner_mb1.png' : '/home/banner1.png'"
+            class="home_view_banner_img"
+          />
+          <div class="home_view_banner_box">
+            <!-- <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4> -->
+            <p class="home_view_banner_box_desc">{{t('home.banner1_desc1')}}</p>
+            <p class="home_view_banner_box_desc">{{t('home.banner1_desc2')}}</p>
+            <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+        </NuxtLink>
+      </swiper-slide>
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <NuxtLink
+          to="service/home"
+          class="home_view_banner"
+        >
+          <img
+            :src="isMobile ? '/home/banner_mb3.png' : '/home/banner3.png'"
             class="home_view_banner_img"
           />
           <div class="home_view_banner_box2">
-            <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4>
+            <!-- <h4 class="home_view_banner_box2_title">{{t('home.banner3_title')}}</h4> -->
             <p class="home_view_banner_box2_desc">{{t('home.banner3_desc1')}}</p>
             <p class="home_view_banner_box2_desc">{{t('home.banner3_desc2')}}</p>
             <div class="home_view_banner_box2_btn">{{t('home.btn')}}&nbsp;></div>
@@ -71,8 +74,7 @@
         class="home_view_banner"
       >
         <NuxtLink
-          to="/product/master"
-          :external="true"
+          to="product/master"
           class="home_view_banner"
         >
           <img
@@ -80,10 +82,29 @@
             class="home_view_banner_img"
           />
           <div class="home_view_banner_box3">
-            <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4>
+            <!-- <h4 class="home_view_banner_box3_title">{{t('home.banner4_title')}}</h4> -->
             <p class="home_view_banner_box3_desc">{{t('home.banner4_desc1')}}</p>
             <p class="home_view_banner_box3_desc">{{t('home.banner4_desc2')}}</p>
             <div class="home_view_banner_box3_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+        </NuxtLink>
+      </swiper-slide>
+      <swiper-slide
+        class="home_view_banner"
+      >
+        <NuxtLink
+          to="product/master"
+          class="home_view_banner"
+        >
+          <img
+            :src="isMobile ? '/home/banner_mb5.png' : '/home/banner5.png'"
+            class="home_view_banner_img"
+          />
+          <div class="home_view_banner_box4">
+            <!-- <h4 class="home_view_banner_box4_title">{{t('home.banner5_title')}}</h4> -->
+            <p class="home_view_banner_box4_desc">{{t('home.banner5_desc1')}}</p>
+            <p class="home_view_banner_box4_desc">{{t('home.banner5_desc2')}}</p>
+            <div class="home_view_banner_box4_btn">{{t('home.btn')}}&nbsp;></div>
           </div>
         </NuxtLink>
       </swiper-slide>
@@ -95,29 +116,49 @@
         class="home_view_forest_img"
       />
       <div class="home_view_forest_main">
-        <p class="home_view_forest_main_title">{{t('home.title')}}</p>
-        <!-- <div class="home_view_forest_main_line">-</div> -->
-        <p class="home_view_forest_main_tip">{{t('home.tip1')}}</p>
-        <p class="home_view_forest_main_tip">{{t('home.tip2').replace(/'/g, '"')}}</p>
-        <p class="home_view_forest_main_tip">{{t('home.tip3').replace(/'/g, '"')}}</p>
-        <p class="home_view_forest_main_tip">{{t('home.tip4')}}</p>
-        <NuxtLink 
+        <div class="home_view_forest_main_left">
+          <div class="home_view_forest_main_left_bed">
+            <p>{{t('home.bed')}}</p>
+            <img
+              src="/home/bed.png"
+              class="bed"
+            />
+          </div>
+          <div class="home_view_forest_main_left_keting">
+            <p>{{t('home.keting')}}</p>
+            <img
+              src="/home/keting.png"
+              class="keting"
+            />
+          </div>
+        </div>
+        <div class="home_view_forest_main_right">
+          <img
+            src="/home/shafa.png"
+            class="shafa"
+          />
+          <div class="home_view_forest_main_right_desc">
+            <p>{{t('home.shafa1')}}</p>
+            <p>{{t('home.shafa2')}}</p>
+          </div>
+        </div>
+        <!-- <NuxtLink 
           class="home_view_forest_main_btn"
-          to="/about"
+          to="/about/home"
         >
           {{t('home.btn')}}&nbsp;>
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
     </div>
     <div class="home_view_product">
-      <NuxtLink class="home_view_product_item" to="product/oxygen">
+      <NuxtLink class="home_view_product_item" to="product/home">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t1')}}</h4>
           <p class="home_view_product_item_main_desc">{{t('home.d1')}}</p>
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>
         <img
-          src="/home/pic1.png"
+          :src="isMobile ? '/home/pic_mb1.png' : '/home/pic1.png'"
           class="home_view_product_item_img"
         />
       </NuxtLink>
@@ -128,7 +169,7 @@
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>
         <img
-          src="/home/pic2.png"
+          :src="isMobile ? '/home/pic_mb2.png' : '/home/pic2.png'"
           class="home_view_product_item_img"
         />
       </NuxtLink>
@@ -139,7 +180,7 @@
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>
         <img
-          src="/home/pic3.png"
+          :src="isMobile ? '/home/pic_mb3.png' : '/home/pic3.png'"
           class="home_view_product_item_img"
         />
       </NuxtLink>
@@ -151,14 +192,14 @@
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>
         <img
-          src="/home/pic4.png"
+          :src="isMobile ? '/home/pic_mb4.png' : '/home/pic4.png'"
           class="home_view_product_item_img"
         />
       </NuxtLink>
     </div>
     <div class="home_view_service">
       <img
-        src="/home/serviceBg.png"
+        :src="isMobile ? '/home/serviceBg_mb.png' : '/home/serviceBg.png'"
         class="home_view_service_img"
       />
       <div class="home_view_service_main">
@@ -169,7 +210,7 @@
         <p class="home_view_service_main_tip">{{t('home.dd3')}}</p>
         <NuxtLink 
           class="home_view_service_main_btn"
-          to="/service"
+          to="/service/home"
         >
           {{t('home.btn')}}&nbsp;>
         </NuxtLink>
@@ -181,6 +222,7 @@
       <div class="home_view_news_list">
         <swiper-container
           ref="containerRef"
+          :slides-per-view="isMobile ? 2 : 4"
           :style="{
             '--swiper-navigation-color': '#0a6250',
             '--swiper-pagination-color': '#0a6250'
@@ -298,33 +340,76 @@ const isMobile = ref(true);
 const windowsUrl = ref('');
 const macUrl = ref('');
 const containerRef = ref(null);
+let num = ref(4);
 const bannerRef = ref(null);
+let number = 0;
+
+
+const homeViewRef = ref(null);
+let scale = 1;
+
+onMounted(()=>{
+  nextTick(()=>{
+    isMobile.value = isMobileDevice();
+    if (isMobileDevice()) {
+      num.value = 2;
+      number = 2;
+    } else {
+      num.value = 4;
+      number = 4;
+    }
+    window.addEventListener("resize", function () {
+      isMobile.value = isMobileDevice();
+      if (isMobileDevice()) {
+        num.value = 2;
+        number = 2;
+      } else {
+        num.value = 4;
+        number = 4;
+      }
+    });
+  });
+
+  window.addEventListener('wheel', function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault();
+      const delta = e.deltaY > 0 ? -0.1 : 0.1;
+      scale += delta;
+      scale = Math.max(0.5, Math.min(3, scale));
+      if (homeViewRef.value) {
+        homeViewRef.value.style.transformOrigin = `${e.pageX}px ${e.pageY}px`;
+        homeViewRef.value.style.transform = `scale(${scale})`;
+      }
+    }
+  }, { passive: false });
+});
+
 const swipers = useSwiper(bannerRef, {
   effect: 'creative',
   loop: true,
   autoplay: {
-    delay: 1000,
+    delay: 300000,
   },
   slidesPerView: 1,
   navigation: true,
   creativeEffect: {
     prev: {
       shadow: true,
-      translate: [0, 0, -400],
+      translate: [0, 0, -200],
     },
     next: {
       shadow: true,
       translate: [0, 0, -400],
     },
   },
-})
+});
+
 const swiper = useSwiper(containerRef, {
   effect: 'creative',
   loop: true,
   autoplay: {
     delay: 1000,
   },
-  slidesPerView: 4,
   navigation: true,
   spaceBetween: 20,
   creativeEffect: {
@@ -338,18 +423,6 @@ const swiper = useSwiper(containerRef, {
     },
   },
 })
-
-onMounted(()=>{
-  nextTick(()=>{
-    isMobile.value = isMobileDevice();
-    window.addEventListener("resize", function () {
-      isMobile.value = isMobileDevice();
-    });
-    console.log('isMobile.value', isMobile.value)
-  })
-  onLoadData();
-});
-
 // if (process.client) {
 //   const isMobileDevice = () => {
 //     return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
@@ -362,11 +435,6 @@ onMounted(()=>{
 //   });
 // }
 
-const onLoadData = async () => {
-  windowsUrl.value = await QRCode.toDataURL('https://cdn-oss.mos.me/public/mosapp/pc/MosApp-Windows-Latest.exe');
-  macUrl.value = await QRCode.toDataURL('https://cdn-oss.mos.me/public/mosapp/pc/MosApp-MacOS-Latest.dmg');
-}
-
 const isMobileDevice = () => {
   return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
@@ -378,13 +446,6 @@ const data = reactive({
 
 const { t } = useI18n();
 </script>
-<style>
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #0a6250 !important; /* ← 修改为你想要的颜色，比如 red, #fff, etc. */
-}
-</style>
 <style lang="scss" scoped>
 @use "./index.scss";
 swiper-slide {

@@ -5,10 +5,19 @@
         src="/about/bg.png"
         class="about_view_section_img"
       />
-      <div class="about_view_section_main">
+      <div class="about_view_section_main" v-if="isMobile">
         <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
-        <p class="about_view_section_title">{{t('about.title')}}</p>
-        <p class="about_view_section_desc">{{t('about.desc')}}</p>
+        <p class="about_view_section_title">{{t('about.title')}}{{t('about.desc')}}</p>
+      </div>
+      <div class="about_view_section_main" :class="[lang == 'zh-cn' ? 'w36' : 'w144']" v-else>
+        <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
+        <div v-if="lang == 'zh-cn'">
+          <p class="about_view_section_title">{{t('about.title')}}</p>
+          <p class="about_view_section_desc">{{t('about.desc')}}</p>
+        </div>
+        <div v-else>
+          <p class="about_view_section_title">{{t('about.title')}}&nbsp;{{t('about.desc')}}</p>
+        </div>
       </div>
       <!--  -->
     </div>
@@ -44,7 +53,8 @@
         <h4 class="about_view_box_container_title">{{t('about.honor')}}</h4>
         <div class="about_view_box_container_swiper">
           <swiper-container
-            ref="containerRef"
+            ref="containerRefs"
+            :slides-per-view="isMobile ? 2 : 4"
             :style="{
               '--swiper-navigation-color': '#0a6250',
               '--swiper-pagination-color': '#0a6250'
@@ -115,41 +125,86 @@
 </template>
 <script setup>
 import { useI18n } from '#imports';
-const { t } = useI18n();
+const { t, locale, setLocale } = useI18n();
 import { reactive, ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
+const isMobile = ref(true);
 
 const route = useRoute();
 
+const lang = ref('');
+
 onMounted(() => {
+  console.log('locale', locale)
   scrollToHash()
-})
+  nextTick(()=>{
+    isMobile.value = isMobileDevice();
+    window.addEventListener("resize", function () {
+      isMobile.value = isMobileDevice();
+    });
+    console.log('isMobile.value', isMobile.value)
+  })
+});
 
-
-const scrollToHash = () => {
-  console.log('route',route.params.id)
-  if (route.params.id && route.params.id != 'home') {
-    document.getElementById(route.params.id).scrollIntoView({
-      behavior: 'smooth', // 平滑滚动
-      block: 'start' // 可选值：start, center, end, nearest
-    })
-  }
+const isMobileDevice = () => {
+  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
 
+const scrollToHash = () => {
+  if (route.params.id && route.params.id != 'home') {
+    setTimeout(()=>{
+      const target = document.getElementById(route.params.id);
+      console.log('target', target);
+      target?.scrollIntoView({
+        behavior: 'smooth',   // 平滑滚动
+        block: 'start'
+      });
+    }, 100);
+  }
+}
+watch(locale, (val, oldVal) => {
+  console.log('val', val);
+  lang.value = val;
+})
+
 watch(route, (to, from) => {
-  scrollToHash()
+  
+  nextTick(()=>{
+    scrollToHash()
+  })
 },{ deep: true })
 
 // watch(() => route.params.id, () => {
 //   scrollToHash()
 // },{ deep: true })
 
-const containerRef = ref(null);
-const swiper = useSwiper(containerRef, {
+const pcRef = ref(null);
+const containerRefs = ref(null);
+
+const swiper = useSwiper(pcRef, {
   effect: 'creative',
   loop: true,
   autoplay: true,
-  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: true,
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: [0, 0, -400],
+    },
+    next: {
+      shadow: true,
+      translate: [0, 0, -400],
+    },
+  },
+});
+
+
+const swipers = useSwiper(containerRefs, {
+  effect: 'creative',
+  loop: true,
+  autoplay: true,
+  slidesPerView: isMobile.value ? 2 : 4,
   spaceBetween: 20,
   navigation: true,
   creativeEffect: {

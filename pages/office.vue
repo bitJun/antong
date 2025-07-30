@@ -10,7 +10,7 @@
       <h4 class="product_view_main_title">{{ t('office.subtitle1') }}</h4>
       <div class="product_view_main_box">
         <img
-          src="/teaSpace/banner1.png"
+          src="/office/banner1.png"
           class="product_view_main_box_img"
         />
         

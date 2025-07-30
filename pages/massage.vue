@@ -26,13 +26,13 @@
           <p class="product_view_section_box_desc">{{t('massage.p1_desc4')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p1_desc5')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('massage.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('massage.more')}}&nbsp;></div>
           </div>
         </div>
       </div>
     </NuxtLink>
     <NuxtLink to="/massagedetail/880" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
-      <div class="box">
+      <div class="box reverse">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title" style="margin-bottom: 0;">M-880</h4>
           <h4 class="product_view_section_box_title">{{t('massage.p2_title')}}</h4>
@@ -43,7 +43,7 @@
           <p class="product_view_section_box_desc">{{t('massage.p2_desc5')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p2_desc6')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('massage.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('massage.more')}}&nbsp;></div>
           </div>
         </div>
         <div class="product_view_section_info">
@@ -72,8 +72,31 @@
           <p class="product_view_section_box_desc">{{t('massage.p3_desc5')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p3_desc6')}}</p>
           <div class="flex">
-            <div class="product_view_section_box_btn">Read more {{t('massage.more')}}&nbsp;></div>
+            <div class="product_view_section_box_btn">{{t('massage.more')}}&nbsp;></div>
           </div>
+        </div>
+      </div>
+    </NuxtLink>
+    <NuxtLink to="/massagedetail/2528" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+      <div class="box reverse">
+        <div class="product_view_section_box">
+          <h4 class="product_view_section_box_title" style="margin-bottom: 0;">OG-2528</h4>
+          <h4 class="product_view_section_box_title">{{t('massage.p4_title')}}</h4>
+          <p class="product_view_section_box_desc">{{t('massage.p4_desc1')}}</p>
+          <p class="product_view_section_box_desc">{{t('massage.p4_desc2')}}</p>
+          <p class="product_view_section_box_desc">{{t('massage.p4_desc3')}}</p>
+          <p class="product_view_section_box_desc">{{t('massage.p4_desc4')}}</p>
+          <p class="product_view_section_box_desc">{{t('massage.p4_desc5')}}</p>
+          <p class="product_view_section_box_desc">{{t('massage.p4_desc6')}}</p>
+          <div class="flex">
+            <div class="product_view_section_box_btn">{{t('massage.more')}}&nbsp;></div>
+          </div>
+        </div>
+        <div class="product_view_section_info">
+          <img
+            src="/massage/banner4.png"
+            class="product_view_section_img"
+          />
         </div>
       </div>
     </NuxtLink>

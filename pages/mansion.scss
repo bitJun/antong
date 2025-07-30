@@ -21,7 +21,7 @@
     background: #6F87A0;
     padding: 8rem 0;
     &_main {
-      width: 80%;
+      width: 144rem;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -50,14 +50,14 @@
       font-size: 3.2rem;
     }
     &_box {
-      width: 80%;
+      width: 144rem;
       margin: 0 auto;
       position: relative;
       &_tip {
         position: absolute;
         left: 2rem;
         bottom: 4rem;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         color: #ffffff;
       }
       &_img {
@@ -84,7 +84,7 @@
     }
     &_container {
       box-sizing: border-box;
-      width: 80%;
+      width: 144rem;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -116,7 +116,7 @@
     }
     &_containers {
       box-sizing: border-box;
-      width: 80%;
+      width: 144rem;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -148,7 +148,7 @@
   }
 }
 .box {
-  width: 80%;
+  width: 144rem;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
@@ -167,7 +167,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .tip {
-  width: 80%;
+  width: 144rem;
   margin: 1rem auto 1rem auto;
   display: flex;
   justify-content: flex-end;
@@ -190,16 +190,18 @@
       font-weight: bold;
     }
     &_subtitle {
-      padding: 2rem 0;
+      padding: 2rem 3rem;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 2rem;
       font-weight: bold;
       color: #206857;
+      box-sizing: border-box;
+      text-align: center;
     }
     &_box1 {
-      padding: 2rem 1.6rem;
+      padding: 2rem 3rem;
       box-sizing: border-box;
       &_main {
         width: 100%;
@@ -221,11 +223,15 @@
       width: 100%;
       &_title {
         color: #206857;
-        padding: 2rem 0;
+        padding: 2rem 3rem;
+        // width: 90%;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 1.8rem;
+        box-sizing: border-box;
+        text-align: center;
       }
       &_box {
         width: 100%;
@@ -322,10 +328,10 @@
     flex-direction: column;
   }
   .tip {
-    width: 100%;
-    font-size: 1.4rem;
-    margin: 1rem 0;
+    font-size: 1.2rem;
+    margin: 1rem auto;
     justify-content: center;
+    width: 90%;
   }
 
   .second {

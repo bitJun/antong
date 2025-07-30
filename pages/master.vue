@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
-      <div class="box">
+      <div class="box reverse">
         <div class="product_view_section_box">
           <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p2_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p2_time')}}</p>
@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="product_view_section" style="background: #D9DADF;padding: 2rem 0;">
-      <div class="box">
+      <div class="box reverse">
         <div class="product_view_section_box">
           <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p4_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p4_time')}}</p>
@@ -93,7 +93,7 @@
       </div>
     </div>
     <div class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
-      <div class="box">
+      <div class="box reverse">
         <div class="product_view_section_box">
           <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p6_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p6_time')}}</p>
@@ -127,7 +127,7 @@
       </div>
     </div>
     <div class="product_view_section" style="background: #D9DADF;padding: 2rem 0;">
-      <div class="box">
+      <div class="box reverse">
         <div class="product_view_section_box">
           <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p8_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p8_time')}}</p>
@@ -161,7 +161,7 @@
       </div>
     </div>
     <div class="product_view_section" style="background: #D9DADF;padding: 2rem 0;">
-      <div class="box">
+      <div class="box reverse">
         <div class="product_view_section_box">
           <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p10_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p10_time')}}</p>

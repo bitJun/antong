@@ -24,7 +24,7 @@
       </div>
     </NuxtLink>
     <NuxtLink id="massage" to="/massage" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
-      <div class="box">
+      <div class="box reverse">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title">{{t('product.p2_title')}}</h4>
           <p class="product_view_section_box_desc">{{t('product.p2_desc')}}</p>
@@ -146,28 +146,33 @@
 <script setup>
 import { useI18n } from '#imports';
 const { t } = useI18n();
-import { reactive, ref, onMounted, watch } from 'vue';
+import { reactive, ref, onMounted, watch, nextTick } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
 onMounted(() => {
   scrollToHash()
-})
-
+});
 
 const scrollToHash = () => {
-  console.log('route',route.params.id)
   if (route.params.id && route.params.id != 'home') {
-    document.getElementById(route.params.id).scrollIntoView({
-      behavior: 'smooth', // 平滑滚动
-      block: 'start' // 可选值：start, center, end, nearest
-    })
+    setTimeout(()=>{
+      const target = document.getElementById(route.params.id);
+      console.log('target', target);
+      target?.scrollIntoView({
+        behavior: 'smooth',   // 平滑滚动
+        block: 'start'
+      });
+    }, 100);
   }
 }
 
 watch(route, (to, from) => {
-   scrollToHash()
+  
+  nextTick(()=>{
+    scrollToHash()
+  })
 },{ deep: true })
 
 

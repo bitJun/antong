@@ -1,8 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   font-family: PingFangSC-Thin, sans-serif;
 }
 img {
+  max-width: 100%;
   image-rendering: auto;
+  // image-rendering: pixelated;   /* 像素风格清晰 */
+  // image-rendering: crisp-edges; /* 尽可能保持边缘锐利 */
 }
 #header {
   height: 8.5rem;
@@ -274,7 +280,7 @@ img {
   margin: 0 auto;
   justify-content: space-between;
   &_main {
-    width: 84rem;
+    width: 114rem;
     &_nav {
       display: flex;
       &_item {
@@ -282,12 +288,20 @@ img {
         &_title {
           color: #ffffff;
           font-size: 1.6rem;
+          margin-bottom: 2.5rem;
+          width: 75%;
+          a {
+            border-bottom: 1px solid #ffffff;
+            padding-bottom: 1rem;
+          }
+        }
+        &_title.links {
           padding-bottom: 1rem;
           border-bottom: 1px solid #ffffff;
-          margin-bottom: 1.5rem;
-          width: 7rem;
         }
         &_link {
+          padding-right: 2%;
+          box-sizing: border-box;
           font-size: 1.6rem;
           color: #ffffff;
           margin-bottom: 1rem;
@@ -297,11 +311,15 @@ img {
     }
     &_tip {
       font-size: 1.2rem;
+      margin-top: 2rem;
+      padding-right: 10%;
+      box-sizing: border-box;
       color: #fff;
     }
   }
   &_content {
-    width: 60rem;
+    width: 30rem;
+    margin-top: 2rem;
     &_info {
       display: flex;
       align-items: center;
@@ -542,20 +560,50 @@ img {
       &_nav {
         flex-direction: column;
         display: flex;
-        padding-left: 1.6rem;
+        padding: 0 3rem;
+        &_item {
+          &_title {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &_img {
+              width: 1.5rem;
+              height: auto;
+            }
+          }
+          &_box {
+            display: none;
+          }
+        }
       }
       &_tip {
-        padding: 0 1.6rem;
+        padding: 0 3rem;
         box-sizing: border-box;
       }
     }
     &_content {
       flex-direction: column;
       width: 100%;
-      padding: 0 1.6rem;
+      padding: 0 3rem;
       box-sizing: border-box;
+      &_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        &_img {
+          width: 100%;
+        }
+      }
     }
   }
+  .reverse {
+    margin-top: 1rem;
+    gap: 1.5rem;
+    flex-direction: column-reverse;
+  }
+}
+.block {
+  display: block;
 }
 
 a {

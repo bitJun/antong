@@ -1,5 +1,5 @@
 .about_view {
-  margin-top: -8.5rem;
+  // margin-top: -8.5rem;
   &_section {
     position: relative;
     &_img {
@@ -22,24 +22,24 @@
       flex-direction: column;
     }
     &_tip {
-      color: #323232;
-      font-size: 1.6rem;
+      color: #ffffff;
       margin-bottom: 1rem;
+      font-size: 3.2rem;
     }
     &_title {
       font-family: Roboto;
       font-weight: 400;
-      font-size: 3.2rem;
       // line-height: 2.2rem;
+      font-size: 1.6rem;
       text-align: center;
-      color: #323232;
+      color: #ffffff;
     }
     &_desc {
       text-align: center;
-      color: #323232;
+      color: #ffffff;
       font-family: Roboto;
       font-weight: 400;
-      font-size: 3.2rem;
+      font-size: 1.6rem;
       // line-height: 2.2rem;
     }
   }

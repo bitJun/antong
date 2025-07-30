@@ -6,8 +6,8 @@
         class="about_view_section_img"
       />
       <div class="about_view_section_main" v-if="isMobile">
-        <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
-        <p class="about_view_section_title">{{t('about.title')}}{{t('about.desc')}}</p>
+        <h4 class="about_view_section_tip">{{t('about.title')}}</h4>
+        <p class="about_view_section_title">{{t('about.desc')}}</p>
       </div>
       <div class="about_view_section_main" :class="[lang == 'zh-cn' ? 'w36' : 'w144']" v-else>
         <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>

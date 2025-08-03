@@ -117,10 +117,11 @@
     "d9": "Honeywell is marketing the air purifiers produced in China to developing countries such as India and Russia. Compared to China, India's air pollution situation is considered more severe, and the capital New Delhi has even been ranked as the city with the worst air in the world by the World Health Organization."
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Feel free to contact us.",
+    "title": "联系我们",
+    "subtitle": "联系我们",
     "VIP": "VIP Exclusive Hotline",
-    "tip": "Please contact us for further information."
+    "tip": "Please contact us for further information.",
+    "notice": "服务邮箱"
   },
   "product": {
     "title": "Smart Health Series",

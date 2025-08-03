@@ -18,7 +18,7 @@
     color: #206857;
   }
   &_box1 {
-    background: #6F87A0;
+    background-image: linear-gradient(180deg, #003D79 0%, #24803A 100%);
     padding: 8rem 0;
     &_main {
       width: 144rem;
@@ -40,7 +40,6 @@
     }
   }
   &_main {
-    background: #E6D8C6;
     padding-bottom: 3rem;
     &_title {
       color: #206857;
@@ -49,6 +48,17 @@
       align-items: center;
       justify-content: center;
       font-size: 3.2rem;
+      position: relative;
+    }
+    &_title::after {
+      content: '';
+      width: 144rem;
+      height: 1px;
+      background: #136857;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
     }
     &_box {
       width: 144rem;
@@ -80,10 +90,12 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1rem;
       &_item {
         background: #ffffff;
         position: relative;
+        border-bottom: 1px solid #206857;
+        margin-bottom: 1rem;
+        box-sizing: border-box;
         &_img {
           width: 100%;
           z-index: 99;
@@ -101,6 +113,15 @@
           font-size: 1.6rem;
         }
       }
+      &_item:nth-child(2n-1) {
+        padding-right: 0.5rem;
+      }
+      &_item:nth-child(2n) {
+        padding-left: 0.5rem;
+      }
+      &_item.last {
+        border-bottom: 0;
+      }
     }
     &_containers {
       box-sizing: border-box;
@@ -108,10 +129,12 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem;
       &_item {
         background: #ffffff;
         position: relative;
+        border-bottom: 1px solid #206857;
+        margin-bottom: 1rem;
+        box-sizing: border-box;
         &_img {
           width: 100%;
           margin-bottom: 1rem;
@@ -129,6 +152,9 @@
           color: #323232;
           font-size: 1.6rem;
         }
+      }
+      &_item.last {
+        border-bottom: 0;
       }
     }
   }
@@ -149,6 +175,18 @@
 .m20 {
   width: 144rem;
   margin: 4rem auto;
+}
+.resource {
+  position: fixed;
+  left: 10%;
+  bottom: 20rem;
+  z-index: 999;
+  width: auto;
+  cursor: pointer;
+  &_img {
+    width: auto;
+    height: auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .product_view {

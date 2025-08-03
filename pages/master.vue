@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="product_view_subtitle">{{t('master.subtitle')}}</div>
-    <div class="product_view_section" style="background: #DDEBF6;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -16,7 +16,7 @@
           />
         </div>
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p1_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p1_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p1_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p1_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -24,10 +24,10 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p2_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p2_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p2_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p2_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -50,7 +50,7 @@
           />
         </div>
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p3_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p3_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p3_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p3_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -58,10 +58,10 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #D9DADF;padding: 2rem 0;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p4_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p4_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p4_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p4_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -75,7 +75,7 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -84,7 +84,7 @@
           />
         </div>
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p5_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p5_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p5_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p5_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -92,10 +92,10 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p6_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p6_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p6_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p6_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -109,7 +109,7 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -118,7 +118,7 @@
           />
         </div>
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p7_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p7_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p7_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p7_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -126,10 +126,10 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #D9DADF;padding: 2rem 0;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p8_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p8_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p8_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p8_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -143,7 +143,7 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <div class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -152,7 +152,7 @@
           />
         </div>
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p9_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p9_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p9_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p9_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -160,10 +160,10 @@
         </div>
       </div>
     </div>
-    <div class="product_view_section" style="background: #D9DADF;padding: 2rem 0;">
+    <div class="product_view_section last" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
-          <p class="product_view_section_box_desc">{{t('master.name')}}：{{t('master.p10_name')}}</p>
+          <p class="product_view_section_box_title">{{t('master.p10_name')}}</p>
           <p class="product_view_section_box_desc">{{t('master.time')}}：{{t('master.p10_time')}}</p>
           <p class="product_view_section_box_desc mb20">{{t('master.designer')}}：{{t('master.p10_designer')}}</p>
           <p class="product_view_section_box_desc">{{t('master.design')}}：</p>
@@ -178,6 +178,12 @@
       </div>
     </div>
   </div>
+  <NuxtLink class="resource" to="/concat">
+    <img
+      src="/resource.png"
+      class="resource_img"
+    />
+  </NuxtLink>
 </template>
 <script setup>
 import { useI18n } from '#imports';

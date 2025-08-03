@@ -9,7 +9,7 @@
     <div class="product_view_title">
       {{ t('massage.subtitle') }}
     </div>
-    <NuxtLink to="/massagedetail/8638" class="product_view_section" style="background: #DDEBF6;">
+    <NuxtLink to="/massagedetail/8638" class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -31,7 +31,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/massagedetail/880" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <NuxtLink to="/massagedetail/880" class="product_view_section" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title" style="margin-bottom: 0;">M-880</h4>
@@ -54,7 +54,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/massagedetail/7598" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink to="/massagedetail/7598" class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -77,7 +77,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/massagedetail/2528" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <NuxtLink to="/massagedetail/2528" class="product_view_section last" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title" style="margin-bottom: 0;">OG-2528</h4>
@@ -101,6 +101,12 @@
       </div>
     </NuxtLink>
   </div>
+  <NuxtLink class="resource" to="/concat">
+    <img
+      src="/resource.png"
+      class="resource_img"
+    />
+  </NuxtLink>
 </template>
 <script setup>
 import { useI18n } from '#imports';

@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="product_view_subtitle">{{t('purifier.subtitle')}}</div>
-    <NuxtLink to="/purifierdetail/KJ1000" class="product_view_section" style="background: #DDEBF6;">
+    <NuxtLink to="/purifierdetail/KJ1000" class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -31,7 +31,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/purifierdetail/HWC05" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <NuxtLink to="/purifierdetail/HWC05" class="product_view_section" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title" style="margin-bottom: 0;">HWC05</h4>
@@ -53,7 +53,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/purifierdetail/KJ205" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink to="/purifierdetail/KJ205" class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -75,7 +75,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/purifierdetail/KJ250F" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <NuxtLink to="/purifierdetail/KJ250F" class="product_view_section" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title" style="margin-bottom: 0;">KJ250F-J11W</h4>
@@ -98,7 +98,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/purifierdetail/KJ460FP21W" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink to="/purifierdetail/KJ460FP21W" class="product_view_section" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -121,7 +121,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/purifierdetail/KJ620F" class="product_view_section" style="background: #ffffff;padding: 2rem 0;">
+    <NuxtLink to="/purifierdetail/KJ620F" class="product_view_section" style="padding: 3rem 0;">
       <div class="box reverse">
         <div class="product_view_section_box">
           <h4 class="product_view_section_box_title" style="margin-bottom: 0;">KJ620F-J22S</h4>
@@ -146,7 +146,7 @@
         </div>
       </div>
     </NuxtLink>
-    <NuxtLink to="/purifierdetail/KJ460F" class="product_view_section" style="background: #DDEBF6;padding: 2rem 0;">
+    <NuxtLink to="/purifierdetail/KJ460F" class="product_view_section last" style="padding: 3rem 0;">
       <div class="box">
         <div class="product_view_section_info">
           <img
@@ -172,6 +172,12 @@
       </div>
     </NuxtLink>
   </div>
+  <NuxtLink class="resource" to="/concat">
+    <img
+      src="/resource.png"
+      class="resource_img"
+    />
+  </NuxtLink>
 </template>
 <script setup>
 import { useI18n } from '#imports';

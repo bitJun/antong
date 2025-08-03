@@ -13,7 +13,7 @@
           src="/office/banner1.png"
           class="product_view_main_box_img"
         />
-        
+        <p class="product_view_main_box_tip">{{ t('office.deskTitle') }}</p>
       </div>
       <div class="product_view_main_container">
         <div
@@ -40,13 +40,19 @@
           <p class="product_view_main_containers_item_desc">{{ t(`office.chair${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">
+      <!-- <p class="tip">
         <NuxtLink to="concat">
           {{t('mansion.tip')}}
         </NuxtLink>
-      </p>
+      </p> -->
     </div>
   </div>
+  <NuxtLink class="resource" to="/concat">
+    <img
+      src="/resource.png"
+      class="resource_img"
+    />
+  </NuxtLink>
 </template>
 <script setup>
 import { useI18n } from '#imports';

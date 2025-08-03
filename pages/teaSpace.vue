@@ -64,7 +64,37 @@
       <div class="product_view_main_container">
         <div
           class="product_view_main_container_item"
-          v-for="item in [1,2,3,4,5,6,7,8]"
+          v-for="item in [1,2]"
+        >
+          <img
+            :src="`/teaSpace/table${item}.png`"
+            class="product_view_main_container_item_img"
+          />
+          <p class="product_view_main_container_item_desc">{{ t(`teaSpace.table${item}`) }}</p>
+        </div>
+        <div
+          class="product_view_main_container_item"
+          v-for="item in [3,4]"
+        >
+          <img
+            :src="`/teaSpace/table${item}.png`"
+            class="product_view_main_container_item_img"
+          />
+          <p class="product_view_main_container_item_desc">{{ t(`teaSpace.table${item}`) }}</p>
+        </div>
+        <div
+          class="product_view_main_container_item"
+          v-for="item in [5,6]"
+        >
+          <img
+            :src="`/teaSpace/table${item}.png`"
+            class="product_view_main_container_item_img"
+          />
+          <p class="product_view_main_container_item_desc">{{ t(`teaSpace.table${item}`) }}</p>
+        </div>
+        <div
+          class="product_view_main_container_item last"
+          v-for="item in [7,8]"
         >
           <img
             :src="`/teaSpace/table${item}.png`"
@@ -77,7 +107,37 @@
       <div class="product_view_main_containers">
         <div
           class="product_view_main_containers_item"
-          v-for="item in [1,2,3,4,5,6,7,8,9,10,11,12]"
+          v-for="item in [1,2,3]"
+        >
+          <img
+            :src="`/teaSpace/chair${item}.png`"
+            class="product_view_main_containers_item_img"
+          />
+          <p class="product_view_main_containers_item_desc">{{ t(`teaSpace.chair${item}`) }}</p>
+        </div>
+        <div
+          class="product_view_main_containers_item"
+          v-for="item in [4,5,6]"
+        >
+          <img
+            :src="`/teaSpace/chair${item}.png`"
+            class="product_view_main_containers_item_img"
+          />
+          <p class="product_view_main_containers_item_desc">{{ t(`teaSpace.chair${item}`) }}</p>
+        </div>
+        <div
+          class="product_view_main_containers_item"
+          v-for="item in [7,8,9]"
+        >
+          <img
+            :src="`/teaSpace/chair${item}.png`"
+            class="product_view_main_containers_item_img"
+          />
+          <p class="product_view_main_containers_item_desc">{{ t(`teaSpace.chair${item}`) }}</p>
+        </div>
+        <div
+          class="product_view_main_containers_item last"
+          v-for="item in [10,11,12]"
         >
           <img
             :src="`/teaSpace/chair${item}.png`"
@@ -88,6 +148,12 @@
       </div>
     </div>
   </div>
+  <NuxtLink class="resource" to="/concat">
+    <img
+      src="/resource.png"
+      class="resource_img"
+    />
+  </NuxtLink>
 </template>
 <script setup>
 import { useI18n } from '#imports';

@@ -40,11 +40,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.coffeetable${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">
+      <!-- <p class="tip">
         <NuxtLink to="concat">
           {{t('mansion.tip')}}
         </NuxtLink>
-      </p>
+      </p> -->
       <h4 class="product_view_main_title">{{ t('mansion.subtitle3') }}</h4>
       <div class="product_view_main_box">
         <img
@@ -65,11 +65,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.desk${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">
+      <!-- <p class="tip">
         <NuxtLink to="concat">
           {{t('mansion.tip')}}
         </NuxtLink>
-      </p>
+      </p> -->
       <h4 class="product_view_main_title">{{ t('mansion.subtitle4') }}</h4>
       <div class="product_view_main_containers">
         <div
@@ -83,17 +83,18 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.chair${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">
+      <!-- <p class="tip">
         <NuxtLink to="concat">
           {{t('mansion.tip')}}
         </NuxtLink>
-      </p>
+      </p> -->
       <h4 class="product_view_main_title">{{ t('mansion.subtitle5') }}</h4>
       <div class="product_view_main_box">
         <img
           src="/mansion/writingDesk_banner.png"
           class="product_view_main_box_img"
         />
+        <p class="product_view_main_box_tip">{{ t('mansion.writingDesktitle') }}</p>
       </div>
       <div class="product_view_main_containers third">
         <div
@@ -107,17 +108,18 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.writingDesk${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">
+      <!-- <p class="tip">
         <NuxtLink to="concat">
           {{t('mansion.tip')}}
         </NuxtLink>
-      </p>
+      </p> -->
       <h4 class="product_view_main_title">{{ t('mansion.subtitle6') }}</h4>
       <div class="product_view_main_box">
         <img
           src="/mansion/bed_banner.png"
           class="product_view_main_box_img"
         />
+        <p class="product_view_main_box_tip">{{ t('mansion.bedTitle') }}</p>
       </div>
       <div class="product_view_main_containers second">
         <div
@@ -131,11 +133,11 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.bed${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">
+      <!-- <p class="tip">
         <NuxtLink to="concat">
           {{t('mansion.tip')}}
         </NuxtLink>
-      </p>
+      </p> -->
       <h4 class="product_view_main_title">{{ t('mansion.subtitle7') }}</h4>
       <div class="product_view_main_containers">
         <div
@@ -149,13 +151,19 @@
           <p class="product_view_main_containers_item_desc">{{ t(`mansion.bedside${item}`) }}</p>
         </div>
       </div>
-      <p class="tip">
+      <!-- <p class="tip">
         <NuxtLink to="concat">
           {{t('mansion.tip')}}
         </NuxtLink>
-      </p>
+      </p> -->
     </div>
   </div>
+  <NuxtLink class="resource" to="/concat">
+    <img
+      src="/resource.png"
+      class="resource_img"
+    />
+  </NuxtLink>
 </template>
 <script setup>
 import { useI18n } from '#imports';

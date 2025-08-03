@@ -1,5 +1,5 @@
 .new_view {
-  margin-top: -8.5rem;
+  // margin-top: -8.5rem;
   &_section {
     position: relative;
     &_img {
@@ -67,7 +67,7 @@
           letter-spacing: 0%;
           margin-bottom: 1rem;
           margin-top: 0;
-          color: #1F1F1F;
+          color: #206857;
         }
         &_tip {
           font-family: Roboto;
@@ -89,6 +89,15 @@
         position: absolute;
         left: 0rem;
         bottom: 8rem;
+        padding: 0 2rem;
+        border-radius: 7.5rem;
+        color: #ffffff;
+        font-size: 2rem;
+        height: 4rem;
+        background-image: linear-gradient(180deg, #003D79 0%, #24803A 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
     &_mains {
@@ -110,7 +119,7 @@
           line-height: 3rem;
           letter-spacing: 0%;
           margin-bottom: 1rem;
-          color: #1F1F1F;
+          color: #206857;
           margin-top: 0;
         }
         &_tip {
@@ -133,6 +142,15 @@
         position: absolute;
         right: 0rem;
         bottom: 8rem;
+        padding: 0 2rem;
+        border-radius: 7.5rem;
+        color: #ffffff;
+        font-size: 2rem;
+        height: 4rem;
+        background-image: linear-gradient(180deg, #003D79 0%, #24803A 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
     &_line {
@@ -146,6 +164,17 @@
   width: 100%;
   display: block;
   text-decoration: none;
+  position: relative;
+}
+.full::after {
+  content: '';
+  width: 144rem;
+  height: 1px;
+  background: #136857;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 .bg1 {
   background: #ECEDF2;
@@ -232,6 +261,15 @@
           right: 8rem;
           bottom: 8rem;
           text-align: center;
+          padding: 0 2rem;
+          border-radius: 7.5rem;
+          color: #ffffff;
+          font-size: 2rem;
+          height: 4rem;
+          background-image: linear-gradient(180deg, #003D79 0%, #24803A 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
       &_mains {
@@ -256,6 +294,15 @@
           right: 8rem;
           bottom: 8rem;
           text-align: center;
+          padding: 0 2rem;
+          border-radius: 7.5rem;
+          color: #ffffff;
+          font-size: 2rem;
+          height: 4rem;
+          background-image: linear-gradient(180deg, #003D79 0%, #24803A 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
     }

@@ -6,13 +6,13 @@
         class="new_view_section_img"
       />
       <div class="new_view_section_main">
-        <h4 class="new_view_section_tip">news</h4>
+        <!-- <h4 class="new_view_section_tip">news</h4> -->
         <p class="new_view_section_title">{{t('news.title')}}</p>
       </div>
       <!--  -->
     </div>
     <div class="new_view_box">
-      <NuxtLink to="http://www.ogawaworld.net.cn/brand/news/122" target="_blank" class="full bg1">
+      <NuxtLink to="http://www.ogawaworld.net.cn/brand/news/122" target="_blank" class="full">
         <div class="new_view_box_mains">
           <img
             src="/news/img1.png"
@@ -27,7 +27,7 @@
           <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="https://www.ogawa.com.cn/news_181.html" target="_blank" class="full bg2">
+      <NuxtLink to="https://www.ogawa.com.cn/news_181.html" target="_blank" class="full">
         <div class="new_view_box_main reverse">
           <div class="w40">
             <div class="new_view_box_main_desc">
@@ -42,7 +42,7 @@
           />
         </div>
       </NuxtLink>
-      <NuxtLink to="https://post.smzdm.com/p/al8x4gle/" target="_blank" class="full bg3">
+      <NuxtLink to="https://post.smzdm.com/p/al8x4gle/" target="_blank" class="full">
         <div class="new_view_box_mains">
           <img
             src="/news/img3.png"
@@ -57,7 +57,7 @@
           <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="https://mp.weixin.qq.com/s/Aj_TfSwMkJvL1G5SrqWiVA" target="_blank" class="full bg1">
+      <NuxtLink to="https://mp.weixin.qq.com/s/Aj_TfSwMkJvL1G5SrqWiVA" target="_blank" class="full">
         <div class="new_view_box_main reverse">
           <div class="w40">
             <div class="new_view_box_main_desc">
@@ -73,7 +73,7 @@
           
         </div>
       </NuxtLink>
-      <NuxtLink to="https://www.ogawa.com.cn/news_169.html" target="_blank" class="full bg2">
+      <NuxtLink to="https://www.ogawa.com.cn/news_169.html" target="_blank" class="full">
         <div class="new_view_box_mains">
           <img
             src="/news/img5.png"
@@ -86,7 +86,7 @@
           <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="http://www.ogawaworld.net.cn/brand/news/119" target="_blank" class="full bg3">
+      <NuxtLink to="http://www.ogawaworld.net.cn/brand/news/119" target="_blank" class="full">
         <div class="new_view_box_main reverse">
           <div class="w40">
             <div class="new_view_box_main_desc">
@@ -102,7 +102,7 @@
           
         </div>
       </NuxtLink>
-      <NuxtLink to="https://mp.weixin.qq.com/s/F9XbRHRbXItohyzkQSOBzg" target="_blank" class="full bg1">
+      <NuxtLink to="https://mp.weixin.qq.com/s/F9XbRHRbXItohyzkQSOBzg" target="_blank" class="full">
         <div class="new_view_box_mains">
           <img
             src="/news/img7.png"
@@ -115,7 +115,7 @@
           <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
-      <NuxtLink to="https://www.ogawa.com.cn/news_180.html" target="_blank" class="full bg2">
+      <NuxtLink to="https://www.ogawa.com.cn/news_180.html" target="_blank" class="full">
         <div class="new_view_box_main reverse">
           <div class="w40">
             <div class="new_view_box_main_desc">
@@ -130,7 +130,7 @@
           />
         </div>
       </NuxtLink>
-      <NuxtLink to="https://www.jiemian.com/article/911718.html" target="_blank" class="full bg3">
+      <NuxtLink to="https://www.jiemian.com/article/911718.html" target="_blank" class="full">
         <div class="new_view_box_mains">
           <img
             src="/news/img9.png"

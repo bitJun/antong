@@ -8,12 +8,14 @@
       <div class="about_view_section_main" v-if="isMobile">
         <h4 class="about_view_section_tip">{{t('about.title')}}</h4>
         <p class="about_view_section_title">{{t('about.desc')}}</p>
+        <p class="about_view_section_title">{{t('about.desc1')}}</p>
       </div>
       <div class="about_view_section_main" :class="[lang == 'zh-cn' ? 'w36' : 'w144']" v-else>
         <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
         <div v-if="lang == 'zh-cn'">
-          <p class="about_view_section_title">{{t('about.title')}}</p>
+          <!-- <p class="about_view_section_title">{{t('about.title')}}</p> -->
           <p class="about_view_section_desc">{{t('about.desc')}}</p>
+          <p class="about_view_section_desc">{{t('about.desc1')}}</p>
         </div>
         <div v-else>
           <p class="about_view_section_title">{{t('about.title')}}&nbsp;{{t('about.desc')}}</p>
@@ -21,8 +23,56 @@
       </div>
       <!--  -->
     </div>
+    <div
+      class="about_view_boxmain"
+    >
+      <img
+        src="/about/bg1.png"
+        class="about_view_boxmain_img"
+      />
+      <div class="about_view_boxmain_content">
+        <h4 class="about_view_boxmain_content_title">
+          {{ t('about.name1') }}<span>{{ t('about.name2') }}</span>{{ t('about.name3') }}
+        </h4>
+        <div class="about_view_boxmain_content_info">
+          <div class="about_view_boxmain_content_info_item">
+            <img
+              src="/about/icon1.png"
+              class="about_view_boxmain_content_info_item_icon"
+            />
+          </div>
+          <div class="about_view_boxmain_content_info_item">
+            <img
+              src="/about/icon2.png"
+              class="about_view_boxmain_content_info_item_icon"
+            />
+          </div>
+          <div class="about_view_boxmain_content_info_item">
+            <img
+              src="/about/icon3.png"
+              class="about_view_boxmain_content_info_item_icon"
+            />
+          </div>
+        </div>
+        <div class="about_view_boxmain_content_main" id="antong">
+          <h4 class="about_view_boxmain_content_main_title">{{t('about.subTitle')}}</h4>
+          <p class="about_view_boxmain_content_main_tip">{{t('about.line1')}}</p>
+          <p class="about_view_boxmain_content_main_tip">{{t('about.line2')}}</p>
+          <!-- <p class="about_view_boxmain_content_main_tip">{{t('about.line3')}}</p> -->
+        </div>
+      </div>
+    </div>
+    <div class="about_view_boxs">
+      <img
+        src="/about/bg2.png"
+        class="about_view_boxs_img"
+      />
+      <div class="about_view_boxs_main">
+        <p>{{t('about.line3')}}</p>
+      </div>
+    </div>
     <div class="about_view_box">
-      <div class="about_view_box_main" id="antong">
+      <!-- <div class="about_view_box_main" id="antong">
         <div class="about_view_box_main_desc">
           <h4 class="about_view_box_main_desc_title">{{t('about.subTitle')}}</h4>
           <p class="about_view_box_main_desc_tip">{{t('about.line1')}}</p>
@@ -33,8 +83,8 @@
           src="/about/pic1.png"
           class="about_view_box_main_img"
         />
-      </div>
-      <div class="about_view_box_section" id="advantages">
+      </div> -->
+      <!-- <div class="about_view_box_section" id="advantages">
         <div class="about_view_box_mains">
           <img
             src="/about/pic2.png"
@@ -47,8 +97,16 @@
             </p>
           </div>
         </div>
+      </div> -->
+      <!-- <div class="about_view_box_line"></div> -->
+      <div class="about_view_box_introduce" id="advantages">
+        <div class="about_view_box_introduce_main">
+        <h4 class="about_view_box_introduce_main_title">{{t('about.subTitle2')}}</h4>
+        <p class="about_view_box_introduce_main_tip">
+          {{t('about.line4')}}
+        </p>
+        </div>
       </div>
-      <div class="about_view_box_line"></div>
       <div class="about_view_box_container" id="honor">
         <h4 class="about_view_box_container_title">{{t('about.honor')}}</h4>
         <div class="about_view_box_container_swiper">

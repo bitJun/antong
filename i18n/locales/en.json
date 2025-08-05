@@ -50,16 +50,20 @@
     "shafa2": "安桐——全球健康生活方案服务商"
   },
   "about": {
-    "tip": "Our Mission",
-    "title": "Integrate Health and Aesthetics into Daily Life",
-    "desc": "Dedicated to providing users with products that combine technological sense, design power, and humanized experience.",
+    "tip": "让健康与美学融入日常",
+    "title": "让健康与美学融入日常",
+    "desc": "致力于为用户提供兼具",
+    "desc1": "科技感、设计力 、人性化的产品体验",
     "subTitle": "About Antora",
     "line1": "Antora International, incorporated in Xiamen, China, is an innovative health and wellness solutions provider integrating R&D, design, production, and global trade.",
     "line2": "Antora International, incorporated in Xiamen, China, is an innovative health and wellness solutions provider integrating R&D, design, production, and global trade.",
     "line3": "Our flagship brand 'Antora' takes 'Integrating Health and Aesthetics into Daily Life' as its core mission, covering smart massage equipment, health oxygen therapy devices, creative furniture, small home appliances, and more. Our products are exported to Southeast Asia and are gradually becoming an emerging global brand in the field of health technology and lifestyle aesthetics.",
     "subTitle2": "Our Advantages",
     "line4": "With a full industrial chain layout as its core advantage, Antora has established in-depth cooperation with top international suppliers. From R&D and design, manufacturing, to global trade, the company has built a complete industrial chain loop to ensure efficient conversion from concept to implementation. Relying on global high-quality resources, Antora not only stays at the forefront of the industry in terms of product quality and technological innovation but also creates products that meet the aesthetic and health functional needs of global consumers through international creative design, guided by user needs, blending Eastern and Western aesthetics and technology.",
-    "honor": "Awards and Honors"
+    "honor": "Awards and Honors",
+    "name1": "健康",
+    "name2": "与",
+    "name3": "美学"
   },
   "service": {
     "title": "VIP Customized Service Orientation",

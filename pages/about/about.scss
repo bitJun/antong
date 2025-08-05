@@ -23,8 +23,8 @@
     }
     &_tip {
       color: #ffffff;
-      margin-bottom: 1rem;
-      font-size: 3.2rem;
+      margin-bottom: 2rem;
+      font-size: 4.1rem;
     }
     &_title {
       font-family: Roboto;
@@ -39,8 +39,114 @@
       color: #ffffff;
       font-family: Roboto;
       font-weight: 400;
-      font-size: 1.6rem;
-      // line-height: 2.2rem;
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
+  }
+  &_boxmain {
+    position: relative;
+    &_img {
+      width: 100%;
+      height: auto;
+    }
+    &_content {
+      height: 100%;
+      width: 144rem;
+      padding: 13rem 10% 0 10%;
+      box-sizing: border-box;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      z-index: 9;
+      &_title {
+        color: #0a6250;
+        font-size: 7rem;
+        font-weight: bold;
+        margin-bottom: 10rem;
+        span {
+          font-weight: 500;
+          font-size: 3.2rem;
+        }
+      }
+      &_info {
+        margin-bottom: 8rem;
+        &_item {
+          display: flex;
+          margin-bottom: 2rem;
+          justify-content: center;
+          &_icon {
+            height: 8rem;
+          }
+        }
+        &_item:first-child {
+          justify-content: flex-start;
+          .about_view_boxmain_content_info_item_icon {
+            height: 6.6rem;
+          }
+        }
+        &_item:last-child {
+          justify-content: flex-end;
+          margin-bottom: 0;
+          .about_view_boxmain_content_info_item_icon {
+            height: 8.85rem;
+          }
+        }
+      }
+      &_main {
+        &_title {
+          font-family: Roboto;
+          font-weight: 700;
+          font-size: 3.2rem;
+          line-height: 4rem;
+          letter-spacing: 0%;
+          margin-bottom: 6rem;
+          color: #0a6250;
+          position: relative;
+        }
+        &_title::after {
+          content: '';
+          width: 6rem;
+          height: 2px;
+          background: #0a6250;
+          position: absolute;
+          top: 6rem;
+          left: 0;
+        }
+        &_tip {
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 2.2rem;
+          line-height: 4.2rem;
+          color: #323232;
+        }
+      }
+    }
+  }
+  &_boxs {
+    margin-top: -1.5rem;
+    position: relative;
+    &_img {
+      width: 100%;
+      height: auto;
+    }
+    &_main {
+      width: 144rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      p {
+        position: absolute;
+        top: 15rem;
+        right: 0;
+        width: 40%;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 4.2rem;
+        color: #ffffff;
+      }
     }
   }
   &_box {
@@ -120,15 +226,15 @@
       width: 100%;
     }
     &_container {
-      background: #edeef3;
-      padding: 6rem 0;
+      padding: 0rem 0 12rem 0;
       width: 100%;
       &_title {
-        color: #333;
+        font-weight: 700;
         font-size: 3.2rem;
         line-height: 4rem;
+        color: #136857;
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 7rem;
       }
       &_swiper {
         width: 144rem;
@@ -144,6 +250,31 @@
         }
       }
     }
+    &_introduce {
+      padding: 12rem 0;
+      &_main {
+        width: 144rem;
+        margin: 0 auto;
+        padding: 0 10%;
+        box-sizing: border-box;
+        &_title {
+          font-family: Roboto;
+          font-weight: 700;
+          font-size: 3.2rem;
+          line-height: 4rem;
+          color: #136857;
+          letter-spacing: 0%;
+          margin-bottom: 3rem;
+        }
+        &_tip {
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 2.2rem;
+          line-height: 4.2rem;
+          color: #323232;
+        }
+      }
+    }
   }
 }
 .w144 {
@@ -151,7 +282,14 @@
   margin: 0 auto;
 }
 .w36 {
-  width: 56rem;
+  width: 65rem;
+  align-items: flex-start;
+  .about_view_section_desc {
+    text-align: left;
+  }
+  .about_view_section_desc:last-child {
+    margin-bottom: 12rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

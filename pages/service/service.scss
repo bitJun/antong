@@ -25,9 +25,9 @@
     &_main {
       width: 144rem;
       margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      &_img {
+        margin-top: 2rem;
+      }
     }
     &_img {
       width: 45%;
@@ -49,6 +49,87 @@
         font-size: 2rem;
         color: #333;
         font-weight: normal;
+      }
+      &_list {
+        margin: 4rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 三列等宽 */
+        gap: 2rem; 
+        &_img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &_list.three{
+        grid-template-columns: repeat(3, 1fr); /* 三列等宽 */
+      }
+    }
+  }
+  &_box1 {
+    margin: 4rem 0;
+    &_main {
+      width: 144rem;
+      margin: 0 auto;
+      &_title {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 3rem;
+        color: #136857;
+        text-align: center;
+        position: relative;
+      }
+      &_title::before {
+        content: '';
+        height: 2px;
+        background: #136857;
+        width: 58rem;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        margin-bottom: 4rem;
+      }
+      &_title::after {
+        content: '';
+        height: 2px;
+        background: #136857;
+        width: 58rem;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+      }
+      &_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 三列等宽 */
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #136857;
+        &_item {
+          display: flex;
+          justify-content: center;
+          &_info {
+            width: 33.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4rem;
+            &_img {
+              width: 25.5rem;
+              height: auto;
+              margin-bottom: 3rem;
+            }
+            &_title {
+              color: #136857;
+              font-size: 4rem;
+              margin-bottom: 2rem;
+            }
+            &_desc {
+              font-size: 1.8rem;
+              text-align: center;
+              line-height: 3rem;
+            }
+          }
+        }
       }
     }
   }

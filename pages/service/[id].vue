@@ -2,82 +2,148 @@
   <div class="product_view">
     <div class="product_view_bg">
       <img
-        :src="isMobile ? '/product/bg_mb.png' : '/product/bg.png'"
+        :src="isMobile ? '/product/bg_mb.png' : '/service/bg.png'"
         class="product_view_bg_img"
       >
       <p class="product_view_bg_desc">VIP {{t('home.subtitle')}}</p>
     </div>
     <div class="product_view_position" id="position">
-      <h3 class="product_view_box_title">{{t('service.subTitles')}}</h3>
       <div class="product_view_position_main">
+        <h3 class="product_view_box_title">{{t('service.subTitles')}}</h3>
+        <p class="product_view_position_section_desc">{{t('service.desc')}}</p>
         <img
-          src="/product/img.png"
-          class="product_view_position_img"
-        >
-        <div class="product_view_position_section">
-          <h3 class="product_view_position_section_title">{{t('service.title')}}</h3>
-          <p class="product_view_position_section_desc">{{t('service.desc')}}</p>
+          src="/service/2.png"
+          class="product_view_position_main_img"
+        />
+        <h3 class="product_view_box_title">{{t('service.subTitles1')}}</h3>
+        <p class="product_view_position_section_desc">{{t('service.desc1')}}</p>
+        <div class="product_view_position_section_list three">
+          <img
+            src="/service/3.png"
+            class="product_view_position_section_list_img"
+          />
+          <img
+            src="/service/4.png"
+            class="product_view_position_section_list_img"
+          />
+          <img
+            src="/service/5.png"
+            class="product_view_position_section_list_img"
+          />
+        </div>
+        <h3 class="product_view_box_title">{{t('service.subTitles2')}}</h3>
+        <p class="product_view_position_section_desc">{{t('service.desc2')}}</p>
+        <div class="product_view_position_section_list">
+          <img
+            src="/service/6.png"
+            class="product_view_position_section_list_img"
+          />
+          <img
+            src="/service/7.png"
+            class="product_view_position_section_list_img"
+          />
+          <img
+            src="/service/8.png"
+            class="product_view_position_section_list_img"
+          />
+          <img
+            src="/service/9.png"
+            class="product_view_position_section_list_img"
+          />
+        </div>
+        <h3 class="product_view_box_title">{{t('service.subTitles3')}}</h3>
+        <p class="product_view_position_section_desc">{{t('service.desc3')}}</p>
+        <div class="product_view_position_section_list">
+          <img
+            src="/service/10.png"
+            class="product_view_position_section_list_img"
+          />
+          <img
+            src="/service/11.png"
+            class="product_view_position_section_list_img"
+          />
+          <img
+            src="/service/12.png"
+            class="product_view_position_section_list_img"
+          />
+          <img
+            src="/service/13.png"
+            class="product_view_position_section_list_img"
+          />
         </div>
       </div>
     </div>
-    <div class="product_view_box" id="process">
-      <h3 class="product_view_box_title">{{t('service.subTitle')}}</h3>
-      <div class="product_view_box_list">
-        <div class="product_view_box_list_item">
-          <img
-            src="/product/img1.png"
-            class="product_view_box_list_item_img"
-          >
-          <h4 class="product_view_box_list_item_title">{{t('service.line1')}}</h4>
-          <p class="product_view_box_list_item_desc">{{t('service.desc1')}}</p>
-        </div>
-        <div class="product_view_box_list_item">
-          <img
-            src="/product/img2.png"
-            class="product_view_box_list_item_img"
-          >
-          <h4 class="product_view_box_list_item_title">{{t('service.line2')}}</h4>
-          <p class="product_view_box_list_item_desc">{{t('service.desc2')}}</p>
-        </div>
-        <div class="product_view_box_list_item">
-          <img
-            src="/product/img3.png"
-            class="product_view_box_list_item_img"
-          >
-          <h4 class="product_view_box_list_item_title">{{t('service.line3')}}</h4>
-          <p class="product_view_box_list_item_desc">{{t('service.desc3')}}</p>
-        </div>
-        <div class="product_view_box_list_item">
-          <img
-            src="/product/img4.png"
-            class="product_view_box_list_item_img"
-          >
-          <h4 class="product_view_box_list_item_title">{{t('service.line4')}}</h4>
-          <p class="product_view_box_list_item_desc">{{t('service.desc4')}}</p>
-        </div>
-        <div class="product_view_box_list_item">
-          <img
-            src="/product/img5.png"
-            class="product_view_box_list_item_img"
-          >
-          <h4 class="product_view_box_list_item_title">{{t('service.line5')}}</h4>
-          <p class="product_view_box_list_item_desc">{{t('service.desc5')}}</p>
-        </div>
-        <div class="product_view_box_list_item">
-          <img
-            src="/product/img6.png"
-            class="product_view_box_list_item_img"
-          >
-          <h4 class="product_view_box_list_item_title">{{t('service.line6')}}</h4>
-          <p class="product_view_box_list_item_desc">{{t('service.desc6')}}</p>
+    <div class="product_view_box1" id="process">
+      <div class="product_view_box1_main">
+        <h4 class="product_view_box1_main_title">{{t('service.tip4')}}</h4>
+        <div class="product_view_box1_main_list">
+          <div class="product_view_box1_main_list_item">
+            <div class="product_view_box1_main_list_item_info">
+              <img
+                src="/service/14.png"
+                class="product_view_box1_main_list_item_info_img"
+              >
+              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line1')}}</h4>
+              <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc1')}}</p>
+            </div>
+          </div>
+          <div class="product_view_box1_main_list_item">
+            <div class="product_view_box1_main_list_item_info">
+              <img
+                src="/service/15.png"
+                class="product_view_box1_main_list_item_info_img"
+              >
+              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line2')}}</h4>
+              <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc2')}}</p>
+            </div>
+          </div>
+          <div class="product_view_box1_main_list_item">
+            <div class="product_view_box1_main_list_item_info">
+              <img
+                src="/service/16.png"
+                class="product_view_box1_main_list_item_info_img"
+              >
+              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line3')}}</h4>
+              <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc3')}}</p>
+            </div>
+          </div>
+          <div class="product_view_box1_main_list_item">
+            <div class="product_view_box1_main_list_item_info">
+              <img
+                src="/service/17.png"
+                class="product_view_box1_main_list_item_info_img"
+              >
+              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line4')}}</h4>
+              <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc4')}}</p>
+            </div>
+          </div>
+          <div class="product_view_box1_main_list_item">
+            <div class="product_view_box1_main_list_item_info">
+              <img
+                src="/service/18.png"
+                class="product_view_box1_main_list_item_info_img"
+              >
+              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line5')}}</h4>
+              <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc5')}}</p>
+            </div>
+          </div>
+          <div class="product_view_box1_main_list_item">
+            <div class="product_view_box1_main_list_item_info">
+              <img
+                src="/service/16.png"
+                class="product_view_box1_main_list_item_info_img"
+              >
+              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line6')}}</h4>
+              <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc6')}}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="product_view_line"></div>
     <div class="massage" id="massage">
       <h3 class="product_view_box_title">{{t('service.massage')}}</h3>
       <img
-        src="/service/massage_banner.png"
+        src="/service/20.png"
         class="massage_banner"
       />
       <p class="massage_title">{{t('service.step')}}</p>

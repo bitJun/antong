@@ -56,7 +56,7 @@
             <p>Wechat</p>
           </div>
         </div>
-        <div class="about_view_main_info">
+        <!-- <div class="about_view_main_info">
           <div class="about_view_main_info_item">
             <div class="about_view_main_info_item_name">厦门安桐进出口有限公司</div>
             <div class="about_view_main_info_item_desc">+86 186 0692 2333(中国大陆)</div>
@@ -69,7 +69,7 @@
             <div class="about_view_main_info_item_name">安桐柬埔寨进出口有限公司</div>
             <div class="about_view_main_info_item_desc">+855 188 56 9999(柬埔寨)</div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <img

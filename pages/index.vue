@@ -1,10 +1,12 @@
 <template>
   <div class="home_view" ref="homeViewRef">
-    <video
-      src="/video.mp4"
-      class="home_view_video"
-      controls
-    />
+    <div class="home_view_video">
+      <video
+        src="/video.mp4"
+        class="home_view_video_src"
+        controls
+      />
+    </div>
     <swiper-container
       ref="bannerRef"
       :style="{
@@ -115,39 +117,35 @@
         src="/home/forest.png"
         class="home_view_forest_img"
       />
-      <div class="home_view_forest_main">
-        <div class="home_view_forest_main_left">
-          <div class="home_view_forest_main_left_bed">
-            <p>{{t('home.bed')}}</p>
-            <img
-              src="/home/bed.png"
-              class="bed"
-            />
+      <div class="home_view_forest_mains">
+        <div class="home_view_forest_main">
+          <div class="home_view_forest_main_left">
+            <div class="home_view_forest_main_left_bed">
+              <p>{{t('home.bed')}}</p>
+              <img
+                src="/home/bed.png"
+                class="bed"
+              />
+            </div>
+            <div class="home_view_forest_main_left_keting">
+              <p>{{t('home.keting')}}</p>
+              <img
+                src="/home/keting.png"
+                class="keting"
+              />
+            </div>
           </div>
-          <div class="home_view_forest_main_left_keting">
-            <p>{{t('home.keting')}}</p>
+          <div class="home_view_forest_main_right">
             <img
-              src="/home/keting.png"
-              class="keting"
+              src="/home/shafa.png"
+              class="shafa"
             />
+            <div class="home_view_forest_main_right_desc">
+              <p>{{t('home.shafa1')}}</p>
+            </div>
           </div>
         </div>
-        <div class="home_view_forest_main_right">
-          <img
-            src="/home/shafa.png"
-            class="shafa"
-          />
-          <div class="home_view_forest_main_right_desc">
-            <p>{{t('home.shafa1')}}</p>
-            <p>{{t('home.shafa2')}}</p>
-          </div>
-        </div>
-        <!-- <NuxtLink 
-          class="home_view_forest_main_btn"
-          to="/about/home"
-        >
-          {{t('home.btn')}}&nbsp;>
-        </NuxtLink> -->
+        <div class="home_view_forest_mains_tip">{{t('home.shafa2')}}</div>
       </div>
     </div>
     <div class="home_view_product">
@@ -388,7 +386,7 @@ const swipers = useSwiper(bannerRef, {
   effect: 'creative',
   loop: true,
   autoplay: {
-    delay: 300000,
+    delay: 3000,
   },
   slidesPerView: 1,
   navigation: true,

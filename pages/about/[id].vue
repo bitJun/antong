@@ -10,9 +10,9 @@
         <p class="about_view_section_title">{{t('about.desc')}}</p>
         <p class="about_view_section_title">{{t('about.desc1')}}</p>
       </div>
-      <div class="about_view_section_main" :class="[lang == 'zh-cn' ? 'w36' : 'w144']" v-else>
+      <div class="about_view_section_main" :class="[locale == 'zh-cn' ? 'w36' : 'w144']" v-else>
         <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
-        <div v-if="lang == 'zh-cn'">
+        <div v-if="locale == 'zh-cn'">
           <!-- <p class="about_view_section_title">{{t('about.title')}}</p> -->
           <p class="about_view_section_desc">{{t('about.desc')}}</p>
           <p class="about_view_section_desc">{{t('about.desc1')}}</p>
@@ -32,7 +32,7 @@
       />
       <div class="about_view_boxmain_content">
         <h4 class="about_view_boxmain_content_title">
-          {{ t('about.name1') }}<span>{{ t('about.name2') }}</span>{{ t('about.name3') }}
+          <!-- {{ t('about.name1') }}<span>{{ t('about.name2') }}</span>{{ t('about.name3') }} -->
         </h4>
         <div class="about_view_boxmain_content_info">
           <div class="about_view_boxmain_content_info_item">

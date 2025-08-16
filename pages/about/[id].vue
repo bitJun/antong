@@ -2,7 +2,7 @@
   <div class="about_view">
     <div class="about_view_section" id="mission">
       <img
-        src="/about/bg.png"
+        :src="isMobile ? '/about/bg_mb.png' : '/about/bg.png'"
         class="about_view_section_img"
       />
       <div class="about_view_section_main" v-if="isMobile">
@@ -23,8 +23,21 @@
       </div>
       <!--  -->
     </div>
+    <div class="about_view_boxmain" v-if="isMobile" id="antong">
+      <img
+        src="/about/infobg.png"
+        class="about_view_boxmain_img"
+      />
+      <div class="about_view_boxmain_contents">
+        <h4 class="about_view_boxmain_contents_title">{{t('about.subTitle')}}</h4>
+        <p class="about_view_boxmain_contents_tip">{{t('about.line1')}}</p>
+        <p class="about_view_boxmain_contents_tip">{{t('about.line2')}}</p>
+        <p class="about_view_boxmain_contents_tip">{{t('about.line3')}}</p>
+      </div>
+    </div>
     <div
       class="about_view_boxmain"
+      v-else
     >
       <img
         src="/about/bg1.png"
@@ -35,7 +48,7 @@
           <!-- {{ t('about.name1') }}<span>{{ t('about.name2') }}</span>{{ t('about.name3') }} -->
         </h4>
         <div class="about_view_boxmain_content_info">
-          <div class="about_view_boxmain_content_info_item">
+          <!-- <div class="about_view_boxmain_content_info_item">
             <img
               src="/about/icon1.png"
               class="about_view_boxmain_content_info_item_icon"
@@ -52,7 +65,7 @@
               src="/about/icon3.png"
               class="about_view_boxmain_content_info_item_icon"
             />
-          </div>
+          </div> -->
         </div>
         <div class="about_view_boxmain_content_main" id="antong">
           <h4 class="about_view_boxmain_content_main_title">{{t('about.subTitle')}}</h4>
@@ -64,10 +77,10 @@
     </div>
     <div class="about_view_boxs">
       <img
-        src="/about/bg2.png"
+        :src="isMobile ? '/about/bg2_mb.png' : '/about/bg2.png'"
         class="about_view_boxs_img"
       />
-      <div class="about_view_boxs_main">
+      <div class="about_view_boxs_main" v-if="!isMobile">
         <p>{{t('about.line3')}}</p>
       </div>
     </div>

@@ -555,6 +555,7 @@ img {
   .footer_box {
     width: 100%;
     flex-direction: column;
+    padding-top: 2rem;
     &_main {
       width: 100%;
       &_nav {
@@ -564,10 +565,16 @@ img {
         &_item {
           &_title {
             width: 100% !important;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            position: relative;
+            display: block;
+            a {
+              display: block;
+            }
             &_img {
+              position: absolute;
+              right: 1rem;
+              top: 50%;
+              transform: translateY(-50%);
               width: 1.5rem;
               height: auto;
             }
@@ -578,6 +585,7 @@ img {
         }
       }
       &_tip {
+        margin-top: 0rem;
         padding: 0 3rem;
         box-sizing: border-box;
       }
@@ -587,6 +595,7 @@ img {
       width: 100%;
       padding: 0 3rem;
       box-sizing: border-box;
+      margin-top: 0;
       &_list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -597,7 +606,7 @@ img {
     }
   }
   .reverse {
-    margin-top: 1rem;
+    margin-top: 0rem;
     gap: 1.5rem;
     flex-direction: column-reverse;
   }

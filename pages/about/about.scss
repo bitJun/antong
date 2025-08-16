@@ -5,7 +5,6 @@
     &_img {
       // width: 192rem;
       // height: 68.6rem;
-
       width: 100%;
       height: auto;
     }
@@ -297,14 +296,12 @@
     margin-top: 0rem;
     &_section {
       position: relative;
-      background-image: url('/about/bg.png');
       background-size: cover;
-      height: 25rem;
+      height: auto;
       position: relative;
       &_img {
         width: 100%;
         height: auto;
-        display: none;
       }
       &_main {
         transform: translateX(0);
@@ -314,24 +311,27 @@
         width: 100% !important;
         height: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        padding: 0 3rem;
+        padding: 0 0 0 7rem;
         box-sizing: border-box;
       }
       &_tip {
-        color: #323232;
+        color: #ffffff;
         font-size: 1.6rem;
         margin-bottom: 1rem;
       }
       &_title {
         font-family: Roboto;
         font-weight: 400;
-        font-size: 1.6rem;
+        font-size: 1rem;
         line-height: 2rem;
-        color: #323232;
+        color: #ffffff;
         text-align: center;
+      }
+      &_title:last-child {
+        margin-bottom: 4rem;
       }
       &_desc {
         color: #323232;
@@ -340,6 +340,74 @@
         font-size: 1.6rem;
         text-align: center;
         line-height: 2rem;
+      }
+    }
+    &_boxs {
+      margin-top: -1.5rem;
+      position: relative;
+      &_img {
+        width: 100%;
+        height: auto;
+      }
+      &_main {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        p {
+          position: absolute;
+          top: 15rem;
+          right: 0;
+          width: 40%;
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 2.2rem;
+          line-height: 4.2rem;
+          color: #ffffff;
+        }
+      }
+    }
+    &_boxmain {
+      margin-top: -0.5rem;
+      position: relative;
+      &_img {
+        width: 100%;
+        height: auto;
+      }
+      &_contents {
+        position: absolute;
+        width: 100%;
+        padding: 0 3.5rem;
+        box-sizing: border-box;
+        left: 0;
+        top: 24rem;
+        &_title {
+          font-family: Roboto;
+          font-weight: bold;
+          font-size: 1.8rem;
+          letter-spacing: 0%;
+          margin-bottom: 2.3rem;
+          color: #0a6250;
+          position: relative;
+        }
+        &_title::after {
+          content: '';
+          width: 3.5rem;
+          height: 2px;
+          background: #0a6250;
+          position: absolute;
+          top: 3rem;
+          left: 0;
+        }
+        &_tip {
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.8rem;
+          color: #323232;
+          margin-bottom: 1rem;
+        }
       }
     }
     &_box {
@@ -425,11 +493,11 @@
         width: 100%;
       }
       &_container {
-        background: #edeef3;
-        padding: 2rem 0;
+        // background: #edeef3;
+        padding: 2rem 0 12rem 0;
         width: 100%;
         &_title {
-          color: #323232;
+          color: #136857;
           font-size: 1.8rem;
           line-height: 4rem;
           text-align: center;
@@ -443,6 +511,31 @@
               width: 100%;
               height: auto;
             }
+          }
+        }
+      }
+      &_introduce {
+        padding: 6rem 0 4rem 0;
+        &_main {
+          width: 100%;
+          margin: 0 auto;
+          padding: 0 10%;
+          box-sizing: border-box;
+          &_title {
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 1.8rem;
+            // line-height: 4rem;
+            color: #136857;
+            letter-spacing: 0%;
+            margin-bottom: 1rem;
+          }
+          &_tip {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.8rem;
+            color: #323232;
           }
         }
       }

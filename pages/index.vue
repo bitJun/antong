@@ -112,7 +112,17 @@
       </swiper-slide>
     </swiper-container>
     <div class="line"></div>
-    <div class="home_view_forest">
+    <div class="home_view_forest" v-if="isMobile">
+      <img
+        src="/home/forest_mb.png"
+        class="home_view_forest_img"
+      />
+      <p class="home_view_forest_desc1">{{t('home.bed')}}</p>
+      <p class="home_view_forest_desc2">{{t('home.keting')}}</p>
+      <p class="home_view_forest_desc3">{{t('home.shafa1')}}</p>
+      <p class="home_view_forest_desc4">{{t('home.shafa2')}}</p>
+    </div>
+    <div class="home_view_forest" v-else>
       <img
         src="/home/forest.png"
         class="home_view_forest_img"

@@ -22,6 +22,7 @@
           <h4 class="product_view_section_box_title">{{t('massage.p1_title')}}</h4>
           <p class="product_view_section_box_desc">{{t('massage.p1_desc1')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p1_desc2')}}</p>
+          <p class="product_view_section_box_desc">{{t('massage.p1_desc6')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p1_desc3')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p1_desc4')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p1_desc5')}}</p>

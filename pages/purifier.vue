@@ -115,6 +115,7 @@
           <p class="product_view_section_box_desc">{{t('purifier.p5_desc4')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p5_desc5')}}</p>
           <p class="product_view_section_box_desc">{{t('purifier.p5_desc6')}}</p>
+          <p class="product_view_section_box_desc">{{t('purifier.p5_desc7')}}</p>
           <div class="flex">
             <div class="product_view_section_box_btn">{{t('purifier.more')}}&nbsp;></div>
           </div>

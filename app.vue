@@ -482,15 +482,15 @@ const onChangeType = (key) => {
         <p class="footer_box_content_email">public@antoralife.com</p>
         <div class="footer_box_content_list">
           <img
-            src="/contact/phone.png"
+            src="/footer/whatsapp.png"
             class="footer_box_content_list_img"
           />
           <img
-            src="/contact/tg.png"
+            src="/footer/tg.png"
             class="footer_box_content_list_img"
           />
           <img
-            src="/contact/wechat.png"
+            src="/footer/wechat.png"
             class="footer_box_content_list_img"
           />
         </div>

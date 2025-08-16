@@ -39,7 +39,7 @@
               src="/contact/phone.png"
               class="about_view_main_contact_img_icon"
             />
-            <p>Whats App</p>
+            <p>WhatsApp</p>
           </div>
           <div class="about_view_main_contact_img">
             <img

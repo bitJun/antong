@@ -14,20 +14,20 @@
       position: absolute;
       left: 50%;
       top: 50%;
+      font-weight: bold;
       transform: translate(-50%, -50%);
-      color: #CDFEFF;
+      color: #fff;
       font-size: 4rem;
     }
   }
   &_position {
     background: #ffffff;
-    padding: 6rem 0;
+    padding: 3rem 0 6rem 0;
     &_main {
       width: 144rem;
       margin: 0 auto;
       &_img {
         margin-top: 2rem;
-        margin-bottom: 2rem;
       }
     }
     &_img {
@@ -118,7 +118,7 @@
             align-items: center;
             margin-bottom: 10rem;
             &_img {
-              width: 25.5rem;
+              width: 20rem;
               height: auto;
               margin-bottom: 3rem;
             }
@@ -143,14 +143,14 @@
     &_title {
       font-size: 4.8rem;
       line-height: 6rem;
-      margin: 12rem auto 0 auto;
+      margin: 6rem auto 0 auto;
       color: #136857;
       text-align: center;
     }
     &_subtitle {
       font-size: 4rem;
       line-height: 5rem;
-      margin: 12rem auto 0 auto;
+      margin: 6rem auto 0 auto;
       color: #136857;
       text-align: center;
     }
@@ -163,7 +163,6 @@
     }
     &_img {
       width: 100%;
-      margin-bottom: 4rem;
       margin-top: 12rem;
     }
     &_list {
@@ -211,13 +210,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    margin-bottom: 4rem;
     &_item {
       background: #ffffff;
-      padding: 2rem;
+      padding: 2rem 2rem 0 2rem;
       &_img {
         width: 100%;
-        margin-bottom: 1rem;
         height: auto;
       }
       &_title {
@@ -310,7 +307,7 @@
 }
 .step_more {
   margin-bottom: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   border: 1px solid #136857;
   &_title {
     margin-top: 8rem;
@@ -380,7 +377,7 @@
   &_banner {
     width: 100%;
     height: auto;
-    margin: 12rem auto 0 auto;
+    margin: 6rem auto 0 auto;
   }
   &_title {
     text-align: center;
@@ -578,16 +575,30 @@
           font-size: 1.2rem;
           color: #333;
           font-weight: normal;
+          padding: 0 3rem;
+          box-sizing: border-box;
+        }
+        &_list {
+          padding: 0 3rem;
+          box-sizing: border-box;
+          display: flex;
+          margin-bottom: 2rem;
+          flex-wrap: wrap;
+          &_img {
+            width: 100%;
+          }
         }
       }
     }
     &_box {
       background: #a8c4d3;
       padding: 1.5rem 0 3rem 0;
-      &_title {
-        font-size: 1.5rem;
+      &_title,
+      &_subtitle {
+        font-size: 1.8rem;
         line-height: 2.5rem;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
+        margin: 4rem 0 2rem 0;
         text-align: center;
         padding: 0 3rem;
       }

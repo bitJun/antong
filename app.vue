@@ -354,45 +354,22 @@ const onChangeType = (key) => {
           <div class="footer_box_main_nav_item">
             <NuxtLink
               class="footer_box_main_nav_item_title links"
+              to="/"
+            >
+              {{t('nav.home')}}
+            </NuxtLink>
+            <div class="footer_box_main_nav_item_box" :class="[type == 'about' ? 'block' : '']">
+            </div>
+          </div>
+          <div class="footer_box_main_nav_item">
+            <NuxtLink
+              class="footer_box_main_nav_item_title links"
               to="/about/antong"
             >
               {{t('footer.intro')}}
             </NuxtLink>
-            <!-- <p class="footer_box_main_nav_item_title" @click="onChangeType('about')">
-              {{t('footer.AboutUs')}}
-              <img
-                v-if="isMobile"
-                :src="type == 'about' ? '/minus.png' : '/add.png'"
-                class="footer_box_main_nav_item_title_img"
-              />
-            </p> -->
             <div class="footer_box_main_nav_item_box" :class="[type == 'about' ? 'block' : '']">
-              <!-- <NuxtLink
-                class="footer_box_main_nav_item_link"
-                to="/about/antong"
-              >
-                {{t('footer.shiming')}}
-              </NuxtLink> -->
-              <!-- <NuxtLink
-                class="footer_box_main_nav_item_link"
-                to="/about/antong"
-              >
-                {{t('footer.intro')}}
-              </NuxtLink> -->
-              <!-- <NuxtLink
-                class="footer_box_main_nav_item_link"
-                to="/about/advantages"
-              >
-                {{t('footer.advantages')}}
-              </NuxtLink>
-              <NuxtLink
-                class="footer_box_main_nav_item_link"
-                to="/about/honor"
-              >
-                {{t('footer.honor')}}
-              </NuxtLink> -->
             </div>
-            <!-- <a class="footer_box_main_nav_item_link">{{t('footer.concat')}}</a> -->
           </div>
           <div class="footer_box_main_nav_item">
             <p class="footer_box_main_nav_item_title">
@@ -478,8 +455,9 @@ const onChangeType = (key) => {
             src="/email1.png"
             class="footer_box_content_info_icon"
           />
+          <p class="footer_box_content_email">public@antoralife.com</p>
         </div>
-        <p class="footer_box_content_email">public@antoralife.com</p>
+        
         <div class="footer_box_content_list">
           <img
             src="/footer/whatsapp.png"

@@ -284,7 +284,8 @@ img {
     &_nav {
       display: flex;
       &_item {
-        flex: 1;
+        margin-right: 5rem;
+        width: max-content;
         &_title {
           color: #ffffff;
           font-size: 1.6rem;
@@ -306,12 +307,15 @@ img {
           color: #ffffff;
           margin-bottom: 1rem;
           display: block;
+          width: max-content;
         }
+      }
+      &_item:last-child {
+        margin-right: 0;
       }
     }
     &_tip {
       font-size: 1.2rem;
-      margin-top: 2rem;
       padding-right: 10%;
       box-sizing: border-box;
       color: #fff;
@@ -319,11 +323,10 @@ img {
   }
   &_content {
     width: 30rem;
-    margin-top: 2rem;
     &_info {
       display: flex;
       align-items: center;
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
       font-size: 1.6rem;
       color: #ffffff;
       &_icon {
@@ -334,11 +337,12 @@ img {
     &_email {
       font-size: 1.6rem;
       color: #ffffff;
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
     }
     &_list {
       display: flex;
       gap: 2rem;
+      margin-bottom: 2rem;
       &_img {
         width: 8rem;
       }
@@ -620,7 +624,7 @@ a {
 }
 .top {
   position: fixed;
-  right: 10%;
+  right: 2%;
   bottom: 20rem;
   z-index: 999;
   cursor: pointer;

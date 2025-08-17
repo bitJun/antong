@@ -6,8 +6,16 @@
         class="about_view_section_img"
       />
       <div class="about_view_section_box">
-        <div class="about_view_section_title" v-if='isMobile'>
-          {{t('contact.title')}}
+        <div class="about_view_section_box_main" v-if='isMobile'>
+          <div class="about_view_section_title">
+            {{t('contact.title')}}
+          </div>
+          <p class="about_view_section_vip">
+            <img
+              src="/contact/icon.png"
+              class="about_view_section_vip_img"
+            />{{t('contact.notice')}}&nbsp;public@antoralife.com
+          </p>
         </div>
         <div class="about_view_section_title" v-else>
           {{t('contact.title')}}
@@ -18,21 +26,6 @@
             />{{t('contact.notice')}}&nbsp;public@antoralife.com
           </p>
         </div>
-        <!-- <div v-if='isMobile'>
-          <p class="about_view_main_vip">
-            <img
-              src="/contact/email.png"
-              class="about_view_main_vip_img"
-            />&nbsp;public@antoralife.com
-          </p>
-        </div>
-        <p class="about_view_main_vip" v-else>
-          <img
-            src="/contact/email.png"
-            class="about_view_main_vip_img"
-          />&nbsp;
-          public@antoralife.com
-        </p> -->
         <div class="about_view_main_contact">
           <div class="about_view_main_contact_img">
             <img
@@ -55,6 +48,11 @@
             />
             <p>Wechat</p>
           </div>
+        </div>
+        <div class="about_view_main_info" v-if='isMobile'>
+          <div class="about_view_main_info_item">厦门安桐进出口有限公司</div>
+          <div class="about_view_main_info_item">安桐有限公司</div>
+          <div class="about_view_main_info_item">安桐柬埔寨进出口有限公司</div>
         </div>
         <!-- <div class="about_view_main_info">
           <div class="about_view_main_info_item">

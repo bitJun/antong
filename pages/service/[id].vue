@@ -275,7 +275,9 @@
         </div>
       </div>
       <div class="step_tip">
-        {{t('service.tip7')}}
+        <NuxtLink to="/concat" style="color: #323232;">
+          {{t('service.tip7')}}
+        </NuxtLink>
       </div>
     </div>
   </div>

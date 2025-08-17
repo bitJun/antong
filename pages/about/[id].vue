@@ -48,7 +48,7 @@
           <!-- {{ t('about.name1') }}<span>{{ t('about.name2') }}</span>{{ t('about.name3') }} -->
         </h4>
         <div class="about_view_boxmain_content_info">
-          <!-- <div class="about_view_boxmain_content_info_item">
+          <div class="about_view_boxmain_content_info_item">
             <img
               src="/about/icon1.png"
               class="about_view_boxmain_content_info_item_icon"
@@ -65,7 +65,7 @@
               src="/about/icon3.png"
               class="about_view_boxmain_content_info_item_icon"
             />
-          </div> -->
+          </div>
         </div>
         <div class="about_view_boxmain_content_main" id="antong">
           <h4 class="about_view_boxmain_content_main_title">{{t('about.subTitle')}}</h4>

@@ -2,8 +2,14 @@
   <div class="about_view">
     <div class="about_view_section">
       <img
+        src="/contact/bg_mb.png"
+        class="about_view_section_img"
+        v-if='isMobile'
+      />
+      <img
         src="/contact/bg.png"
         class="about_view_section_img"
+        v-else
       />
       <div class="about_view_section_box">
         <div class="about_view_section_box_main" v-if='isMobile'>
@@ -71,8 +77,14 @@
       </div>
 
       <img
+        src="/contact/map_mb.png"
+        class="about_view_section_img"
+        v-if='isMobile'
+      />
+      <img
         src="/contact/map.png"
         class="about_view_section_img"
+        v-else
       />
     </div>
   </div>

@@ -173,7 +173,7 @@
         // display: flex;
         // align-items: center;
         // justify-content: center;
-        padding: 4rem 2rem;
+        padding: 4rem 3rem;
         box-sizing: border-box;
         width: 100%;
         &_main {
@@ -220,13 +220,14 @@
         box-sizing: border-box;
         gap: 1rem;
         padding-bottom: 2rem;
+        justify-content: space-between;
         &_img {
-          width: 8rem;
+          width: 7rem;
           height: auto;
           &_icon {
-            width: 8rem;
-            height: 8rem;
-            margin-bottom: 2rem;
+            width: 7rem;
+            height: 7rem;
+            margin-bottom: 0rem;
           }
           p {
             text-align: center;

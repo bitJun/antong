@@ -180,7 +180,7 @@
   .product_view {
     &_box1,
     &_box2 {
-      padding: 2rem 3rem;
+      padding: 10rem 3rem;
       box-sizing: border-box;
       &_main {
         width: 100%;
@@ -234,6 +234,16 @@
         }
       }
     }
+    &_section::after {
+      content: '';
+      width: calc(100% - 6rem) !important;
+      height: 1px;
+      background: #136857;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
     &_main {
       margin-bottom: 1.5rem;
       display: block;
@@ -275,6 +285,16 @@
           height: auto;
         }
       }
+    }
+    &_main::after {
+      content: '';
+      width: calc(100% - 6rem);
+      height: 1px;
+      background: #136857;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
     }
   } 
   .box {

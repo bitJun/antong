@@ -2,11 +2,19 @@
   <div class="new_view">
     <div class="new_view_section">
       <img
+        src="/news/bg_mb.png"
+        class="new_view_section_img"
+        v-if="isMobile"
+      />
+      <img
         src="/news/bg.png"
         class="new_view_section_img"
+        v-else
       />
-      <div class="new_view_section_main">
-        <!-- <h4 class="new_view_section_tip">news</h4> -->
+      <div class="new_view_section_mainbox" v-if="isMobile">
+        <p class="new_view_section_title">{{t('news.title')}}</p>
+      </div>
+      <div class="new_view_section_main" v-else>
         <p class="new_view_section_title">{{t('news.title')}}</p>
       </div>
       <!--  -->
@@ -24,7 +32,10 @@
               {{t('news.d1')}}
             </p>
           </div>
-          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          <div class="flexEnd" v-if="isMobile">
+            <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+          <div class="new_view_box_mains_btn" v-else>{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.ogawa.com.cn/news_181.html" target="_blank" class="full">
@@ -34,7 +45,10 @@
               <h4 class="new_view_box_main_desc_title">{{t('news.t2')}}</h4>
               <p class="new_view_box_main_desc_tip">{{t('news.d2')}}</p>
             </div>
-            <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
+            <div class="flexEnd" v-if="isMobile">
+              <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
+            </div>
+            <div class="new_view_box_main_btn" v-else>{{t('home.btn')}}&nbsp;></div>
           </div>
           <img
             src="/news/img2.png"
@@ -54,7 +68,10 @@
               {{t('news.d3')}}
             </p>
           </div>
-          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          <div class="flexEnd" v-if="isMobile">
+            <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+          <div class="new_view_box_mains_btn" v-else>{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://mp.weixin.qq.com/s/Aj_TfSwMkJvL1G5SrqWiVA" target="_blank" class="full">
@@ -64,7 +81,10 @@
               <h4 class="new_view_box_main_desc_title">{{t('news.t4')}}</h4>
               <p class="new_view_box_main_desc_tip">{{t('news.d4')}}</p>
             </div>
-            <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
+            <div class="flexEnd" v-if="isMobile">
+              <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
+            </div>
+            <div class="new_view_box_main_btn" v-else>{{t('home.btn')}}&nbsp;></div>
           </div>
           <img
             src="/news/img4.png"
@@ -83,7 +103,10 @@
             <h4 class="new_view_box_mains_desc_title">{{t('news.t5')}}</h4>
             <p class="new_view_box_mains_desc_tip">{{t('news.d5')}}</p>
           </div>
-          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          <div class="flexEnd" v-if="isMobile">
+            <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+          <div class="new_view_box_mains_btn" v-else>{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="http://www.ogawaworld.net.cn/brand/news/119" target="_blank" class="full">
@@ -93,7 +116,10 @@
               <h4 class="new_view_box_main_desc_title">{{t('news.t6')}}</h4>
               <p class="new_view_box_main_desc_tip">{{t('news.d6')}}</p>
             </div>
-            <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
+            <div class="flexEnd" v-if="isMobile">
+              <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
+            </div>
+            <div class="new_view_box_main_btn" v-else>{{t('home.btn')}}&nbsp;></div>
           </div>
           <img
             src="/news/img6.png"
@@ -112,7 +138,10 @@
             <h4 class="new_view_box_mains_desc_title">{{t('news.t7')}}</h4>
             <p class="new_view_box_mains_desc_tip">{{t('news.d7')}}</p>
           </div>
-          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          <div class="flexEnd" v-if="isMobile">
+            <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+          <div class="new_view_box_mains_btn" v-else>{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
       <NuxtLink to="https://www.ogawa.com.cn/news_180.html" target="_blank" class="full">
@@ -122,7 +151,10 @@
               <h4 class="new_view_box_main_desc_title">{{t('news.t8')}}</h4>
               <p class="new_view_box_main_desc_tip">{{t('news.d8')}}</p>
             </div>
-            <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
+            <div class="flexEnd" v-if="isMobile">
+              <div class="new_view_box_main_btn">{{t('home.btn')}}&nbsp;></div>
+            </div>
+            <div class="new_view_box_main_btn" v-else>{{t('home.btn')}}&nbsp;></div>
           </div>
           <img
             src="/news/img8.png"
@@ -140,7 +172,10 @@
             <h4 class="new_view_box_mains_desc_title">{{t('news.t9')}}</h4>
             <p class="new_view_box_mains_desc_tip">{{t('news.d9')}}</p>
           </div>
-          <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          <div class="flexEnd" v-if="isMobile">
+            <div class="new_view_box_mains_btn">{{t('home.btn')}}&nbsp;></div>
+          </div>
+          <div class="new_view_box_mains_btn" v-else>{{t('home.btn')}}&nbsp;></div>
         </div>
       </NuxtLink>
     </div>
@@ -149,7 +184,7 @@
 <script setup>
 import { useI18n } from '#imports';
 const { t } = useI18n();
-import { reactive, ref } from 'vue';
+import { reactive, ref, onMounted, nextTick } from 'vue';
 
 const containerRef = ref(null);
 const swiper = useSwiper(containerRef, {
@@ -171,6 +206,20 @@ const swiper = useSwiper(containerRef, {
     },
   },
 })
+
+const isMobile = ref(true);
+
+onMounted(()=>{
+  nextTick(()=>{
+    isMobile.value = isMobileDevice();
+    window.addEventListener("resize", function () {
+      isMobile.value = isMobileDevice();
+    });
+  });
+});
+const isMobileDevice = () => {
+  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+}
 
 </script>
 <style lang="scss" scoped>

@@ -567,6 +567,7 @@ img {
         display: flex;
         padding: 0 3rem;
         &_item {
+          width: 100%;
           &_title {
             width: 100% !important;
             position: relative;

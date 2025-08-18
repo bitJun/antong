@@ -2,7 +2,7 @@
   <div class="product_view">
     <div class="product_view_bg">
       <img
-        :src="isMobile ? '/product/bg_mb.png' : '/service/bg.png'"
+        :src="isMobile ? '/service/bg_mb.png' : '/service/bg.png'"
         class="product_view_bg_img"
       >
       <p class="product_view_bg_desc">VIP {{t('home.subtitle')}}</p>
@@ -12,7 +12,7 @@
         <h3 class="product_view_box_title">{{t('service.subTitles')}}</h3>
         <p class="product_view_position_section_desc" style="text-align: left;">{{t('service.desc')}}</p>
         <img
-          src="/service/2.png"
+          :src="isMobile ? '/service/2_mb.png' : '/service/2.png'"
           class="product_view_position_main_img"
         />
         <h3 class="product_view_box_subtitle">{{t('service.subTitles1')}}</h3>
@@ -33,7 +33,7 @@
         </div>
         <h3 class="product_view_box_subtitle">{{t('service.subTitles2')}}</h3>
         <p class="product_view_position_section_desc">{{t('service.desc2')}}</p>
-        <div class="product_view_position_section_list">
+        <div :class="['product_view_position_section_list', isMobile ? 'twoList' : '']">
           <img
             src="/service/6.png"
             class="product_view_position_section_list_img"
@@ -53,7 +53,7 @@
         </div>
         <h3 class="product_view_box_subtitle">{{t('service.subTitles3')}}</h3>
         <p class="product_view_position_section_desc">{{t('service.desc3')}}</p>
-        <div class="product_view_position_section_list">
+        <div :class="['product_view_position_section_list', isMobile ? 'twoList' : '']">
           <img
             src="/service/10.png"
             class="product_view_position_section_list_img"
@@ -130,7 +130,7 @@
           <div class="product_view_box1_main_list_item">
             <div class="product_view_box1_main_list_item_info">
               <img
-                src="/service/16.png"
+                src="/service/19.png"
                 class="product_view_box1_main_list_item_info_img"
               >
               <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line6')}}</h4>
@@ -143,19 +143,26 @@
     <div class="massage" id="massage">
       <h3 class="product_view_box_title">{{t('service.massage')}}</h3>
       <img
-        src="/service/20.png"
+        :src="isMobile ? '/service/20_mb.png' : '/service/20.png'"
         class="massage_banner"
       />
     </div>
     <div class="other" id="other">
       <h3 class="product_view_box_subtitle">{{t('service.t1')}}</h3>
       <p class="product_view_box_desc">{{t('service.d1')}}</p>
+      <div class="mobileImg" v-if="isMobile">
+        <img
+          src="/service/21.png"
+          class="product_view_box_img"
+        />
+      </div>
       <img
+        v-else
         src="/service/21.png"
         class="product_view_box_img"
         style="margin-top: 1rem;"
       />
-      <h3 class="product_view_box_subtitle">{{t('service.t2')}}</h3>
+      <h3 :class="['product_view_box_subtitle', isMobile ? 'mobile' : '']">{{t('service.t2')}}</h3>
       <p class="product_view_box_desc">{{t('service.d2')}}</p>
       <div class="other_list">
         <div class="other_list_item">
@@ -199,10 +206,10 @@
       <div class="step">
         <div class="step_item">
           <h4 class="step_item_title">{{t('service.step1')}}</h4>
-          <h5 class="step_item_subtitle"></h5>
+          <h5 class="step_item_subtitle" v-if="!isMobile"></h5>
           <p class="step_item_desc">{{ t('service.step1desc') }}</p>
           <img
-            src="/service/27.png"
+            :src="isMobile ? '/service/27_mb.png' : '/service/27.png'"
             class="step_item_img"
           />
         </div>
@@ -212,7 +219,7 @@
           <p class="step_item_desc">{{ t('service.step2desc2') }}</p>
           <p class="step_item_desc">{{ t('service.step2desc3') }}</p>
           <img
-            src="/service/28.png"
+            :src="isMobile ? '/service/28_mb.png' : '/service/28.png'"
             class="step_item_img"
           />
         </div>
@@ -222,22 +229,37 @@
           <p class="step_item_desc">{{ t('service.step3desc2') }}</p>
           <p class="step_item_desc">{{ t('service.step3desc3') }}</p>
           <img
-            src="/service/29.png"
+            :src="isMobile ? '/service/29_mb.png' : '/service/29.png'"
             class="step_item_img"
           />
         </div>
         <div class="step_item">
           <h4 class="step_item_title">{{t('service.step4')}}</h4>
-          <h5 class="step_item_subtitle"></h5>
+          <h5 class="step_item_subtitle" v-if="!isMobile"></h5>
           <p class="step_item_desc">{{ t('service.step4desc1') }}</p>
           <p class="step_item_desc">{{ t('service.step4desc2') }}</p>
           <img
-            src="/service/30.png"
+            :src="isMobile ? '/service/30_mb.png' : '/service/30.png'"
             class="step_item_img"
           />
         </div>
       </div>
-      <div class="step_more">
+      <div class="step_more" v-if="isMobile">
+        <h4 class="step_more_title">{{t('service.step5')}}</h4>
+        <div class="step_more_content">
+          <img
+            src="/service/32_mb.png"
+            class="step_more_content_img"
+          />
+          <p style="margin-bottom: 2rem;">{{t('service.tip5')}}</p>
+          <img
+            src="/service/31_mb.png"
+            class="step_more_content_img"
+          />
+          <p>{{t('service.tip6')}}</p>
+        </div>
+      </div>
+      <div class="step_more" v-else>
         <h4 class="step_more_title">{{t('service.step5')}}</h4>
         <div class="step_more_list">
           <div class="step_more_list_box">

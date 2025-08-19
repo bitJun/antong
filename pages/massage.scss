@@ -190,9 +190,12 @@
       color: #323232;
       font-weight: bold;
     }
+    &_title::after {
+      display: none;
+    }
     &_box1,
     &_box2 {
-      padding: 2rem 3rem;
+      padding: 10rem 3rem;
       box-sizing: border-box;
       &_main {
         width: 100%;
@@ -201,6 +204,7 @@
         &_title {
           width: 100%;
           font-size: 1.8rem;
+          font-weight: 800;
         }
         &_desc {
           width: 100%;
@@ -245,6 +249,16 @@
           margin-top: 1rem;
         }
       }
+    }
+    &_section::after {
+      content: '';
+      width: calc(100% - 6rem) !important;
+      height: 1px;
+      background: #136857;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
     }
     &_main {
       margin-bottom: 1.5rem;

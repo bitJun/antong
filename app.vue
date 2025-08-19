@@ -322,7 +322,8 @@ const onChangeType = (key) => {
                   v-if="locale == 'zh-cn'"
                 />
               </div>
-              <div
+              <!-- 高棉语 -->
+              <!-- <div
                 class="header_action_lang_menu_item langChange"
                 :class="[locale == 'khmer' ? 'active' : '']"
                 @click.stop="onChangeLocal('khmer')"
@@ -332,8 +333,7 @@ const onChangeType = (key) => {
                   src="/check.png"
                   v-if="locale == 'khmer'"
                 />
-                <!-- 高棉语 -->
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -584,7 +584,8 @@ const onChangeType = (key) => {
             v-if="locale == 'zh-cn'"
           />
         </div>
-        <div
+        <!-- 高棉语 -->
+        <!-- <div
           class="menuList_langList_item"
           :class="[locale == 'khmer' ? 'active' : '']"
           @click="setLocale('khmer')"
@@ -594,8 +595,7 @@ const onChangeType = (key) => {
             src="/check.png"
             v-if="locale == 'khmer'"
           />
-          <!-- 高棉语 -->
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

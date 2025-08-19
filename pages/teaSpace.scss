@@ -208,9 +208,11 @@
       font-weight: bold;
       color: #206857;
     }
-    &_box1 {
-      padding: 2rem 1.6rem;
+    &_box1,
+    &_box2 {
+      padding: 10rem 3rem;
       box-sizing: border-box;
+      margin-bottom: 3rem;
       &_main {
         width: 100%;
         display: flex;
@@ -218,6 +220,7 @@
         &_title {
           width: 100%;
           font-size: 1.8rem;
+          font-weight: 800;
         }
         &_desc {
           width: 100%;
@@ -226,18 +229,23 @@
       }
     }
     &_main {
-      background: #E6D8C6;
+      background: #ffffff;
       padding-bottom: 3rem;
       width: 100%;
       &_title {
-        color: #206857;
+        color: #206857 !important;
         padding: 2rem 3rem;
         box-sizing: border-box;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-weight: 900;
         font-size: 1.8rem;
+      }
+      &_title::after {
+        width: 100%;
+        display: none;
       }
       &_box {
         width: 100%;
@@ -248,18 +256,20 @@
           margin-bottom: 0rem;
         }
         &_line {
-          line-height: 1.8rem;
-          font-size: 1.6rem;
+          line-height: 2rem;
+          font-size: 1.2rem;
           color: #323232;
           text-align: center;
         }
         &_flex {
           width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: space-between;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
           gap: 0.5rem;
-          margin: 0 0 1rem 0;
+          margin: 0 0 3rem 0 !important;
           &_item {
             flex: 1;
           }
@@ -278,6 +288,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        margin-bottom: 3rem;
         width: 100%;
         &_item {
           padding: 1rem 0;
@@ -300,6 +311,9 @@
             box-sizing: border-box;
           }
         }
+        &_item.last {
+          border-bottom: 1px solid #206857;
+        }
       }
       &_containers {
         box-sizing: border-box;
@@ -307,6 +321,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 3rem;
         gap: 1rem;
         &_item {
           padding: 1rem 0;
@@ -329,11 +344,14 @@
             box-sizing: border-box;
           }
         }
+        &_item.last {
+          border-bottom: 1px solid #206857;
+        }
       }
     }
   } 
   .m20 {
-    margin: 1rem 0;
+    margin: 3rem 0;
     padding: 0 3rem;
     box-sizing: border-box;
     width: 100%;

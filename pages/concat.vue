@@ -91,17 +91,22 @@
 </template>
 <script setup>
 import { useI18n } from '#imports';
+import { ref, onMounted, nextTick } from 'vue';
 const { t } = useI18n();
 const isMobile = ref(false);
 
-if (process.client) {
-  const isMobileDevice = () => {
-    return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
-  }
-  isMobile.value = isMobileDevice();
-  window.addEventListener("resize", function () {
+onMounted(() => {
+  nextTick(()=>{
     isMobile.value = isMobileDevice();
-  });
+    window.addEventListener("resize", function () {
+      isMobile.value = isMobileDevice();
+    });
+    console.log('isMobile.value', isMobile.value)
+  })
+});
+
+const isMobileDevice = () => {
+  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
 </script>
 <style lang="scss" scoped>

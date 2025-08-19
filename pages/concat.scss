@@ -190,17 +190,18 @@
         border-bottom: none;
         padding-bottom: 0;
         display: flex;
-        flex-direction: column;
-        &_vip {
-          display: flex;
-          align-items: center;
-          color: #136857;
-          font-size: 1.3rem;
-          &_img {
-            width: 3rem;
-            height: auto;
-            margin-right: 1rem;
-          }
+        justify-content: flex-start;
+        align-items: center;
+      }
+      &_vip {
+        display: flex;
+        align-items: center;
+        color: #136857;
+        font-size: 1.6rem;
+        &_img {
+          width: 2rem;
+          height: auto;
+          margin-right: 1rem;
         }
       }
     }
@@ -218,10 +219,10 @@
       // }
       &_contact {
         display: flex;
-        margin: 2.5rem 0 4rem 0;
+        margin: 4rem 0;
         box-sizing: border-box;
         gap: 1rem;
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
         justify-content: space-between;
         &_img {
           width: 7rem;
@@ -254,7 +255,7 @@
           left: 0;
           top: 2.5rem;
           width: 7rem;
-          height: 2px;
+          height: 1px;
           background: #136857;
         }
       }

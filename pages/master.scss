@@ -214,9 +214,12 @@
       box-sizing: border-box;
       color: #206857;
     }
+    &_subtitle::after {
+      display: none;
+    }
     &_box1,
     &_box2 {
-      padding: 2rem 3rem;
+      padding: 10rem 3rem;
       box-sizing: border-box;
       &_main {
         width: 100%;
@@ -225,6 +228,7 @@
         &_title {
           width: 100%;
           font-size: 1.8rem;
+          font-weight: 800;
         }
         &_desc {
           width: 100%;
@@ -250,7 +254,8 @@
         &_title {
           font-size: 1.8rem;
           margin-bottom: 1.5rem;
-          color: #323232;
+          color: #206857;
+          font-weight: 900;
         }
         &_desc {
           font-size: 1.2rem;
@@ -268,6 +273,16 @@
           border-radius: 125px;
         }
       }
+    }
+    &_section::after {
+      content: '';
+      width: calc(100% - 6rem) !important;
+      height: 1px;
+      background: #136857;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
     }
     &_main {
       margin-bottom: 1.5rem;

@@ -112,7 +112,7 @@
       </swiper-slide>
     </swiper-container>
     <div class="line"></div>
-    <div class="home_view_forest" v-if="isMobile">
+    <NuxtLink to="/about/home" class="home_view_forest" v-if="isMobile" style="display: block;">
       <img
         src="/home/forest_mb.png"
         class="home_view_forest_img"
@@ -121,8 +121,8 @@
       <p class="home_view_forest_desc2">{{t('home.keting')}}</p>
       <p class="home_view_forest_desc3">{{t('home.shafa1')}}</p>
       <p class="home_view_forest_desc4">{{t('home.shafa2')}}</p>
-    </div>
-    <div class="home_view_forest" v-else>
+    </NuxtLink>
+    <NuxtLink to="/about/home" class="home_view_forest" v-else style="display: block;">
       <img
         src="/home/forest.png"
         class="home_view_forest_img"
@@ -157,7 +157,7 @@
         </div>
         <div class="home_view_forest_mains_tip">{{t('home.shafa2')}}</div>
       </div>
-    </div>
+    </NuxtLink>
     <div class="home_view_product">
       <NuxtLink class="home_view_product_item" to="product/home">
         <div class="home_view_product_item_main">

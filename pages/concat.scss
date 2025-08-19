@@ -189,16 +189,18 @@
         margin-bottom: 2rem;
         border-bottom: none;
         padding-bottom: 0;
-      }
-      &_vip {
         display: flex;
-        align-items: center;
-        color: #136857;
-        font-size: 1.3rem;
-        &_img {
-          width: 3rem;
-          height: auto;
-          margin-right: 1rem;
+        flex-direction: column;
+        &_vip {
+          display: flex;
+          align-items: center;
+          color: #136857;
+          font-size: 1.3rem;
+          &_img {
+            width: 3rem;
+            height: auto;
+            margin-right: 1rem;
+          }
         }
       }
     }

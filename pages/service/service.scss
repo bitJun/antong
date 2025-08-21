@@ -15,6 +15,7 @@
       left: 50%;
       top: 50%;
       font-weight: bold;
+        font-family: PingFang SC, PingFang SC;
       transform: translate(-50%, -50%);
       color: #fff;
       font-size: 4rem;
@@ -385,6 +386,7 @@
     font-size: 2.8rem;
     line-height: 2.8rem;
     font-weight: bold;
+        font-family: PingFang SC, PingFang SC;
     margin-bottom: 1rem
   }
   &_box {
@@ -445,6 +447,7 @@
       text-align: center;
       font-size: 3rem;
       color: #323232;
+      font-family: PingFang SC, PingFang SC;
       font-weight: 700;
       // margin-bottom: 1rem;
     }
@@ -541,6 +544,7 @@
         font-size: 2rem;
         text-align: center;
         font-weight: 700;
+      font-family: PingFang SC, PingFang SC;
         -webkit-text-stroke: 0.8px;
       }
     }
@@ -568,6 +572,7 @@
           color: #333333;
           font-size: 1.8rem;
           line-height: 2.4rem;
+      font-family: PingFang SC, PingFang SC;
           font-weight: 700;
           -webkit-text-stroke: 0.8px; 
           margin-bottom: 2rem;
@@ -608,6 +613,7 @@
       }
       &_title {
         font-weight: 700;
+      font-family: PingFang SC, PingFang SC;
         -webkit-text-stroke: 0.8px;
       }
       &_subtitle.mobile {
@@ -748,6 +754,7 @@
       font-size: 1.5rem;
       line-height: 2.8rem;
       font-weight: bold;
+        font-family: PingFang SC, PingFang SC;
       margin-bottom: 1rem
     }
     &_box {
@@ -812,6 +819,7 @@
         font-size: 1.8em;
         color: #323232;
         font-weight: 700;
+      font-family: PingFang SC, PingFang SC;
         // margin-bottom: 1rem;
       }
       &_tip {
@@ -1032,6 +1040,7 @@
     height: 3rem;
     font-size: 1.2rem;
     font-weight: 700;
+      font-family: PingFang SC, PingFang SC;
     -webkit-text-stroke: 0.8px;
     color: #323232;
   }

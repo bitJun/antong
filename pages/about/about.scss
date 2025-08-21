@@ -62,6 +62,7 @@
         color: #0a6250;
         font-size: 7rem;
         font-weight: bold;
+        font-family: PingFang SC, PingFang SC;
         margin-bottom: 16rem;
         span {
           font-weight: 500;
@@ -96,6 +97,7 @@
         &_title {
           font-family: PingFang SC, PingFang SC;
           font-weight: 700;
+          font-family: PingFang SC, PingFang SC;
           font-size: 3.2rem;
           line-height: 4rem;
           letter-spacing: 0%;
@@ -165,6 +167,7 @@
         &_title {
           font-family: PingFang SC, PingFang SC;
           font-weight: 700;
+      font-family: PingFang SC, PingFang SC;
           font-size: 3.2rem;
           line-height: 4rem;
           letter-spacing: 0%;
@@ -200,6 +203,7 @@
         &_title {
           font-family: PingFang SC, PingFang SC;
           font-weight: 700;
+      font-family: PingFang SC, PingFang SC;
           font-size: 2.8rem;
           line-height: 4rem;
           letter-spacing: 0%;
@@ -229,6 +233,7 @@
       width: 100%;
       &_title {
         font-weight: 700;
+      font-family: PingFang SC, PingFang SC;
         font-size: 3.2rem;
         line-height: 4rem;
         color: #136857;
@@ -500,11 +505,13 @@
         padding: 2rem 0 12rem 0;
         width: 100%;
         &_title {
-          color: #136857;
+          font-family: PingFang SC, PingFang SC;
+          font-weight: 700;
+          -webkit-text-stroke: 0.8px; 
           font-size: 1.8rem;
-          line-height: 4rem;
-          text-align: center;
-          margin-bottom: 1.5rem;
+          color: #136857;
+          letter-spacing: 0%;
+          margin-bottom: 1rem;
         }
         &_swiper {
           width: 100%;

@@ -185,6 +185,7 @@
       &_title {
         font-size: 2rem;
         font-weight: bold;
+        -webkit-text-stroke: 0.8px;
         color: #136857;
         margin-bottom: 2rem;
         border-bottom: none;
@@ -247,6 +248,7 @@
           margin-bottom: 4rem;
           font-size: 1.8rem;
           font-weight: bold;
+          -webkit-text-stroke: 0.8px;
           position: relative;
         }
         &_item::after {

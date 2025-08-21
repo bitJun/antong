@@ -189,7 +189,8 @@
         &_title {
           width: 100%;
           font-size: 1.8rem;
-          font-weight: 800;
+          font-weight: 700;
+          -webkit-text-stroke: 0.8px;
         }
         &_desc {
           width: 100%;
@@ -216,7 +217,8 @@
           font-size: 1.8rem;
           margin-bottom: 1.5rem;
           color: #136857;
-          font-weight: 800;
+          font-weight: 700;
+          -webkit-text-stroke: 0.8px;
         }
         &_desc {
           font-size: 1.2rem;
@@ -260,6 +262,8 @@
           font-size: 1.8rem;
           margin-bottom: 1.5rem;
           color: #136857;
+          font-weight: 700;
+          -webkit-text-stroke: 0.8px;
         }
         &_btn {
           display: flex;
@@ -305,5 +309,17 @@
   }
   .reverse {
     flex-direction: column-reverse;
+  }
+  .resource {
+    position: fixed;
+    left: 3rem;
+    bottom: 4rem;
+    z-index: 999;
+    width: auto;
+    cursor: pointer;
+    &_img {
+      width: auto;
+      height: auto;
+    }
   }
 }

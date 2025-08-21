@@ -540,7 +540,8 @@
         color: #CDFEFF;
         font-size: 2rem;
         text-align: center;
-        font-weight: 800;
+        font-weight: 700;
+        -webkit-text-stroke: 0.8px;
       }
     }
     &_position {
@@ -567,7 +568,8 @@
           color: #333333;
           font-size: 1.8rem;
           line-height: 2.4rem;
-          font-weight: 500;
+          font-weight: 700;
+          -webkit-text-stroke: 0.8px; 
           margin-bottom: 2rem;
           text-align: center;
         }
@@ -605,7 +607,8 @@
         padding: 0 3rem;
       }
       &_title {
-        font-weight: 800;
+        font-weight: 700;
+        -webkit-text-stroke: 0.8px;
       }
       &_subtitle.mobile {
         padding: 0 7rem;
@@ -1028,7 +1031,8 @@
     align-items: center;
     height: 3rem;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 700;
+    -webkit-text-stroke: 0.8px;
     color: #323232;
   }
   .mobileImg {

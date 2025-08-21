@@ -199,7 +199,8 @@
       justify-content: center;
       font-size: 1.8rem;
       color: #323232;
-      font-weight: bold;
+      font-weight: 700;
+      -webkit-text-stroke: 0.8px;
     }
     &_subtitle {
       padding: 2rem 3rem;
@@ -207,7 +208,8 @@
       align-items: center;
       justify-content: center;
       font-size: 2rem;
-      font-weight: bold;
+      font-weight: 700;
+      -webkit-text-stroke: 0.8px;
       color: #206857;
       box-sizing: border-box;
       text-align: center;
@@ -224,7 +226,8 @@
         &_title {
           width: 100%;
           font-size: 1.8rem;
-          font-weight: 800;
+          font-weight: 700;
+          -webkit-text-stroke: 0.8px;
         }
         &_desc {
           width: 100%;
@@ -357,5 +360,18 @@
   }
   .third {
     grid-template-columns: 1fr 1fr !important;
+  }
+
+  .resource {
+    position: fixed;
+    left: 3rem;
+    bottom: 4rem;
+    z-index: 999;
+    width: auto;
+    cursor: pointer;
+    &_img {
+      width: auto;
+      height: auto;
+    }
   }
 }

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   devServer: {
     port: 4000,
+    host: '0.0.0.0'
   },
   css: ['@/public/style/common.css','@/public/style/global.scss'],
   modules: ['@nuxtjs/i18n', '@element-plus/nuxt', 'nuxt-swiper'],

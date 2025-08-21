@@ -26,7 +26,7 @@
       font-size: 4.1rem;
     }
     &_title {
-      font-family: Roboto;
+      font-family: PingFang SC, PingFang SC;
       font-weight: 400;
       // line-height: 2.2rem;
       font-size: 1.6rem;
@@ -36,7 +36,7 @@
     &_desc {
       text-align: center;
       color: #ffffff;
-      font-family: Roboto;
+      font-family: PingFang SC, PingFang SC;
       font-weight: 400;
       font-size: 2.5rem;
       line-height: 4rem;
@@ -94,7 +94,7 @@
       }
       &_main {
         &_title {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 700;
           font-size: 3.2rem;
           line-height: 4rem;
@@ -113,7 +113,7 @@
           left: 0;
         }
         &_tip {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 400;
           font-size: 2.2rem;
           line-height: 4.2rem;
@@ -140,7 +140,7 @@
         top: 15rem;
         right: 0;
         width: 40%;
-        font-family: Roboto;
+        font-family: PingFang SC, PingFang SC;
         font-weight: 400;
         font-size: 2.2rem;
         line-height: 4.2rem;
@@ -163,7 +163,7 @@
       &_desc {
         width: 40%;
         &_title {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 700;
           font-size: 3.2rem;
           line-height: 4rem;
@@ -172,7 +172,7 @@
           color: #323232;
         }
         &_tip {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 400;
           font-size: 1.6rem;
           line-height: 2.6rem;
@@ -198,7 +198,7 @@
       &_desc {
         width: 40%;
         &_title {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 700;
           font-size: 2.8rem;
           line-height: 4rem;
@@ -207,7 +207,7 @@
           color: #323232;
         }
         &_tip {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 400;
           font-size: 1.6rem;
           line-height: 2.6rem;
@@ -257,7 +257,7 @@
         padding: 0 10%;
         box-sizing: border-box;
         &_title {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 700;
           font-size: 3.2rem;
           line-height: 4rem;
@@ -266,7 +266,7 @@
           margin-bottom: 3rem;
         }
         &_tip {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 400;
           font-size: 2.2rem;
           line-height: 4.2rem;
@@ -323,7 +323,7 @@
         margin-bottom: 1rem;
       }
       &_title {
-        font-family: Roboto;
+        font-family: PingFang SC, PingFang SC;
         font-weight: 400;
         font-size: 1rem;
         line-height: 2rem;
@@ -335,7 +335,7 @@
       }
       &_desc {
         color: #323232;
-        font-family: Roboto;
+        font-family: PingFang SC, PingFang SC;
         font-weight: 400;
         font-size: 1.6rem;
         text-align: center;
@@ -360,7 +360,7 @@
           top: 15rem;
           right: 0;
           width: 40%;
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 400;
           font-size: 2.2rem;
           line-height: 4.2rem;
@@ -381,10 +381,11 @@
         padding: 0 3.5rem;
         box-sizing: border-box;
         left: 0;
-        top: 26rem;
+        top: 32rem;
         &_title {
-          font-family: Roboto;
-          font-weight: bold;
+          font-family: PingFang SC, PingFang SC;
+          font-weight: 700;
+          -webkit-text-stroke: 0.8px;
           font-size: 1.8rem;
           letter-spacing: 0%;
           margin-bottom: 2.3rem;
@@ -401,7 +402,7 @@
           left: 0;
         }
         &_tip {
-          font-family: Roboto;
+          font-family: PingFang SC, PingFang SC;
           font-weight: 400;
           font-size: 1.2rem;
           line-height: 1.8rem;
@@ -425,8 +426,9 @@
           width: 100%;
           padding-bottom: 2.5rem;
           &_title {
-            font-family: Roboto;
+            font-family: PingFang SC, PingFang SC;
             font-weight: 700;
+            -webkit-text-stroke: 0.8px; 
             font-size: 1.8rem;
             line-height: 2.4rem;
             letter-spacing: 0%;
@@ -435,7 +437,7 @@
             text-align: center;
           }
           &_tip {
-            font-family: Roboto;
+            font-family: PingFang SC, PingFang SC;
             font-weight: 400;
             font-size: 1.2rem;
             line-height: 1.8rem;
@@ -463,8 +465,9 @@
           width: 100%;
           padding-bottom: 2.5rem;
           &_title {
-            font-family: Roboto;
+            font-family: PingFang SC, PingFang SC;
             font-weight: 700;
+            -webkit-text-stroke: 0.8px; 
             font-size: 1.8rem;
             line-height: 2.4rem;
             letter-spacing: 0%;
@@ -473,7 +476,7 @@
             text-align: center;
           }
           &_tip {
-            font-family: Roboto;
+            font-family: PingFang SC, PingFang SC;
             font-weight: 400;
             font-size: 1.2rem;
             line-height: 1.8rem;
@@ -522,8 +525,9 @@
           padding: 0 10%;
           box-sizing: border-box;
           &_title {
-            font-family: Roboto;
+            font-family: PingFang SC, PingFang SC;
             font-weight: 700;
+            -webkit-text-stroke: 0.8px; 
             font-size: 1.8rem;
             // line-height: 4rem;
             color: #136857;
@@ -531,7 +535,7 @@
             margin-bottom: 1rem;
           }
           &_tip {
-            font-family: Roboto;
+            font-family: PingFang SC, PingFang SC;
             font-weight: 400;
             font-size: 1.2rem;
             line-height: 1.8rem;

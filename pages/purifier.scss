@@ -196,7 +196,8 @@
       justify-content: center;
       font-size: 1.8rem;
       color: #323232;
-      font-weight: bold;
+      font-weight: 700;
+      -webkit-text-stroke: 0.8px;
       box-sizing: border-box;
     }
     &_subtitle {
@@ -208,10 +209,10 @@
       justify-content: center;
       text-align: center;
       font-size: 2rem;
-      font-weight: bold;
+      font-weight: 700;
+      -webkit-text-stroke: 0.8px;
       box-sizing: border-box;
       color: #206857;
-      font-weight: 800;
     }
     &_subtitle::after {
       display: none;
@@ -227,7 +228,8 @@
         &_title {
           width: 100%;
           font-size: 1.8rem;
-          font-weight: 800;
+          font-weight: 700;
+          -webkit-text-stroke: 0.8px;
         }
         &_desc {
           width: 100%;
@@ -333,5 +335,18 @@
   }
   .reverse {
     flex-direction: column-reverse;
+  }
+
+  .resource {
+    position: fixed;
+    left: 3rem;
+    bottom: 4rem;
+    z-index: 999;
+    width: auto;
+    cursor: pointer;
+    &_img {
+      width: auto;
+      height: auto;
+    }
   }
 }

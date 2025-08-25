@@ -26,6 +26,7 @@
           <p class="product_view_section_box_desc">{{t('massage.p1_desc3')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p1_desc4')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p1_desc5')}}</p>
+          <p class="product_view_section_box_desc" v-if="locale == 'en'">{{t('massage.p1_desc7')}}</p>
           <div class="flex">
             <div class="product_view_section_box_btn">{{t('massage.more')}}&nbsp;></div>
           </div>
@@ -72,6 +73,7 @@
           <p class="product_view_section_box_desc">{{t('massage.p3_desc4')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p3_desc5')}}</p>
           <p class="product_view_section_box_desc">{{t('massage.p3_desc6')}}</p>
+          <p class="product_view_section_box_desc" v-if="locale == 'en'">{{t('massage.p3_desc7')}}</p>
           <div class="flex">
             <div class="product_view_section_box_btn">{{t('massage.more')}}&nbsp;></div>
           </div>
@@ -104,14 +106,14 @@
   </div>
   <NuxtLink class="resource" to="/concat">
     <img
-      src="/resource.png"
+      :src="locale == 'en' ? '/resource_en.png' : '/resource.png'"
       class="resource_img"
     />
   </NuxtLink>
 </template>
 <script setup>
 import { useI18n } from '#imports';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import { reactive, ref } from 'vue';
 
 const containerRef = ref(null);

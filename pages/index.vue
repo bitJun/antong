@@ -47,7 +47,7 @@
           />
           <div class="home_view_banner_box">
             <!-- <h4 class="home_view_banner_box_title">{{t('home.banner1_title')}}</h4> -->
-            <h4 class="home_view_banner_box_desc">{{t('home.banner1_desc1')}}</h4>
+            <h4 class="home_view_banner_box_desc" v-if="locale == 'zh-cn'">{{t('home.banner1_desc1')}}</h4>
             <h4 class="home_view_banner_box_desc">{{t('home.banner1_desc2')}}</h4>
             <div class="home_view_banner_box_btn">{{t('home.btn')}}&nbsp;></div>
           </div>
@@ -131,14 +131,14 @@
         <div class="home_view_forest_main">
           <div class="home_view_forest_main_left">
             <div class="home_view_forest_main_left_bed">
-              <p>{{t('home.bed')}}</p>
+              <p v-if="locale == 'zh-cn'">{{t('home.bed')}}</p>
               <img
                 src="/home/bed.png"
                 class="bed"
               />
             </div>
             <div class="home_view_forest_main_left_keting">
-              <p>{{t('home.keting')}}</p>
+              <p v-if="locale == 'zh-cn'">{{t('home.keting')}}</p>
               <img
                 src="/home/keting.png"
                 class="keting"
@@ -150,19 +150,19 @@
               src="/home/shafa.png"
               class="shafa"
             />
-            <div class="home_view_forest_main_right_desc">
+            <div  v-if="locale == 'zh-cn'" class="home_view_forest_main_right_desc">
               <p>{{t('home.shafa1')}}</p>
             </div>
           </div>
         </div>
-        <div class="home_view_forest_mains_tip">{{t('home.shafa2')}}</div>
+        <div :class="['home_view_forest_mains_tip', locale == 'en' ? 'f30' : '']">{{t('home.shafa2')}}</div>
       </div>
     </NuxtLink>
     <div class="home_view_product">
       <NuxtLink class="home_view_product_item" to="product/home">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t1')}}</h4>
-          <p class="home_view_product_item_main_desc">{{t('home.d1')}}</p>
+          <p class="home_view_product_item_main_desc" v-if="locale == 'zh-cn'">{{t('home.d1')}}</p>
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>
         <img
@@ -173,7 +173,7 @@
       <NuxtLink class="home_view_product_item" to="massage">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t2')}}</h4>
-          <p class="home_view_product_item_main_desc">{{t('home.d2')}}</p>
+          <p class="home_view_product_item_main_desc" v-if="locale == 'zh-cn'">{{t('home.d2')}}</p>
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>
         <img
@@ -184,7 +184,7 @@
       <NuxtLink to="/purifier" class="home_view_product_item">
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t3')}}</h4>
-          <p class="home_view_product_item_main_desc">{{t('home.d3')}}</p>
+          <p class="home_view_product_item_main_desc" v-if="locale == 'zh-cn'">{{t('home.d3')}}</p>
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>
         <img
@@ -196,7 +196,7 @@
       <!-- <NuxtLink :to="{path: '/product', hash: '#creativity'}" class="home_view_product_item"> -->
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t4')}}</h4>
-          <p class="home_view_product_item_main_desc">{{t('home.d4')}}</p>
+          <p class="home_view_product_item_main_desc" v-if="locale == 'zh-cn'">{{t('home.d4')}}</p>
           <div class="home_view_product_item_main_more">{{t('home.btn')}}&nbsp;></div>
         </div>
         <img
@@ -210,12 +210,12 @@
         :src="isMobile ? '/home/serviceBg_mb.png' : '/home/serviceBg.png'"
         class="home_view_service_img"
       />
-      <div class="home_view_service_main">
+      <div :class="['home_view_service_main', locale == 'en' ? 'left' : '']">
         <h4 class="home_view_service_main_title">{{t('home.subtitle')}}</h4>
         <div class="home_view_service_main_line"></div>
-        <p class="home_view_service_main_tip">{{t('home.dd1')}}</p>
-        <p class="home_view_service_main_tip">{{t('home.dd2')}}</p>
-        <p class="home_view_service_main_tip">{{t('home.dd3')}}</p>
+        <p :class="['home_view_service_main_tip', locale == 'en' ? 'f18' : '']">{{t('home.dd1')}}</p>
+        <p :class="['home_view_service_main_tip', locale == 'en' ? 'f18' : '']">{{t('home.dd2')}}</p>
+        <p :class="['home_view_service_main_tip', locale == 'en' ? 'f18' : '']">{{t('home.dd3')}}</p>
         <NuxtLink 
           class="home_view_service_main_btn"
           to="/service/home"
@@ -396,7 +396,7 @@ const swipers = useSwiper(bannerRef, {
   effect: 'creative',
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 300000,
   },
   slidesPerView: 1,
   navigation: true,
@@ -453,6 +453,7 @@ const data = reactive({
 
 
 const { t } = useI18n();
+const { locale, setLocale } = useI18n();
 </script>
 <style lang="scss" scoped>
 @use "./index.scss";

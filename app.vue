@@ -421,7 +421,7 @@ const onChangeType = (key) => {
                 class="footer_box_main_nav_item_link"
                 to="/service/position"
               >
-                {{t('service.subTitles')}}
+                {{t('footer.serviceProduct')}}
               </NuxtLink>
               <NuxtLink 
                 class="footer_box_main_nav_item_link"

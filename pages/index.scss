@@ -231,6 +231,9 @@
         font-family: PingFang SC, PingFang SC;
         margin-bottom: 1rem;
       }
+      &_tip.f30 {
+        font-size: 3.6rem;
+      }
     }
     &_main {
       display: flex;
@@ -412,6 +415,11 @@
         color: #ffffff;
         margin-bottom: 1rem;
       }
+      &_tip.f18 {
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: left;
+      }
       &_btn {
         display: flex;
         align-items: center;
@@ -424,6 +432,9 @@
         height: 4rem;
         background-image: linear-gradient(180deg, #003D79 0%, #24803A 100%);
       }
+    }
+    &_main.left {
+      align-items: flex-start;
     }
   }
   &_news {

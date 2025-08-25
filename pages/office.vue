@@ -49,14 +49,14 @@
   </div>
   <NuxtLink class="resource" to="/concat">
     <img
-      src="/resource.png"
+      :src="locale == 'en' ? '/resource_en.png' : '/resource.png'"
       class="resource_img"
     />
   </NuxtLink>
 </template>
 <script setup>
 import { useI18n } from '#imports';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import { reactive, ref } from 'vue';
 </script>
 <style lang="scss" scoped>

@@ -113,6 +113,9 @@
         margin-bottom: 2rem;
         color: #136857;
       }
+      &_title.center {
+        text-align: center;
+      }
       &_btn {
         display: flex;
         align-items: center;
@@ -173,7 +176,7 @@
   cursor: pointer;
   &_img {
     width: auto;
-    height: auto;
+    height: 5rem;
   }
 }
 @media screen and (max-width: 768px) {

@@ -118,7 +118,7 @@
     <NuxtLink id="teaSpace" to="/teaSpace" class="product_view_main teaSpace" style="padding: 5rem 0;">
       <div class="box">
         <div class="product_view_main_info">
-          <h4 class="product_view_main_info_title">{{t('product.p7_title')}}</h4>
+          <h4 :class="['product_view_main_info_title', locale == 'en' ? 'center' : '']">{{t('product.p7_title')}}</h4>
           <div class="flex">
             <div class="product_view_main_info_btn">{{t('product.more')}}&nbsp;></div>
           </div>
@@ -143,7 +143,7 @@
     </div> -->
     <NuxtLink class="resource" to="/concat">
       <img
-        src="/resource.png"
+        :src="locale == 'en' ? '/resource_en.png' : '/resource.png'"
         class="resource_img"
       />
     </NuxtLink>
@@ -151,7 +151,7 @@
 </template>
 <script setup>
 import { useI18n } from '#imports';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import { reactive, ref, onMounted, watch, nextTick } from 'vue';
 import { useRoute } from 'vue-router';
 

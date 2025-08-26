@@ -343,7 +343,7 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        padding: 0 0 0 7rem;
+        padding: 0 7rem;
         box-sizing: border-box;
       }
       &_tip {
@@ -539,7 +539,7 @@
           margin-bottom: 1rem;
         }
         &_swiper {
-          width: 100%;
+          width: 90%;
           margin: 0 auto;
           &_item {
             &_img {

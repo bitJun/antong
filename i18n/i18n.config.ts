@@ -4,7 +4,8 @@ import en from './locales/en.json';
 
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: 'zh-cn',
+  // locale: 'zh-cn',
+  locale: 'en',
   messages: {
     en: en,
     'zh-cn': zhCN,

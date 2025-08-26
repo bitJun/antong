@@ -6,9 +6,8 @@
         class="about_view_section_img"
       />
       <div class="about_view_section_main" v-if="isMobile">
-        <h4 class="about_view_section_tip">{{t('about.title')}}</h4>
-        <p class="about_view_section_title">{{t('about.desc')}}</p>
-        <p class="about_view_section_title">{{t('about.desc1')}}</p>
+        <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
+        <p class="about_view_section_title">{{t('about.title')}}</p>
       </div>
       <div class="about_view_section_main" :class="[locale == 'zh-cn' ? 'w36' : 'w144', locale == 'en' ? 'left': '']" v-else>
         <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
@@ -25,7 +24,7 @@
     </div>
     <div class="about_view_boxmain" v-if="isMobile" id="antong">
       <img
-        src="/about/infobg.png"
+        :src="locale == 'en' ? '/about/infobg_en.png' : '/about/infobg.png'"
         class="about_view_boxmain_img"
       />
       <div class="about_view_boxmain_contents">

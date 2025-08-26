@@ -5,12 +5,18 @@
         :src="isMobile ? '/service/bg_mb.png' : '/service/bg.png'"
         class="product_view_bg_img"
       >
-      <p class="product_view_bg_desc">VIP {{t('home.subtitle')}}</p>
+      <p class="product_view_bg_desc" v-if="locale == 'en'">{{ (t('service.mainTitle')) }}</p>
+      <p class="product_view_bg_desc" v-else>VIP {{t('home.subtitle')}}</p>
     </div>
     <div class="product_view_position" id="position">
       <div class="product_view_position_main">
         <h3 class="product_view_box_title">{{t('service.subTitles')}}</h3>
-        <p class="product_view_position_section_desc" style="text-align: left;">{{t('service.desc')}}</p>
+        <p 
+          :class="['product_view_position_section_desc', locale == 'en' ? 'mt2' : '']"
+          :style="{
+            'text-align': 'left',
+          }"
+        >{{t('service.desc')}}</p>
         <img
           :src="isMobile ? '/service/2_mb.png' : '/service/2.png'"
           class="product_view_position_main_img"
@@ -75,7 +81,7 @@
     </div>
     <div class="product_view_box1" id="process">
       <div class="product_view_box1_main">
-        <h4 class="product_view_box1_main_title">{{t('service.tip4')}}</h4>
+        <h4 :class="['product_view_box1_main_title', locale == 'en' ? 'small' : '']">{{t('service.tip4')}}</h4>
         <div class="product_view_box1_main_list">
           <div class="product_view_box1_main_list_item">
             <div class="product_view_box1_main_list_item_info">
@@ -83,7 +89,7 @@
                 src="/service/14.png"
                 class="product_view_box1_main_list_item_info_img"
               >
-              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line1')}}</h4>
+              <h4 :class="['product_view_box1_main_list_item_info_title', locale == 'en' ? 'center' : '']">{{t('service.line1')}}</h4>
               <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc1')}}</p>
             </div>
           </div>
@@ -93,7 +99,7 @@
                 src="/service/15.png"
                 class="product_view_box1_main_list_item_info_img"
               >
-              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line2')}}</h4>
+              <h4 :class="['product_view_box1_main_list_item_info_title', locale == 'en' ? 'center' : '']">{{t('service.line2')}}</h4>
               <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc2')}}</p>
             </div>
           </div>
@@ -103,7 +109,7 @@
                 src="/service/16.png"
                 class="product_view_box1_main_list_item_info_img"
               >
-              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line3')}}</h4>
+              <h4 :class="['product_view_box1_main_list_item_info_title', locale == 'en' ? 'center' : '']">{{t('service.line3')}}</h4>
               <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc3')}}</p>
             </div>
           </div>
@@ -113,7 +119,7 @@
                 src="/service/17.png"
                 class="product_view_box1_main_list_item_info_img"
               >
-              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line4')}}</h4>
+              <h4 :class="['product_view_box1_main_list_item_info_title', locale == 'en' ? 'center' : '']">{{t('service.line4')}}</h4>
               <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc4')}}</p>
             </div>
           </div>
@@ -123,7 +129,7 @@
                 src="/service/18.png"
                 class="product_view_box1_main_list_item_info_img"
               >
-              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line5')}}</h4>
+              <h4 :class="['product_view_box1_main_list_item_info_title', locale == 'en' ? 'center' : '']">{{t('service.line5')}}</h4>
               <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc5')}}</p>
             </div>
           </div>
@@ -133,7 +139,7 @@
                 src="/service/19.png"
                 class="product_view_box1_main_list_item_info_img"
               >
-              <h4 class="product_view_box1_main_list_item_info_title">{{t('service.line6')}}</h4>
+              <h4 :class="['product_view_box1_main_list_item_info_title', locale == 'en' ? 'center' : '']">{{t('service.line6')}}</h4>
               <p class="product_view_box1_main_list_item_info_desc">{{t('service.desc6')}}</p>
             </div>
           </div>
@@ -202,10 +208,10 @@
       </div>
     </div>
     <div class="product_view_box1_main">
-      <h4 class="product_view_box1_main_title">{{t('service.step')}}</h4>
+      <h4 :class="['product_view_box1_main_title', locale == 'en' ? 'middle' : '']">{{t('service.step')}}</h4>
       <div class="step">
         <div class="step_item">
-          <h4 class="step_item_title">{{t('service.step1')}}</h4>
+          <h4 :class="['step_item_title', locale == 'en' ? 'mt10' : '']">{{t('service.step1')}}</h4>
           <h5 class="step_item_subtitle" v-if="!isMobile"></h5>
           <p class="step_item_desc">{{ t('service.step1desc') }}</p>
           <img
@@ -214,7 +220,7 @@
           />
         </div>
         <div class="step_item">
-          <h4 class="step_item_title">{{t('service.step2')}}</h4>
+          <h4 :class="['step_item_title', locale == 'en' ? 'mt10' : '']">{{t('service.step2')}}</h4>
           <h5 class="step_item_subtitle">{{ t('service.step2desc1') }}</h5>
           <p class="step_item_desc">{{ t('service.step2desc2') }}</p>
           <p class="step_item_desc">{{ t('service.step2desc3') }}</p>
@@ -224,7 +230,7 @@
           />
         </div>
         <div class="step_item">
-          <h4 class="step_item_title">{{t('service.step3')}}</h4>
+          <h4 :class="['step_item_title', locale == 'en' ? 'mt10' : '']">{{t('service.step3')}}</h4>
           <h5 class="step_item_subtitle">{{ t('service.step3desc1') }}</h5>
           <p class="step_item_desc">{{ t('service.step3desc2') }}</p>
           <p class="step_item_desc">{{ t('service.step3desc3') }}</p>
@@ -234,7 +240,7 @@
           />
         </div>
         <div class="step_item">
-          <h4 class="step_item_title">{{t('service.step4')}}</h4>
+          <h4 :class="['step_item_title', locale == 'en' ? 'mt10' : '']">{{t('service.step4')}}</h4>
           <h5 class="step_item_subtitle" v-if="!isMobile"></h5>
           <p class="step_item_desc">{{ t('service.step4desc1') }}</p>
           <p class="step_item_desc">{{ t('service.step4desc2') }}</p>
@@ -306,7 +312,7 @@
 </template>
 <script setup>
 import { useI18n } from '#imports';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import { reactive, ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 

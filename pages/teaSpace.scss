@@ -76,6 +76,9 @@
         color: #323232;
         text-align: center;
       }
+      &_line.l3 {
+        line-height: 3.3rem;
+      }
       &_flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -270,7 +273,10 @@
           line-height: 2rem;
           font-size: 1.2rem;
           color: #323232;
-          text-align: center;
+          text-align: left;
+        }
+        &_line.l3 {
+          line-height: 1.8rem;
         }
         &_flex {
           width: 100%;
@@ -380,7 +386,7 @@
     width: auto;
     cursor: pointer;
     &_img {
-      width: auto;
+      width: 11rem;
       height: auto;
     }
   }

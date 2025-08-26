@@ -14,12 +14,12 @@
           class="product_view_main_box_img"
         />
         <div class="m20">
-          <p class="product_view_main_box_line">{{ t('teaSpace.line1') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.line2') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.line3') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.line4') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.line5') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.line6') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.line1') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.line2') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.line3') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.line4') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.line5') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.line6') }}</p>
         </div>
         <div class="product_view_main_box_flex">
           <div class="product_view_main_box_flex_item">
@@ -36,12 +36,12 @@
           </div>
         </div>
         <div class="m20">
-          <p class="product_view_main_box_line">{{ t('teaSpace.desc1') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.desc2') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.desc3') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.desc4') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.desc5') }}</p>
-          <p class="product_view_main_box_line">{{ t('teaSpace.desc6') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.desc1') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.desc2') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.desc3') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.desc4') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.desc5') }}</p>
+          <p class="product_view_main_box_line" :class="[locale == 'en' ? 'l3' : '']">{{ t('teaSpace.desc6') }}</p>
         </div>
         <div class="product_view_main_box_flex" style="margin-bottom: 0;">
           <div class="product_view_main_box_flex_item">

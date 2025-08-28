@@ -10,7 +10,8 @@
         <p class="about_view_section_title">{{t('about.title')}}</p>
       </div>
       <div class="about_view_section_main" :class="[locale == 'zh-cn' ? 'w36' : 'w144', locale == 'en' ? 'left': '']" v-else>
-        <h4 class="about_view_section_tip">{{t('about.tip')}}</h4>
+        <h4 class="about_view_section_tip" style="margin-bottom: 0">{{t('about.tip')}}</h4>
+        <h4 class="about_view_section_tip">{{t('about.tip1')}}</h4>
         <div v-if="locale == 'zh-cn'">
           <!-- <p class="about_view_section_title">{{t('about.title')}}</p> -->
           <p class="about_view_section_desc">{{t('about.desc')}}</p>

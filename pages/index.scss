@@ -246,7 +246,7 @@
         &_bed {
           display: flex;
           align-items: flex-end;
-          justify-content: space-between;
+          justify-content: flex-end;
           margin-bottom: 1rem;
           p {
             color: #ffffff;
@@ -345,7 +345,7 @@
       &_main {
         position: absolute;
         left: 0;
-        top: 4rem;
+        top: 5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -355,7 +355,7 @@
           color: #136857;
           font-size: 4.2rem;
           font-weight: bold;
-        font-family: PingFang SC, PingFang SC;
+          font-family: PingFang SC, PingFang SC;
           margin-bottom: 1rem;
         }
         &_desc {
@@ -366,7 +366,7 @@
         }
         &_more {
           color: #0a6250;
-          font-size: 1.4rem;
+          font-size: 2rem;
         }
       }
       &_img {
@@ -763,7 +763,6 @@
           top: 4rem;
           &_title {
             color: #136857;
-            
             font-family: PingFang SC, PingFang SC;
             font-weight: 700;
             -webkit-text-stroke: 0.8px; 
@@ -780,7 +779,7 @@
           }
           &_more {
             color: #0a6250;
-            font-size: 0.8rem;
+            font-size: 1rem;
           }
         }
         &_img {

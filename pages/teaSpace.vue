@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-      <h4 class="product_view_main_title" style="color: #323232">{{ t('teaSpace.subtitle2') }}</h4>
+      <h4 class="product_view_main_title">{{ t('teaSpace.subtitle2') }}</h4>
       <div class="product_view_main_container">
         <div
           class="product_view_main_container_item"
@@ -103,7 +103,7 @@
           <p class="product_view_main_container_item_desc">{{ t(`teaSpace.table${item}`) }}</p>
         </div>
       </div>
-      <h4 class="product_view_main_title" style="color: #323232">{{ t('teaSpace.subtitle3') }}</h4>
+      <h4 class="product_view_main_title">{{ t('teaSpace.subtitle3') }}</h4>
       <div class="product_view_main_containers">
         <div
           class="product_view_main_containers_item"

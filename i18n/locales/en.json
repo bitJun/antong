@@ -52,7 +52,7 @@
   "about": {
     "tip": "Integrating Wellness",
     "tip1": "& Aesthetics into Daily Life",
-    "title": "Humanized Intelligence , designed for You",
+    "title": "Humanized Intelligence , designed for you",
     "desc": "致力于为用户提供兼具",
     "desc1": "科技感、设计力 、人性化的产品体验",
     "subTitle": "About Antora",
@@ -69,7 +69,7 @@
   "service": {
     "mainTitle": "Antora Customization Services",
     "title": "VIP Customized Service Orientation",
-    "desc": "The Antora Master Craftsmen Alliance, provides excellence from start to finish: from precise spatial mapping to lifetime project maintenance. We transform personalised visions into elegant realities by offering the following.",
+    "desc": "Antora provides excellence services from start to finish: from precise spatial mapping to lifetime project maintenance. We transform personalised visions into elegant realities by offering the following.",
     "subTitle": "VIP Customized Service Procedure",
     "subTitles": "High-end Furniture Customization",
     "subTitles1": "FAS Black Walnut",
@@ -159,7 +159,7 @@
   },
   "product": {
     "title": "Massage & Wellness ",
-    "desc": "Integrate AI and biosensing technologies into homes to cultivate healthy living, building a holistic health solution defined by \"proactive intervention + precision management.\"",
+    "desc": "Integrate AI and biosensor technology into home environments to cultivate healthy living, building holistic health solutions defined by \"proactive intervention + precision management\".",
     "title1": "Creative Living",
     "desc1": "Where Italian top-grain leather meets Ming Dynasty joinery art, modular intelligence gives rise to adaptive furnishings for evolving spaces. This functional artistry manifests as curated design icons for discerning collectors, deconstructing Eastern wisdom through modern design syntax and transforming habitats into galleries of daily poetics.",
     "p1_title": "Micro-hyperbaric oxygen chamber",
@@ -205,7 +205,7 @@
   },
   "massage": {
     "title": "Massage & Wellness ",
-    "desc": "Integrate AI and biosensing technologies into homes to cultivate healthy living, building a holistic health solution defined by \"proactive intervention + precision management.\"",
+    "desc": "Integrate AI and biosensor technology into home environments to cultivate healthy living, building holistic health solutions defined by \"proactive intervention + precision management\".",
     "subtitle": "OGAWA Smart Massage Chair",
     "p1_title": "",
     "p1_desc1": "◎5D intelligent positioning mechanism",
@@ -239,8 +239,9 @@
     "p4_desc6": "◎ 4 Intelligent Massage Programs",
     "more": "Learn More"
   },
-  "purifier": {"title": "Massage & Wellness ",
-    "desc": "Integrate AI and biosensing technologies into homes to cultivate healthy living, building a holistic health solution defined by \"proactive intervention + precision management.\"",
+  "purifier": {
+    "title": "Massage & Wellness ",
+    "desc": "Integrate AI and biosensor technology into home environments to cultivate healthy living, building holistic health solutions defined by \"proactive intervention + precision management\".",
     "subtitle": "Honeywell Air Disinfection Purifier",
     "p1_title": "Air Disinfection Purifier",
     "p1_desc1": "◎ Hisiv+CTOX Dual-Action Tech: Adsorbs and decomposes formaldehyde.",

@@ -295,7 +295,6 @@ const swipers = useSwiper(containerRefs, {
     },
   },
 })
-
 </script>
 <style lang="scss" scoped>
   @use './about.scss';

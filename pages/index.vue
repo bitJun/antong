@@ -95,7 +95,7 @@
         class="home_view_banner"
       >
         <NuxtLink
-          to="product/master"
+          to="product/purifier"
           class="home_view_banner"
         >
           <img
@@ -192,7 +192,7 @@
           class="home_view_product_item_img"
         />
       </NuxtLink>
-      <NuxtLink to="/product/creativity" :external="true" class="home_view_product_item">
+      <NuxtLink to="/product/creativity" class="home_view_product_item">
       <!-- <NuxtLink :to="{path: '/product', hash: '#creativity'}" class="home_view_product_item"> -->
         <div class="home_view_product_item_main">
           <h4 class="home_view_product_item_main_title">{{t('home.t4')}}</h4>

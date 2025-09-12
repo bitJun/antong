@@ -396,7 +396,7 @@ const swipers = useSwiper(bannerRef, {
   effect: 'creative',
   loop: true,
   autoplay: {
-    delay: 300000,
+    delay: 3000,
   },
   slidesPerView: 1,
   navigation: true,
